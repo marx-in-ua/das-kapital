@@ -14,6 +14,12 @@ Test rename:
 
     find -name '*.txt' | sort | gawk 'BEGIN{ a=61 }{ printf "echo %s %04d.txt\n", $0, a++ }' | bash 
 
+Task sizes:
+	
+- franko = 5
+- ii = 10
+- iii.2 = 7
+
 Download single photo via ssh from your local home folder
 
     scp <source> <destination>
