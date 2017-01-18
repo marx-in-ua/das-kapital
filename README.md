@@ -14,6 +14,10 @@ Test rename:
 
     find -name '*.txt' | sort | gawk 'BEGIN{ a=61 }{ printf "echo %s %04d.txt\n", $0, a++ }' | bash 
 
+Replace char in files:
+
+	rename 's/\:/-/g' *.txt -vn
+
 Task sizes:
 	
 - franko = 5
