@@ -18,6 +18,10 @@ Replace char in files:
 
 	rename 's/\:/-/g' *.txt -vn
 
+Mass file convert
+
+	mogrify -type Grayscale -format jpg -resize 50% -auto-level -quality 80 *.tif
+
 Task sizes:
 	
 - franko = 5
