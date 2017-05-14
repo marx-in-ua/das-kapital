@@ -1,39 +1,28 @@
-# das.kapital
+# Карл Маркс. Капітал.
 
-Automated fixes:
+## Том І. Процес продукції капіталу. 
 
-* merge hyphen words - (char probably U+002D)
-* replace double equal signs on line break
-* fix quotation marks („…“ to «…») in Book II and Franko
+Переклад з четвертого німецького виддання за редакцією [A. Річицького] Д. Рабіновича і С. Трикоза
 
-Rename files:
+Харків (1933) Партвидав «Пролетар» 
 
-    find -name '*.txt' | sort | gawk 'BEGIN{ a=61 }{ printf "mv %s %04d.txt\n", $0, a++ }' | bash
+## Том ІІ. Процес циркуляції капіталу. 
 
-Test rename:
+Переклад з другого німечького видання за редакцією Д. Рабіновіча та С. Трикози. 
 
-    find -name '*.txt' | sort | gawk 'BEGIN{ a=61 }{ printf "echo %s %04d.txt\n", $0, a++ }' | bash 
+Харків (1932) Партвидав «Пролетар» 
 
-Replace char in files:
 
-	rename 's/\:/-/g' *.txt -vn
+## Том ІІІ, частина І. Сукупний процес капіталістичного виробництва.
 
-Mass file convert
+Переклад з першого німецького видання за редакцією Д. Рабіновіча.
 
-	mogrify -type Grayscale -format jpg -resize 50% -auto-level -quality 80 *.tif
+Київ (1936) Партвидав ЦК КП(б)У
 
-Task sizes:
-	
-- franko = 5
-- ii = 10
-- iii.2 = 7
 
-Download single photo via ssh from your local home folder
+## Том ІІІ, частина ІІ. Процес капіталістичної продукції в цілому.
 
-    scp <source> <destination>
+Переклад з третього німецького видання 1911 року за редакцією Д. Рабіновіча, С. Трикози та В. Щербаненка.
 
-    scp /home/chmen/franko.web/0061.jpg root@46.101.228.108:/home/rails/scharwerk/public/scans
+Харків (1930) Державне видавництво України
 
-Download folder via ssh from your local home folder:
-
-    scp -r /home/chmen/franko.web root@46.101.228.108:/home/rails/scharwerk/public/scans
