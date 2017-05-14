@@ -34,7 +34,7 @@
 Капітал виявляє себе як капітал в наслідок зростання його
 вартості; ступінь зростання його вартості є виразом того кіль-
 
-60	„Вираз вартість (value), застосований до currency [засобу циркуляції], має
+60    „Вираз вартість (value), застосований до currency [засобу циркуляції], має
 три значення... Подруге, currency actually in hand (гроші, які дійсно є в касі],
 порівняно з тією самою сумою грошей, яка надійде пізніше. Тоді їх вартість
 вимірюється розміром процента, а розмір процента визначається by the ratio
@@ -43,7 +43,7 @@ between the amount of loanable capital and the demand for it [відношенн
 R. Torrens: „On the Operation of the Bank Charter Act of 1844 etc.“, 2 вид. 1847,
 [стор. 5 і далі]).
 
-61	The ambiguity of the term value of money or of the currency, when emp-
+61    The ambiguity of the term value of money or of the currency, when emp-
 loyed indiscriminately as it is, to signify both value in exchange for commodities
 and value in use of capital, is a constant source of confusion“ [„Двояке значення
 виразу вартість грошей або засобу циркуляції, коли його, як це буває, без

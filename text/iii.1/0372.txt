@@ -32,7 +32,7 @@
 На базі капіталістичного виробництва в акційних підприєм-
 ствах розвиваємся нове шахрайство з платою за управління,
 
-79	.Masters are labourers as well as their journeymen. In this character their
+79    .Masters are labourers as well as their journeymen. In this character their
 interest is precisely the same as that of their men. But they are also either capita-
 lists, or the agents of capitalists, and in this respect their interest is decidedly
 opposed to the interest of the workmen“. [»Майстри — такі ж робітники, як і їх
@@ -47,7 +47,7 @@ by increasing the number of persons who possess their peculiar knowledge“'[„
 шуючи число осіб, які мають такі ж спеціальні знання“] (стор ЗО. Hodgskin:
 .Labour defended against the Claims of Capital etc.“ London 1825).
 
-80	„The general relaxation of conventional barriers, the increased facilities of edu-
+80    „The general relaxation of conventional barriers, the increased facilities of edu-
 cation tend to bring down the wages of skilled labour Instead of raising those of
 the unskilled“ („Загальне ослаблення умовних перепон і збільшення можливості
 дістати освіту діють в напрямі зниження плати кваліфікованої праці замість

@@ -1,4 +1,10 @@
+add new line to the end of file
 
+	sed -i -e '$a\' file
+
+replace tabs with spaces
+
+	 sed -i $'s/\t/    /g' *.txt
 
 Automated fixes:
 

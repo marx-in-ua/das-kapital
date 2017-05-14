@@ -29,14 +29,14 @@
 один одному лише як продавці й покупці. Твердити, що додат-
 кова вартість постає для продуцента з того, що споживачі пла-
 
-24	«При збільшенні номінальної вартости продукту... продавці не
+24    «При збільшенні номінальної вартости продукту... продавці не
 збагачуються... бо рівно стільки, скільки вони виграють як продавці»
 вони втрачають як покупці» («Bythe augmentation of the nominal value
 of the produce... sellers not enriched... since what they gain as sellers, they
 précisély expend in the quality of buyers»), («The Essential Principles of
 the Wealth of Nations etc.», London 1797, p. 66).
 
-25	«Коли хтось мусить віддати за 18 ліврів таку кількість продукту,
+25    «Коли хтось мусить віддати за 18 ліврів таку кількість продукту,
 яка варта 24 ліври, то, вживши виручені гроші на купівлю, він так само
 одержить за 18 ліврів те, за що раніш плати и 24 ліври» («Si Ton est
 forcé de donner pour 18 livres une quantité de telle production qui en valait
@@ -44,7 +44,7 @@ forcé de donner pour 18 livres une quantité de telle production qui en valait
 18 1. ce que Гоп payait 24»), (Le Trosne «De l’Intérêt Social»,
 Physiocrates, éd. Daire, Paris 1846, p. 897).
 
-26	«Кожен продавець не може завжди підвищувати ціни на свої товари
+26    «Кожен продавець не може завжди підвищувати ціни на свої товари
 інакше, як згодившись платити завжди дорожче за товари інших .про-
 давців; і з тієї самої причини кожний споживач, звичайно, не може завжди
 платити дешевше зате, що купує, інакше, як згодившись на таке саме змен-
@@ -56,5 +56,5 @@ moins cher ce qu’il achète, qu’en se soumettant aussi à une diminution
 semblable sur le prix des choses qu’il vend»), (Mercier de la Rivière:
 «L’Ordre naturel et essentiel», Physiocrates, éd. Daire, II. Partie, p. 555).
 
-27	R. Torrerts: «An Essay on the Production of Wealth», London
+27    R. Torrerts: «An Essay on the Production of Wealth», London
 1821, p. 349.

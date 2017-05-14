@@ -32,7 +32,7 @@
 капіталізований процент, бо процент є лише частина додаткової
 варгосіи 27
 
-24	Тим то можна дивуватися з хитромудрости Прудона, що хоче зни-
+24    Тим то можна дивуватися з хитромудрости Прудона, що хоче зни-
 
 щити капіталістичну власність, протиставлячи їй вічні закони власности
 товарової продукціїї
@@ -45,11 +45,11 @@ view to profit»). (Malthus: «Principles of Political Economy», p. 262).
 revenue, and used with a view to profit»). (R. Jones: «An Introductory
 Lecture on Political Economy», London 1833, p. 262).
 
-26	«Посідачі додаткового продукту або капіталу» ( «The possessors
+26    «Посідачі додаткового продукту або капіталу» ( «The possessors
 of surplusproduce or capital»). ( «The Source and Remedy of the National
 Difficulties. A Letter to Lord John Russel», London 1821).
 
-27	«Капітал із складними процентами на кожну частину заощадже-
+27    «Капітал із складними процентами на кожну частину заощадже-
 ного капіталу до такої міри виріс, що все багатство світу, яке дає дохід,
 віддавна є вже процент від капіталу» («Capital, with compound interest
 on every portion of capital saved, is so all engrossing, that all the wealth

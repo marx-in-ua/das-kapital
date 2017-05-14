@@ -9,7 +9,7 @@
 в кожний даний момент одноманітна. Отже, ця ріжниця не по-
 рушує постійності і одноманітності розміру процента.72
 
-71	.This rule of dividing profits is not, however, to be applied particularly to
+71    .This rule of dividing profits is not, however, to be applied particularly to
 every lender and borrower, but to lenders and borrowers in general... remarkably
 great and small gain's are the reward of skill ant the want of understanding, which
 lenders have nothing at all to do with; for as they will not suffer by the one,
