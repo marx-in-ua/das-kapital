@@ -28,6 +28,8 @@ Mass file convert
 
 	mogrify -type Grayscale -format jpg -resize 50% -auto-level -quality 80 *.tif
 
+	mogrify -type Grayscale -format jpg -auto-level -quality 80 *.tif
+
 Task sizes:
 	
 - franko = 5
@@ -43,3 +45,5 @@ Download single photo via ssh from your local home folder
 Download folder via ssh from your local home folder:
 
     scp -r /home/chmen/franko.web root@46.101.228.108:/home/rails/scharwerk/public/scans
+
+
