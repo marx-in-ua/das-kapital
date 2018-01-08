@@ -1,4 +1,4 @@
-﻿В мануфактурі робітники мусять окремо або групами виконувати
+В мануфактурі робітники мусять окремо або групами виконувати
 кожний окремий частинний процес своїм ручним знаряддям.
 Якщо робітник і пристосовується тут до процесу, то й процес
 теж уже перед тим пристосовано до робітника. За машинової
@@ -6,7 +6,7 @@
 процес розкладається тут об’єктивно, розглядуваний сам по собі,
 на свої складові фази, і проблема виконання кожного частинного
 процесу та сполучення різних частинних процесів розв’язується
-за допомогою технічного застосування механіки, хемії й т.д.,10*
+за допомогою технічного застосування механіки, хемії й т.д., 102
 при чому, природно, теоретична концепція, як і раніш, мусить
 бути вдосконалена через нагромаджений широкий практичний
 досвід. Кожна частинна машина постачає для тієї що безпосе-
@@ -35,7 +35,7 @@
 дають перевагу вовні, розчісаній руками. Багато з ручних чесальників
 найшло працю на фабриках, але продукт ручного чесальника такий не-
 значний супроти продукту машини, що дуже велике число чесальників
-лишилося без праці». («The applicationof power to the process of combing
+лишилося без праці». («The application of power to the process of combing
 wool... extensively in operation since the introduction of the «combing
 machine», especially Lister’s... undoubtedly had the effect of throwing
 a very large number of men out of work. Wool was formerly combed by
@@ -44,10 +44,10 @@ combed in the factory, and hand labour is superseded, except in some parti-
 cular kinds of work, in which hand - combed wool is still preferred. Many
 of the handcombers found employment in the factories, but the produce of
 the handcomber bears so small a proportion to that of the machine, that
-the employment of a very large number of combers has passed away»)- («He-
+the employment of a very large number of combers has passed away»). («Re-
 ports of Insp. of Fact, for 31st October 1856», p. 16).
 
-i°a «Отже, принцип фабричної системи є в заміні... поділу або роз-
+102  «Отже, принцип фабричної системи є в заміні... поділу або роз-
 членування праці між робітників розкладом процесу на його посутні
 складові елементи» ( «The principle of the factory system, then, is to sub-
 stitute... the partition of a process into its essential constituents, lor the
