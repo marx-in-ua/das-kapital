@@ -26,7 +26,7 @@
 кувати потрібні для окремих частин машин строго геометричні
 форми, такі, як от лінія, площінь, коло, циліндер, конус і куля.
 Цю проблему розв’язав Генрі Моделей в першому десятилітті
-XIX віку, винайшовши slide - rest, що його незабаром зроблено
+XIX віку, винайшовши slide-rest, що його незабаром зроблено
 автоматичним і в змодифікованій формі перенесено з токарського
 варстату, для якого він був спочатку призначений, на інші буді-
 вельні машини. Цей механічний пристрій замінює не якесь окреме
@@ -48,6 +48,6 @@ XIX віку, винайшовши slide - rest, що його незабаро�
 ( «Simple and outwardly unimportant as this appendage to lathes may ap-
 pear, it is not, we belive, averring too much to state, that its influence m
 improving and extending the use of machinery has been as great as that
-produced by Watt’s improvements of the steam - engine itself. Its intro-
+produced by Watt’s improvements of the steam-engine itself. Its intro-
 duction went at once to perfect all machinery, to cheapen it, and to stimu-
 late invention and improvement»).
