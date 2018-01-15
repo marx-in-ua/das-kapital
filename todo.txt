@@ -1,0 +1,22 @@
+All
+
+- spaces around dashes
+- remove line brakes
+- remove double \n
+
+
+I
+
+
+II
+
+- noted errors + image
+
+III.1
+
+- noted errors + image
+- remove link to russian book
+
+III.2
+
+- noted errors + image

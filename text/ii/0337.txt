@@ -3,23 +3,23 @@
 функціонувати як капітал і не може бути спожита як дохід.
 
 Навпаки, коли вартість сукупного продукту = 9000 ми розподілимо
-на 6000 с +1500 v + 1500 m і розглядатимемо 3000 (v + m) лише
+на 6000 с + 1500 v + 1500 m і розглядатимемо 3000 (v + m) лише
 в їхній властивості бути доходом, то здається, ніби змінний капітал зник,
 і що капітал, розглядуваний з суспільного погляду, складається виключно
-з сталого капіталу. Бо те, що спочатку виступало як 1500 v, розкла-
-лось на частину суспільного доходу, на заробітну плату, дохід робітни-
-чої кляси,— і разом з тим зник характер капіталу цієї частини. Рамсай
+з сталого капіталу. Бо те, що спочатку виступало як 1500 v, розклалось
+на частину суспільного доходу, на заробітну плату, дохід робітничої
+кляси, — і разом з тим зник характер капіталу цієї частини. Рамсай
 і справді зробив такий висновок. На його думку, капітал, розглядуваний
 з суспільного погляду, складається лише з основного капіталу, але під
 основним капіталом він розуміє сталий капітал, масу вартости, що є в
 засобах продукції, хоч будуть ці засоби продукції лише засобами праці
-або матеріялами праці, як от сировинний матеріял, напівфабрикат, допо-
-міжний матеріял тощо. Змінний капітал він зве обіговим капіталом. „Обі-
-говий капітал складається виключно з засобів існування та інших доко-
-нечних речей, авансовуваних робітникам, поки вивершиться продукт
+або матеріялами праці, як от сировинний матеріял, напівфабрикат, допоміжний
+матеріял тощо. Змінний капітал він зве обіговим капіталом. „Обіговий
+капітал складається виключно з засобів існування та інших доконечних
+речей, авансовуваних робітникам, поки вивершиться продукт
 їхньої праці... Тільки основний капітал, а не обіговий є, власне кажучи,
 джерело національного багатства... Обіговий капітал не є безпосередній
-чинник продукції, і взагалі він не має для неї посутнього значення; це—
+чинник продукції, і взагалі він не має для неї посутнього значення; це —
 лише умова, що стала доконечною в наслідок гірких злиднів маси народу...
 З національного погляду лише основний капітал є елемент витрат
 продукції“.*) (Ramsay, 1. с., стор. 23—26 passim). Ближче Рамсай так
@@ -39,13 +39,13 @@
 *) „Circulating capital consists exclusively of subsistence and other necessaries
 advanced to the workmen, previous to the completion of the produce of their labour...
 Fixed capital... alone, not circulating, is properly speaking a source of national
-wealth... Circulating capital is not an inmediate agent in production, nor even essen-
-tial to it at all, but merely a convenience rendered necessary by the deplorable poverty
+wealth... Circulating capital is not an inmediate agent in production, nor even essential
+to it at all, but merely a convenience rendered necessary by the deplorable poverty
 of the mass of the people... Fixed capital alone constitutes an element of cost of
 production in a national point of view“.
 
 **) „The length of time during which any portion of the product of that labour
-(а саме—labour bestowed on any commodity) has existed as fixed capital; that is
+(а саме — labour bestowed on any commodity) has existed as fixed capital; that is
 in a form in which, though assisting to raise the future commodity, it does not
 maintain labourers“.
 

@@ -1,8 +1,8 @@
 між авансованою заробітною платою і купівельною ціною, шо її платить
 останній споживач, повинна являти зиск з капіталу. Він розподіляється
 між фабрикантом, гуртовим купцем і роздрібним торговцем, з того часу,
-як вони розподілили між собою свої функції, а виконана робота ли-
-шилась та сама, хоч здійснили її три особи й три гатунки капіталу
+як вони розподілили між собою свої функції, а виконана робота лишилась
+та сама, хоч здійснили її три особи й три гатунки капіталу
 замість одного“ *).
 
 „Всі (торговці) посередньо сприяли продукції, бо вона має на меті
@@ -11,11 +11,11 @@
 
 Розглядаючи загальні форми кругобігу, і взагалі в усій цій другій
 книзі, ми беремо гроші як металеві гроші й лишаємо осторонь
-символічні гроші—звичайні знаки вартости, що є лише виключно при-
-належність деяких держав, а також кредитові гроші, які ще не розви-
-нулись. Це, поперше, відповідає історичному розвиткові; кредитові гроші
-не відіграють жадної ролі, або лише незначну ролю, в першу добу капіта-
-лістичної продукції. Подруге, доконечність такого порядку дослідження
+символічні гроші — звичайні знаки вартости, що є лише виключно приналежність
+деяких держав, а також кредитові гроші, які ще не розвинулись.
+Це, поперше, відповідає історичному розвиткові; кредитові гроші
+не відіграють жадної ролі, або лише незначну ролю, в першу добу капіталістичної
+продукції. Подруге, доконечність такого порядку дослідження
 обґрунтовується також теоретично тим, що всі критичні досліди над
 циркуляцією кредитових грошей, що їх маємо з боку Тука й інших,
 примушували їх завжди повертатись до розгляду того, як стояли б справи
@@ -32,7 +32,7 @@ remplacer celui dont nous avons parlé. Pour saisir avec clarté le progrès de 
 richesse, nous l’avons prise à sa création, et nous l’avons suivie jusqu’à sa consommation.
 Alors le capital employé dans la manufacture de draps, par exemple, nous a paru
 toujours le même; échangé contre le revenu du consommateur, il ne s’est partagé
-qu’en deux parties: l’une a servi de revenu au fabricant comme profit, l’autre a servi de revenu aux ouvriers comme salaire, tandis qu’ils fabriquaient de nouveau drap.—
+qu’en deux parties: l’une a servi de revenu au fabricant comme profit, l’autre a servi de revenu aux ouvriers comme salaire, tandis qu’ils fabriquaient de nouveau drap. —
 
 „Mais on trouva bientôt que, pour l’avantage de tous, il valait mieux que les
 diverses parties de ce capital se remplaçassent l’une l’autre, et que, si cent mille
