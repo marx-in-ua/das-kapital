@@ -23,7 +23,7 @@
 робочої сили становить 3 шилінґи, вартість, спродуковану протягом
 6 робочих годин, а робочий день має 12 годин, то ціна од-
 
-......    . З шилінгам „    „
+......    . З шилінгам „„
 
 нієі робочої години дорівнює----^2----- = 3 пенсам. Знайдена
 
@@ -48,8 +48,8 @@
 
 30 Вартість самих грошей тут завжди припускається за сталу.
 
-31 «Ціна праці є сума, виплачена за певну кількість праці»-(«The
-price of labour is the sum paid for a given quantity of labour»). (.Sir Edward
+31 «Ціна праці є сума, виплачена за певну кількість праці» - («The
+price of labour is the sum paid for a given quantity of labour»). (. Sir Edward
 West: «Price of Corn and Wages of Labour», London 1826, p. 67).
 Вест є автор анонімного твору, епохального в історії політичної економії:
 «Essay on the Application of Capital to Land. By a Fellow of the

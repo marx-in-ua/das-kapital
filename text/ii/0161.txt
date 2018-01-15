@@ -9,7 +9,7 @@
 як уже утворена вартість. Коли робоча сила вже діяла, то капітал не
 складається вже більше з робочої сили на одному боці, із засобів продукції
 на другому. Капітальна вартість, витрачена на робочу силу, є тепер
-вартість, що її ( + додаткову вартість) долучено до продукту. Щоб
+вартість, що її (+ додаткову вартість) долучено до продукту. Щоб
 повторити процес, треба продати продукт і на вторговані гроші знову й
 знову купувати робочу силу і вводити її в продуктивний капітал. Це
 надає тоді частині капіталу, витраченій на робочу силу, так само, як і частинам
@@ -46,4 +46,4 @@ works, the implements with which his labour is assisted, are all of a perishable
 nature. There is, however, a vast difference in the time for which these different
 capitals will endure: a steam-engine will last longer than a ship, a ship than the
 clothing of the labourer, and the clothing of the labourer longer than the food which
-he consumes“.(Ricardo, etc., p. 27).
+he consumes“. (Ricardo, etc., p. 27).

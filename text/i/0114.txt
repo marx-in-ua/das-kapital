@@ -29,14 +29,14 @@
 один одному лише як продавці й покупці. Твердити, що додаткова
 вартість постає для продуцента з того, що споживачі пла-
 
-24  «При збільшенні номінальної вартости продукту... продавці не
+24 «При збільшенні номінальної вартости продукту... продавці не
 збагачуються... бо рівно стільки, скільки вони виграють як продавці,
 вони втрачають як покупці» («By the augmentation of the nominal value
 of the produce... sellers not enriched... since what they gain as sellers, they
 prеcisеly expend in the quality of buyers»). («The Essential Principles of
 the Wealth of Nations etc.», London 1797, p. 66).
 
-25  «Коли хтось мусить віддати за 18 ліврів таку кількість продукту,
+25 «Коли хтось мусить віддати за 18 ліврів таку кількість продукту,
 яка варта 24 ліври, то, вживши виручені гроші на купівлю, він так само
 одержить за 18 ліврів те, за що раніш плати и 24 ліври» («Si L’on est
 forcé de donner pour 18 livres une quantité de telle production qui en valait
@@ -44,11 +44,11 @@ forcé de donner pour 18 livres une quantité de telle production qui en valait
 18 ce que L’on payait 24»). (Le Trosne «De l’Intérêt Social»,
 Physiocrates, éd. Daire, Paris 1846, p. 897).
 
-26  «Кожен продавець не може завжди підвищувати ціни на свої товари
+26 «Кожен продавець не може завжди підвищувати ціни на свої товари
 інакше, як згодившись платити завжди дорожче за товари інших продавців;
 і з тієї самої причини кожний споживач, звичайно, не може завжди
 платити дешевше за те, що купує, інакше, як згодившись на таке саме зменшення
-цін на ті речі, які продає» ( «Chaque vendeur ne peut donc parvenir
+цін на ті речі, які продає» («Chaque vendeur ne peut donc parvenir
 à renchérir habituellement ses marchandises, qu’en se soumettant aussi à
 payer habituellement plus cher les marchandises des autres vendeurs; et
 par la même raison, chaque consommateur ne peut payer habituellement

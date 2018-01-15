@@ -6,7 +6,7 @@
 
 Товар
 
-1.    Два фактори товару: споживна вартість і вартість (субстанція
+1. Два фактори товару: споживна вартість і вартість (субстанція
 вартости, величина вартосте)
 
 Багатство суспільств, що в них панує капіталістичний спосіб
@@ -33,8 +33,8 @@
 S. 4. (K. Маркс: «До критики політичної економії», ДВУ, 1926 р.,
 стор. 45).
 
-2    «Бажання має собі за передумову потребу; це апетит духа, і він
-для нього так само природний, як голод для тіла...більша частина (речей)
+2 «Бажання має собі за передумову потребу; це апетит духа, і він
+для нього так само природний, як голод для тіла... більша частина (речей)
 має свою вартість, тому що вони задовольняють потреби духа» («Desire
 implies want; it is the appetite of the mind, and as natural as hunger to
 the body... the greatest number (of things) have treir value from supplying
@@ -42,9 +42,9 @@ the wants of the mind»). (Nikolas Barbon: «А Discourse concerning coining
 the new money lighter, in answer to Mr. Locke’s Considerations
 etc.», London 1696, p. 2, 3).
 
-3    «Речі мають унутрішню властивість (vertue — так специфічно
+3 «Речі мають унутрішню властивість (vertue — так специфічно
 означує Барбон споживну вартість), що всюди є однакова, як от, приміром,
-властивість магнету притягати залізо » («Things have an intrinsick vertue,
+властивість магнету притягати залізо» («Things have an intrinsick vertue,
 which in all places have the same vertue; as the loadstone te attract iron»).
 (N. Barbon: «А Discourse concerning coining the new money lighter»,
 p. 16). Властивість магнету притягати залізо стала корисною лише тоді,

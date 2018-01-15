@@ -9,7 +9,7 @@
 в кожний даний момент одноманітна. Отже, ця ріжниця не порушує
 постійності і одноманітності розміру процента.72
 
-71    .This rule of dividing profits is not, however, to be applied particularly to
+71. This rule of dividing profits is not, however, to be applied particularly to
 every lender and borrower, but to lenders and borrowers in general... remarkably
 great and small gain's are the reward of skill ant the want of understanding, which
 lenders have nothing at all to do with; for as they will not suffer by the one,
@@ -20,7 +20,7 @@ than the common profits made by other merchants and tradesmen of the same
 country, the extraordinary gain is theirs, though it required only common skill
 and understanding to get it; and not the lenders, who supplied them with money...
 for the lenders would not have lent their money to c^fry on any business or trade
-upon low:er terms than would admit of paying so much as the common rate of
+upon low: er terms than would admit of paying so much as the common rate of
 interest; and, therefore, they ought not to receive more than that, whatever advantage
 may be made by their money“. [„Однак, це правило розподілу зисків не
 може бути застосоване до кожного окремого позикодавця і позичальника, а
@@ -44,11 +44,11 @@ Essay on the Governing Causes of the Natural Rate of Interest“. London 1750,
 72 Bank rate [норма дисконту Англійського банку]...........................5%
 
 Market rate of discount, 60 days’ drafts [ринкова норма дисконту,
-векселі на 60 днів].................................................................3 5/8 %
+векселі на 60 днів].................................................................3 5/8%
 
-Ditto 3 months [те ж саме, тримісячні векселі] ...........................3 1/2 %
+Ditto 3 months [те ж саме, тримісячні векселі]...........................3 1/2%
 
-Ditto 6 months [те ж саме, шестимісячні векселі]......................3 5/16 %
+Ditto 6 months [те ж саме, шестимісячні векселі]......................3 5/16%
 
 Loans to bill-brokers, day to day [позики вексельним
 лерам, на день].............................................................................1—2%
