@@ -1,12 +1,8 @@
 All
 
-- spaces around dashes
-- remove line brakes
-- remove double \n
-
-
 I
 
+- greek on page 23
 
 II
 
