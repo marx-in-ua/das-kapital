@@ -42,7 +42,6 @@ monev is made), a тільки сама публіка має з того кор
 42    Коли б якийсь фабричний робітник відмовився, наприклад, працювати
 встановлене велике число годин, «його одразу замінили б кимось
 іншим, готовим працювати скільки завгодно, і він лишився б без праці»
-
 («he would very shortly be replaced by somebody who would work any
 length of time and thus be tbrown out of employment»). («Reports of Insp.
 of Fact. for. 31 st October 1848». Evidence p. 39, n. 58). «Якщо одна людина
