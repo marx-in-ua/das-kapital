@@ -1,6 +1,6 @@
 # Карл Маркс. Капітал.
 
-[![license](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+[![license](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
 ### Том І. Процес продукції капіталу. 
 
@@ -32,4 +32,4 @@
 
 ## Ліцензія 
 
-Цей твір ліцензовано на умовах [Ліцензії Creative Commons Зазначення Авторства 4.0 Міжнародна](http://creativecommons.org/licenses/by/4.0/).
+Цей твір ліцензовано на умовах [Ліцензії Creative Commons Із Зазначенням Авторства — Поширення На Тих Самих Умовах 4.0 Міжнародна](http://creativecommons.org/licenses/by-sa/4.0/).
