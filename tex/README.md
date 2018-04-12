@@ -11,6 +11,8 @@ Image from https://github.com/blang/latex-docker
 	$ ./latexdockerdaemoncmd.sh pdflatex main.tex
 	# or
 	$ docker exec -it latex_daemon /bin/sh -c "cd sample && lualatex main.tex"
+	# or 
+	docker exec -it latex_daemon lualatex --interaction=nonstopmode --output-directory=test/ 0001.tex
 
 	# Stop the daemon
 	docker stop latex_daemon
