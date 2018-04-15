@@ -17,13 +17,28 @@
 % fonts
 \setmainfont{serif}[
 	Path = fonts/ ,
-    BoldFont = *-bold.ttf ,
+	BoldFont = *-bold.ttf ,
+	ItalicFont = *-italic.ttf ,
+	BoldItalicFont = *-bolditalic.ttf
+]
+\setsansfont{sans}[
+	Path = fonts/ ,
+	BoldFont = *-bold.ttf ,
 	ItalicFont = *-italic.ttf ,
 	BoldItalicFont = *-bolditalic.ttf
 ]
 
 % titles
+\newcommand\UkrNumToName[1]{%
+\ifcase#1\relax % case 0
+\or перший\or другий\or третій%
+\else Not implemented\fi}
+
 \addto\captionsukrainian{\renewcommand{\chaptername}{Відділ}}
-\addto\captionsukrainian{\renewcommand{\sectionname}{Розділ}}
+\chapterstyle{bianchi}
+\renewcommand{\printchapternum}{\UkrNumToName{\thechapter}}
+
+\counterwithout{section}{chapter}}
+\renewcommand{\thesection}{Відділ \UkrNumToName{\value{section}}}
 
 \endinput
