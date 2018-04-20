@@ -16,3 +16,7 @@ Image from https://github.com/blang/latex-docker
 
 	# Stop the daemon
 	docker stop latex_daemon
+
+Commands
+
+	rename 's/\.txt$/\.tex/' *.txt
