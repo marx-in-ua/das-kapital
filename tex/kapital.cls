@@ -17,15 +17,17 @@
 % fonts
 \setmainfont{serif}[
 	Path = fonts/ ,
-	BoldFont = *-bold.ttf ,
-	ItalicFont = *-italic.ttf ,
-	BoldItalicFont = *-bolditalic.ttf
+	Extension = .ttf ,
+	BoldFont = *-bold ,
+	ItalicFont = *-italic ,
+	BoldItalicFont = *-bolditalic
 ]
 \setsansfont{sans}[
 	Path = fonts/ ,
-	BoldFont = *-bold.ttf ,
-	ItalicFont = *-italic.ttf ,
-	BoldItalicFont = *-bolditalic.ttf
+	Extension = .ttf ,
+	BoldFont = *-bold ,
+	ItalicFont = *-italic ,
+	BoldItalicFont = *-bolditalic
 ]
 
 % titles
@@ -39,6 +41,52 @@
 \renewcommand{\printchapternum}{\UkrNumToName{\thechapter}}
 
 \counterwithout{section}{chapter}}
-\renewcommand{\thesection}{Відділ \UkrNumToName{\value{section}}}
+\renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}}}
+
+% math
+\RequirePackage{xfrac}
+
+% typography
+\usepackage{microtype}
+\frenchspacing
+
+% footnotes 
+\RequirePackage{bigfoot}
+
+\makeatletter
+\def\@fnsymbolsingle#1{%
+  %\ensuremath{%
+    \ifcase#1% 0
+      *
+    \or % 1
+      *%   
+    \or % 2
+      **
+    \or % 3  
+      ***
+    \or % 4   
+      ****
+    \or % 5
+      *****
+    \else % >= 6
+      \@ctrerr  
+    \fi
+  %}%   
+}   
+\makeatother
+
+% 100 note
+\DeclareNewFootnote{default}
+
+% ** note
+\DeclareNewFootnote{Z}[fnsymbolsingle]
+\MakeSortedPerPage{footnoteZ}
+\WithSuffix\newcommand\footnote*[1]{\footnoteZ{#1}}
+
+% 100a note
+\newcounter{footalt}[footnote]
+\def\thefootalt{\thefootnote \alph{footalt}}
+\def\footnoteA{\refstepcounter{footalt}%
+   \Footnotedefault{\thefootalt}}
 
 \endinput
