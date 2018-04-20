@@ -1,18 +1,10 @@
 All
 
-I
-
-- greek on page 23
-
-II
-
-- noted errors + image
-
 III.1
 
-- noted errors + image
-- remove link to russian book
+- remove link to russian book ([стор. 148 рос. вид. 1935 р.])
 
 III.2
 
 - noted errors + image
+- add tables from git (*.docx)
