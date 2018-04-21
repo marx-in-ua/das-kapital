@@ -7,27 +7,29 @@
 \checkandfixthelayout
 
 % languages support
+\RequirePackage[no-math]{fontspec}
 \RequirePackage{polyglossia}
 \setmainlanguage{ukrainian}
 \setotherlanguage{greek}
-\setotherlanguage{english}
 \setotherlanguage{german}
-\setotherlanguage{french}
+\setotherlanguage{english}
+% Temporary disable dut to franch footnotes
+% \setotherlanguage{french}
 
 % fonts
 \setmainfont{serif}[
-	Path = fonts/ ,
-	Extension = .ttf ,
-	BoldFont = *-bold ,
-	ItalicFont = *-italic ,
-	BoldItalicFont = *-bolditalic
+  Path = fonts/ ,
+  Extension = .ttf ,
+  BoldFont = *-bold ,
+  ItalicFont = *-italic ,
+  BoldItalicFont = *-bolditalic
 ]
 \setsansfont{sans}[
-	Path = fonts/ ,
-	Extension = .ttf ,
-	BoldFont = *-bold ,
-	ItalicFont = *-italic ,
-	BoldItalicFont = *-bolditalic
+  Path = fonts/ ,
+  Extension = .ttf ,
+  BoldFont = *-bold ,
+  ItalicFont = *-italic ,
+  BoldItalicFont = *-bolditalic
 ]
 \newfontfamily{\greekfont}{STIX2Text}[
   Path = fonts/ ,
@@ -55,10 +57,23 @@
 
 % math
 \RequirePackage{xfrac}
+\RequirePackage{amsmath}
+
+\usepackage{unicode-math}
+\setmathfont{serif}[
+  Path = fonts/ ,
+  Extension = .ttf ,
+  BoldFont = *-bold ,
+  ItalicFont = *-italic ,
+  BoldItalicFont = *-bolditalic
+]
 
 %% typography
-%\usepackage{microtype}
-%\frenchspacing
+\usepackage{microtype}
+\frenchspacing
+% Do not break line at mdash
+\usepackage{newunicodechar}
+\newunicodechar{—}{\unskip\ifmmode-\else~---\fi}
 
 % footnotes 
 \RequirePackage{bigfoot}
