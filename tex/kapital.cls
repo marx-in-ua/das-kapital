@@ -9,10 +9,10 @@
 % languages support
 \RequirePackage{polyglossia}
 \setmainlanguage{ukrainian}
+\setotherlanguage{greek}
 \setotherlanguage{english}
 \setotherlanguage{german}
 \setotherlanguage{french}
-\setotherlanguage{greek}
 
 % fonts
 \setmainfont{serif}[
@@ -28,6 +28,16 @@
 	BoldFont = *-bold ,
 	ItalicFont = *-italic ,
 	BoldItalicFont = *-bolditalic
+]
+\newfontfamily{\greekfont}{STIX2Text}[
+  Path = fonts/ ,
+  Script=Greek,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+  Scale=MatchLowercase,
 ]
 
 % titles
@@ -46,9 +56,9 @@
 % math
 \RequirePackage{xfrac}
 
-% typography
-\usepackage{microtype}
-\frenchspacing
+%% typography
+%\usepackage{microtype}
+%\frenchspacing
 
 % footnotes 
 \RequirePackage{bigfoot}
