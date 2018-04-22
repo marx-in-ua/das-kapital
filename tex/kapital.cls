@@ -52,7 +52,7 @@
 \chapterstyle{bianchi}
 \renewcommand{\printchapternum}{\UkrNumToName{\thechapter}}
 
-\counterwithout{section}{chapter}}
+\counterwithout{section}{chapter}
 \renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}}}
 
 % math
