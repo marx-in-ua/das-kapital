@@ -71,6 +71,22 @@
   BoldItalicFont = *-bolditalic
 ]
 
+\setmathfont{STIX2Math}[% A-Z
+  Path = fonts/ ,
+  Extension = .otf ,
+  StylisticSet=01 ,
+  range={"00041-"0005A}
+  % Scale = 1.0 
+]
+
+\setmathfont{STIX2Math}[% a-z
+  Path = fonts/ ,
+  Extension = .otf ,
+  StylisticSet=01 ,
+  range = {"00061-"0007A}
+  % Scale = 1.0 
+]
+
 %% typography
 \usepackage{microtype}
 \frenchspacing
