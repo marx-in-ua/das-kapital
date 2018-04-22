@@ -1,5 +1,6 @@
 *.pdf
 *.log
+*.idx
 *.aux
 .texlive*/
 */*/*
