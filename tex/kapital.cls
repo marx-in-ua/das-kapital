@@ -50,10 +50,13 @@
 
 \addto\captionsukrainian{\renewcommand{\chaptername}{Відділ}}
 \chapterstyle{bianchi}
-\renewcommand{\printchapternum}{\UkrNumToName{\thechapter}}
+\renewcommand{\printchapternum}{\UkrNumToName{\thechapter}. }
 
 \counterwithout{section}{chapter}
-\renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}}}
+\renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}}. }
+
+\setsecnumdepth{subsection}
+\renewcommand{\thesubsection}{\arabic{subsection}. }
 
 % math
 \RequirePackage{xfrac}
