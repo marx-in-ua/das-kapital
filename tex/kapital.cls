@@ -3,7 +3,7 @@
 
 % page size 70×100/16
 \LoadClass[b5paper, final]{memoir}
-\isopage
+\semiisopage
 \checkandfixthelayout
 
 % languages support
@@ -55,8 +55,9 @@
 \counterwithout{section}{chapter}
 \renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}}. }
 
-\setsecnumdepth{subsection}
+\setsecnumdepth{subsubsection}
 \renewcommand{\thesubsection}{\arabic{subsection}. }
+\renewcommand{\thesubsubsection}{\alph{subsubsection}. }
 
 % math
 \RequirePackage{xfrac}
