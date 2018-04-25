@@ -17,29 +17,40 @@
 % \setotherlanguage{french}
 
 % fonts
-\setmainfont{serif}[
-  Path = fonts/ ,
-  Extension = .ttf ,
-  BoldFont = *-bold ,
-  ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic
+\setmainfont{PTF55F}[ % шрифты в подкаталогах "paratype" и "stix-fonts"
+	Path = fonts/paratype/ ,
+    Extension = .ttf ,
+    UprightFont = PTF55F ,
+    BoldFont = PTF75F ,
+    ItalicFont = PTF56F ,
+    BoldItalicFont = PTF76F
 ]
-\setsansfont{sans}[
-  Path = fonts/ ,
-  Extension = .ttf ,
-  BoldFont = *-bold ,
-  ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic
+
+\setsansfont{PTS55F}[
+	Path = fonts/paratype/ ,
+    Extension = .ttf ,
+    UprightFont = PTS55F ,
+    BoldFont = PTS75F ,
+    ItalicFont = PTS56F ,
+    BoldItalicFont = PTS76F
 ]
-\newfontfamily{\greekfont}{STIX2Text}[
-  Path = fonts/ ,
-  Script=Greek,
-  Extension=.otf,
-  UprightFont=*-Regular,
-  ItalicFont=*-Italic,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-BoldItalic,
-  Scale=MatchLowercase,
+
+\setmonofont{PTM55F}[
+	Path = fonts/paratype/ ,
+    Extension = .ttf ,
+    UprightFont = PTM55F ,
+    BoldFont = PTM75F
+]
+
+\newfontfamily{\greekfont}{STIX2Text-Regular}[
+  Path = fonts/stix-fonts/ ,
+  Script = Greek ,
+  Extension = .otf ,
+  UprightFont = STIX2Text-Regular ,
+  ItalicFont = STIX2Text-Italic ,
+  BoldFont = STIX2Text-Bold ,
+  BoldItalicFont = STIX2Text-BoldItalic ,
+  Scale = MatchLowercase
 ]
 
 % titles
@@ -64,12 +75,27 @@
 \RequirePackage{amsmath}
 
 \usepackage{unicode-math}
-\setmathfont{serif}[
-  Path = fonts/ ,
+\setmathfont{PTF55F}[
+  Path = fonts/paratype/ ,
   Extension = .ttf ,
-  BoldFont = *-bold ,
-  ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic
+  UprightFont = PTF55F ,
+  BoldFont = PTF75F ,
+  ItalicFont = PTF56F ,
+  BoldItalicFont = PTF76F 
+]
+
+\setmathfont{STIX2Math}[% A-Z все начертания с латиницей без цифр
+  Path = fonts/stix-fonts/ ,
+  Extension = .otf ,
+  StylisticSet=01 ,
+  range = {"00041-"0005A, "1D400-"1D419, "1D434-"1D44D, "1D468-"1D481, "1D49C-"1D4B5, "1D4D0-"1D4E9, "1D5A0-"1D5B9, "1D5D4-"1D5ED, "1D608-"1D621, "1D63C-"1D655, "1D538-"1D551, "1D504-"1D51D, "1D56C-"1D585, "1D670-"1D689}
+]
+
+\setmathfont{STIX2Math}[% a-z все начертания с латиницей без цифр
+  Path = fonts/stix-fonts/ ,
+  Extension = .otf ,
+  StylisticSet=01 ,
+  range = {"00061-"0007A, "1D41A-"1D433, "1D44E-"1D467, "1D482-"1D49B, "1D4B6-"1D4CF, "1D4EA-"1D503, "1D5BA-"1D5D3, "1D5EE-"1D607, "1D622-"1D63B, "1D656-"1D66F, "1D552-"1D56B, "1D51E-"1D537, "1D586-"1D59F, "1D68A-"1D6A3}
 ]
 
 %% Alllow cyrilic letters in math
