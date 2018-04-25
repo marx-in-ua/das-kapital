@@ -74,6 +74,7 @@
 \RequirePackage{xfrac}
 \RequirePackage{amsmath}
 
+\DeclareSymbolFont{letters}{\encodingdefault}{\rmdefault}{m}{it}
 \usepackage{unicode-math}
 \setmathfont{PTF55F}[
   Path = fonts/paratype/ ,
