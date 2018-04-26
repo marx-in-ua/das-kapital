@@ -20,3 +20,22 @@ Image from https://github.com/blang/latex-docker
 Commands
 
 	rename 's/\.txt$/\.tex/' *.txt
+
+## Todo for any book
+
+- wrap100
+- copy and rename
+- percent
+- fraction
+- footnotes
+- red
+- join
+- fix whitespace
+- math
+- dots, ndash
+
+I 
+- wrap100
+- copy and rename
+- percent
+- fraction
