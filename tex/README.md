@@ -26,16 +26,23 @@ Commands
 - wrap100
 - copy and rename
 - percent
-- fraction
 - footnotes
-- red
 - join
 - fix whitespace
-- math
+- red
+- fraction
+- math-letters
+- math-1
 - dots, ndash
 
 I 
 - wrap100
 - copy and rename
 - percent
+- footnotes
+- join
+- fix whitespace
+- red
 - fraction
+- math-letters - NO
+- math-1
