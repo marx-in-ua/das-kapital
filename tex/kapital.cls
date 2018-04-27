@@ -135,8 +135,8 @@
 \makeindex{franko}
 \makeindex{i}
 \makeindex{ii}
-\makeindex{ii1}
-\makeindex{ii2}
+\makeindex{iii1}
+\makeindex{iii2}
 
 %% Breaks
 \newcommand{\parbreak}{¬ \emph{(абзац продовжується на наступній сторінці)}}
