@@ -64,12 +64,20 @@
 \RequirePackage{amsmath}
 
 \usepackage{unicode-math}
-\setmathfont{serif}[
+%\setmathfont{serif}[
+%  Path = fonts/ ,
+%  Extension = .ttf ,
+%  BoldFont = *-bold ,
+%  ItalicFont = *-italic ,
+%  BoldItalicFont = *-bolditalic
+%]
+
+\setmathfont{STIX2Math}[% a-z
   Path = fonts/ ,
-  Extension = .ttf ,
-  BoldFont = *-bold ,
-  ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic
+  Extension = .otf ,
+  StylisticSet=01 ,
+  Scale = MatchLowercase ,
+  % range = {"00061-"0007A, "1D41A-"1D433, "1D44E-"1D467, "1D482-"1D49B, "1D4B6-"1D4CF, "1D4EA-"1D503, "1D5BA-"1D5D3, "1D5EE-"1D607, "1D622-"1D63B, "1D656-"1D66F, "1D552-"1D56B, "1D51E-"1D537, "1D586-"1D59F, "1D68A-"1D6A3}
 ]
 
 %% Alllow cyrilic letters in math
