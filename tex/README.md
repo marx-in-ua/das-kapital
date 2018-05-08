@@ -35,14 +35,14 @@ Commands
 - math-1
 - dots, ndash
 
-I 
+### I (fixes)
+
+- \dotfill{}
+- add task 0189 and 0190-0192
+
+### II (done)
+
 - wrap100
 - copy and rename
 - percent
 - footnotes
-- join
-- fix whitespace
-- red
-- fraction
-- math-letters - NO
-- math-1
