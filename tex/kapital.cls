@@ -92,12 +92,24 @@
   \makecyrmathletter{\count255}
 \repeat
 
-%% typography
+%% ======
+%% Typography
+%% ======
+
 \usepackage{microtype}
 \frenchspacing
+
 % Do not break line at mdash
 \usepackage{newunicodechar}
 \newunicodechar{—}{\unskip\ifmmode-\else~---\fi}
+
+% L e t t e r  s p a c e (\so)
+\RequirePackage{soul} 
+\makeatletter
+\font\SOUL@tt="PTserif"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@
+\makeatother
 
 % footnotes 
 \RequirePackage{bigfoot}
