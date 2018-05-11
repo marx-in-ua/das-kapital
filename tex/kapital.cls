@@ -92,6 +92,10 @@
   \makecyrmathletter{\count255}
 \repeat
 
+%% frac in text mode
+\let\oldfrac\frac
+\renewcommand{\frac}[2]{\ifmmode\oldfrac{#1}{#2}\else$\oldfrac{#1}{#2}$\fi}
+
 %% ======
 %% Typography
 %% ======

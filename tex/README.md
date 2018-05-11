@@ -46,9 +46,7 @@ Commands
 
 ## notes on II
 poznacjhky u zagolovkax
-rozryadka
-_ sub
-frac standa_0189_0190_0191_0192.texlione
+rozraydka
 
 Г г Т т Р Зп П апостроф дельта
 ... - = 
