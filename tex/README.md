@@ -46,3 +46,22 @@ Commands
 - copy and rename
 - percent
 - footnotes
+- join
+- fix whitespace
+
+## notes on II
+poznacjhky u zagolovkax
+rozryadka
+_ sub
+frac standalione
+greek on 99
+
+Г г Т т Р Зп П апостроф дельта
+... - = 
+
+
+c v m 
+/+=digits
+
+add task id order on load
+\Wυ\W - v
