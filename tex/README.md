@@ -35,11 +35,6 @@ Commands
 - math-1
 - dots, ndash
 
-### I (fixes)
-
-- \dotfill{}
-- add task 0189 and 0190-0192
-
 ### II (done)
 
 - wrap100
@@ -53,15 +48,15 @@ Commands
 poznacjhky u zagolovkax
 rozryadka
 _ sub
-frac standalione
-greek on 99
+frac standa_0189_0190_0191_0192.texlione
 
 Г г Т т Р Зп П апостроф дельта
 ... - = 
 
-
 c v m 
 /+=digits
 
-add task id order on load
-\Wυ\W - v
+Task load:
+ 
+ load i - _0189_0190_0191_0192.tex
+ add task id order on load
