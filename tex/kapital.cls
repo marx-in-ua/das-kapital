@@ -97,7 +97,9 @@
 \renewcommand{\frac}[2]{\ifmmode\oldfrac{#1}{#2}\else$\oldfrac{#1}{#2}$\fi}
 
 %% split frac
-\newcommand{\splitfrac}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
+\newcommand{\splitfracm}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
+% in text mode
+\newcommand{\splitfrac}[2]{\ifmmode\splitfracm{#1}{#2}\else$\splitfracm{#1}{#2}$\fi}
 
 %% ======
 %% Typography
