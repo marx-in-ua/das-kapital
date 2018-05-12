@@ -43,6 +43,9 @@ Commands
 - footnotes
 - join
 - fix whitespace
+- red
+- fraction
+- math-2
 
 ## notes on II
 poznacjhky u zagolovkax
@@ -50,9 +53,6 @@ rozraydka
 
 Г г Т т Р Зп П апостроф дельта
 ... - = 
-
-c v m 
-/+=digits
 
 Task load:
  
