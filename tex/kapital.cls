@@ -96,6 +96,9 @@
 \let\oldfrac\frac
 \renewcommand{\frac}[2]{\ifmmode\oldfrac{#1}{#2}\else$\oldfrac{#1}{#2}$\fi}
 
+%% split frac
+\newcommand{\splitfrac}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
+
 %% ======
 %% Typography
 %% ======
