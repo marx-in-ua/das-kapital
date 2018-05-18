@@ -92,12 +92,33 @@
   \makecyrmathletter{\count255}
 \repeat
 
-%% typography
+%% frac in text mode
+\let\oldfrac\frac
+\renewcommand{\frac}[2]{\ifmmode\oldfrac{#1}{#2}\else$\oldfrac{#1}{#2}$\fi}
+
+%% split frac
+\newcommand{\splitfracm}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
+% in text mode
+\newcommand{\splitfrac}[2]{\ifmmode\splitfracm{#1}{#2}\else$\splitfracm{#1}{#2}$\fi}
+
+%% ======
+%% Typography
+%% ======
+
 \usepackage{microtype}
 \frenchspacing
+
 % Do not break line at mdash
 \usepackage{newunicodechar}
 \newunicodechar{—}{\unskip\ifmmode-\else~---\fi}
+
+% L e t t e r  s p a c e (\so)
+\RequirePackage{soul} 
+\makeatletter
+\font\SOUL@tt="PTserif"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@
+\makeatother
 
 % footnotes 
 \RequirePackage{bigfoot}

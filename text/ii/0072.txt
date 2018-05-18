@@ -26,13 +26,15 @@
 
 *) Le commerce emploie un capital considérable qui paraît, au premier coup
 d’oeil, ne point faire partie de celui dont nous avons détaillé la marche. La valeur
-des draps accumulés dans les magasins du marchand-drapier semble d'abord tout-à-fait étrangère à cette partie de la production annuelle que le riche donne au
+des draps accumulés dans les magasins du marchand-drapier semble d'abord tout-à-fait étrangère à
+cette partie de la production annuelle que le riche donne au
 pauvre comme salaire pour le faire travailler. Ce capital n’a fait cependant que
 remplacer celui dont nous avons parlé. Pour saisir avec clarté le progrès de la
 richesse, nous l’avons prise à sa création, et nous l’avons suivie jusqu’à sa consommation.
 Alors le capital employé dans la manufacture de draps, par exemple, nous a paru
 toujours le même; échangé contre le revenu du consommateur, il ne s’est partagé
-qu’en deux parties: l’une a servi de revenu au fabricant comme profit, l’autre a servi de revenu aux ouvriers comme salaire, tandis qu’ils fabriquaient de nouveau drap. —
+qu’en deux parties: l’une a servi de revenu au fabricant comme profit, l’autre a servi de revenu aux
+ouvriers comme salaire, tandis qu’ils fabriquaient de nouveau drap. —
 
 „Mais on trouva bientôt que, pour l’avantage de tous, il valait mieux que les
 diverses parties de ce capital se remplaçassent l’une l’autre, et que, si cent mille
@@ -40,8 +42,13 @@ diverses parties de ce capital se remplaçassent l’une l’autre, et que, si c
 ces cent mille écus se partageassent également entre le fabricant, le marchand en
 gros et le marchand en détail. Le premier, avec le tiers seulement, fit le même
 ouvrage qu’il aurait fait avec la totalité, parcequ’au moment où sa fabrication était
-terminée, il trouvait le marchand acheteur beaucoup plus tôt qu’il n’aurait trouvé le consommateur. Le capital du marchand en gros se trouvait de son côté beaucoup
-plus tôt remplacé par celui du marchand en détail... La différence entre les sommes, des salaires avancés et le prix d’achat du dernier consommateur devait faire le profit des capitaux. Elle se répartit entre le fabricant, le marchand et le détaillant depuis qu’ils eurent divisé entre eux leurs fonctions, et l’ouvrage accompli fut le même quoiqu il eût employé trois personnes et trois fractions de capitaux, au lieu d’une.
+terminée, il trouvait le marchand acheteur beaucoup plus tôt qu’il n’aurait trouvé le consommateur.
+Le capital du marchand en gros se trouvait de son côté beaucoup
+plus tôt remplacé par celui du marchand en détail... La différence entre les sommes, des salaires
+avancés et le prix d’achat du dernier consommateur devait faire le profit des capitaux. Elle se
+répartit entre le fabricant, le marchand et le détaillant depuis qu’ils eurent divisé entre eux
+leurs fonctions, et l’ouvrage accompli fut le même quoiqu il eût employé trois personnes et trois
+fractions de capitaux, au lieu d’une.
 („Nouveaux Principes d’Economie Politique, Livre II, ch. VIII, éd. 1827. p. 138—140).
 
 **) Tous concouraient indirectement à la production; car celle-ci, avant pour

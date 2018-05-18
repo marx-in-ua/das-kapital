@@ -35,7 +35,8 @@ Commands
 - math-1
 - dots, ndash
 
-I 
+### II (done)
+
 - wrap100
 - copy and rename
 - percent
@@ -44,5 +45,35 @@ I
 - fix whitespace
 - red
 - fraction
-- math-letters - NO
+- math-2
 - math-1
+
+## notes on II
+poznacjhky u zagolovkax
+rozraydka
+splitfrac
+
+Task load:
+ 
+ load i - _0189_0190_0191_0192.tex
+ add task id order on load
+ restore i/_0290 i/_0291 i/_0292 i/_0293 i/_0293
+
+Fix footnotes on:
+	text/i/0290.txt
+	text/i/0291.txt
+	text/i/0292.txt
+	text/i/0293.txt
+	text/i/0294.txt 
+
+	text/ii/0007.txt
+	text/ii/0008.txt
+	text/ii/0009.txt
+	text/ii/0010.txt
+	text/ii/0011.txt 
+
+	text/ii/0012.txt
+	text/ii/0013.txt
+	text/ii/0014.txt
+	text/ii/0015.txt
+	text/ii/0016.txt 
