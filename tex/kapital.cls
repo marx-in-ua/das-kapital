@@ -102,6 +102,13 @@
 \newcommand{\splitfrac}[2]{\ifmmode\splitfracm{#1}{#2}\else$\splitfracm{#1}{#2}$\fi}
 
 %% ======
+%% Tables
+%% ======
+
+\usepackage[font=bf]{caption}
+
+
+%% ======
 %% Typography
 %% ======
 
