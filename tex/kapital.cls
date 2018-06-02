@@ -31,10 +31,10 @@
   ItalicFont = *-italic ,
   BoldItalicFont = *-bolditalic
 ]
-\newfontfamily{\greekfont}{STIX2Text}[
+\newfontfamily{\greekfont}{NotoSerif}[
   Path = fonts/ ,
   Script=Greek,
-  Extension=.otf,
+  Extension=.ttf,
   UprightFont=*-Regular,
   ItalicFont=*-Italic,
   BoldFont=*-Bold,
