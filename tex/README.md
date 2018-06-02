@@ -88,3 +88,4 @@ Fix footnotes on:
 	!0090, !0101- fix link to pages in footnote
 	small font size in peredmova dates
 	footnotes on i/0532
+	find where the col space set to 0
