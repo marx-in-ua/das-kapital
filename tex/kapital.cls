@@ -53,7 +53,7 @@
 \renewcommand{\printchapternum}{\UkrNumToName{\thechapter}. }
 
 \counterwithout{section}{chapter}
-\renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}}. }
+\renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}} }
 
 \setsecnumdepth{subsubsection}
 \renewcommand{\thesubsection}{\arabic{subsection}. }
