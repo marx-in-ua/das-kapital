@@ -87,3 +87,4 @@ Fix footnotes on:
 Аfter 
 	!0090, !0101- fix link to pages in footnote
 	small font size in peredmova dates
+	footnotes on i/0532
