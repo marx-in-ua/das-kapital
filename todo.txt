@@ -1,6 +1,7 @@
 All
 
 - greek reproof
+- replace minus with mdash
 
 III.1
 

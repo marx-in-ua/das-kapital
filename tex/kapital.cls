@@ -31,10 +31,10 @@
   ItalicFont = *-italic ,
   BoldItalicFont = *-bolditalic
 ]
-\newfontfamily{\greekfont}{STIX2Text}[
+\newfontfamily{\greekfont}{NotoSerif}[
   Path = fonts/ ,
   Script=Greek,
-  Extension=.otf,
+  Extension=.ttf,
   UprightFont=*-Regular,
   ItalicFont=*-Italic,
   BoldFont=*-Bold,
@@ -53,7 +53,7 @@
 \renewcommand{\printchapternum}{\UkrNumToName{\thechapter}. }
 
 \counterwithout{section}{chapter}
-\renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}}. }
+\renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}} }
 
 \setsecnumdepth{subsubsection}
 \renewcommand{\thesubsection}{\arabic{subsection}. }
@@ -100,6 +100,13 @@
 \newcommand{\splitfracm}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
 % in text mode
 \newcommand{\splitfrac}[2]{\ifmmode\splitfracm{#1}{#2}\else$\splitfracm{#1}{#2}$\fi}
+
+%% ======
+%% Tables
+%% ======
+
+\usepackage[font=bf]{caption}
+
 
 %% ======
 %% Typography
