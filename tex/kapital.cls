@@ -107,6 +107,13 @@
 
 \usepackage[font=bf]{caption}
 
+%% ditto mark
+\usepackage{calc}
+
+\newcommand{\dittomark}{>>}
+\newcommand{\ditto}[1]{
+  \makebox[\widthof{#1}][c]{\dittomark{}}%
+}
 
 %% ======
 %% Typography
