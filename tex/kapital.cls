@@ -94,7 +94,7 @@
 
 %% frac in text mode
 \let\oldfrac\frac
-\renewcommand{\frac}[2]{\ifmmode\oldfrac{#1}{#2}\else$\oldfrac{#1}{#2}$\fi}
+\renewcommand{\frac}[2]{\ifmmode{\oldfrac{#1}{#2}}\else$\oldfrac{#1}{#2}$\fi}
 
 %% split frac
 \newcommand{\splitfracm}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
@@ -106,13 +106,20 @@
 %% ======
 
 \usepackage[font=bf]{caption}
+\usepackage{makecell}
+\usepackage{dcolumn}
+
+%% same width
+%% \samewidth{of_what}{text}
+\usepackage{calc}
+\newcommand{\samewidth}[2]{
+  \makebox[\widthof{#1}][c]{#2}%
+}
 
 %% ditto mark
-\usepackage{calc}
-
 \newcommand{\dittomark}{>>}
 \newcommand{\ditto}[1]{
-  \makebox[\widthof{#1}][c]{\dittomark{}}%
+  \samewidth{#1}{\dittomark{}}%
 }
 
 %% ======
