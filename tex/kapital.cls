@@ -183,8 +183,9 @@
 
 %% styling
 \setlength{\skip\footinsZ}{0pt}
-\setlength{\footmarkwidth}{-1sp}
-\setlength{\footmarksep}{0em}
+\setlength{\footmarkwidth}{-0.5em}
+\setlength{\footmarksep}{-\footmarkwidth}
+% \setlength{\footnotemargin}{1em}
 % \footmarkstyle{{\flushright{}#1\enspace{}}}
 
 %% styling
