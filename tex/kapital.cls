@@ -210,7 +210,7 @@
   \createplainmark{glossary}{both}{\glossaryname}}
 
 \makeevenhead{mypage}{\footnotesize\sffamily\leftmark}{}{}
-\makeoddhead{mypage}{}{}{\footnotesize\sffamily\rightmark}}
+\makeoddhead{mypage}{}{}{\footnotesize\sffamily\rightmark}
 \makeevenfoot{mypage}{\footnotesize\sffamily\thepage}{}{}
 \makeoddfoot{mypage}{}{}{\footnotesize\sffamily\thepage}
 
