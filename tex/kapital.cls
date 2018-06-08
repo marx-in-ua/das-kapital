@@ -215,6 +215,12 @@
 
 \pagestyle{mypage}
 
+%% format plain
+\makerunningwidth{plain}{\headwidth}
+\makeevenfoot{plain}{\footnotesize\sffamily\thepage}{}{}
+\makeoddfoot{plain}{}{}{\footnotesize\sffamily\thepage}
+
+
 %% indexes 
 \RequirePackage{amsmidx}
 \makeindex{franko}
