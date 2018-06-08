@@ -7,7 +7,7 @@
 \checkandfixthelayout
 
 %% styling
-\setlength{\parskip}{0}
+\setlength{\parskip}{0em}
 
 % languages support
 \RequirePackage[no-math]{fontspec}
@@ -183,6 +183,12 @@
 \def\thefootalt{\thefootnote \alph{footalt}}
 \def\footnoteA{\refstepcounter{footalt}%
    \Footnotedefault{\thefootalt}}
+
+%% styling
+\setlength{\skip\footinsZ}{0pt}
+\setlength{\footmarkwidth}{-1sp}
+\setlength{\footmarksep}{0}
+% \footmarkstyle{{\flushright{}#1\enspace{}}}
 
 %% indexes 
 \RequirePackage{amsmidx}
