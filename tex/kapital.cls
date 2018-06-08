@@ -2,7 +2,7 @@
 \ProvidesClass{kapital}[2017/04/15 Das Kapital]
 
 % page size 70×100/16
-\LoadClass[11pt, b5paper, final]{memoir}
+\LoadClass[11pt, b5paper, final, openany]{memoir}
 \semiisopage
 \checkandfixthelayout
 
@@ -43,20 +43,29 @@
   Scale=MatchLowercase,
 ]
 
-% titles
+%% titles
 \newcommand\UkrNumToName[1]{%
 \ifcase#1\relax % case 0
 \or перший\or другий\or третій%
 \else Not implemented\fi}
 
-\addto\captionsukrainian{\renewcommand{\chaptername}{Відділ}}
+%% We move headings one level up
+\let\subparagraph\paragraph
+\let\paragraph\subsubsection
+\let\subsubsection\subsection
+\let\subsection\section
+\let\section\chapter
+\let\chapter\part
+
+\addto\captionsukrainian{\renewcommand{\partname}{Відділ}}
+
 \chapterstyle{bianchi}
 \renewcommand{\printchapternum}{\UkrNumToName{\thechapter}. }
 
 \counterwithout{section}{chapter}
-\renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}} }
+% \renewcommand{\thesection}{\UkrNumToName{\value{section}} }
 
-\setsecnumdepth{subsubsection}
+\setsecnumdepth{paragraph}
 \renewcommand{\thesubsection}{\arabic{subsection}. }
 \renewcommand{\thesubsubsection}{\alph{subsubsection}. }
 
