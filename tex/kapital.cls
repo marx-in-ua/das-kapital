@@ -1,9 +1,19 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{kapital}[2017/04/15 Das Kapital]
 
-% page size 70×100/16
 \LoadClass[11pt, b5paper, final, openany]{memoir}
-\semiisopage
+
+% 1889
+% 2893
+% 11.8082 px in mm
+
+% 1422 2190 + 56
+\setstocksize{245mm}{160mm}
+\settrimmedsize{\stockheight}{\stockwidth}{*}
+
+\settypeblocksize{*}{120.42mm}{1.5795}
+\setlrmargins{*}{*}{1.5}
+\setulmargins{*}{*}{1.5}
 \checkandfixthelayout
 
 % languages support
@@ -201,9 +211,9 @@
 \setlength{\parskip}{0em}
 
 %% pagestyle
-\setlength{\headwidth}{\textwidth}
-  \addtolength{\headwidth}{-1.8em}
-  \addtolength{\headwidth}{-1.8em}
+\setlength{\headwidth}{\textwidth - 3.6em}
+  %\addtolength{\headwidth}{-1.8em}
+  %\addtolength{\headwidth}{-1.8em}
 
 \makepagestyle{mypage}
 \makerunningwidth{mypage}{\headwidth}
@@ -222,11 +232,15 @@
 \makeoddhead{mypage}{}{}{\footnotesize\sffamily\rightmark}
 \makeevenfoot{mypage}{\footnotesize\sffamily\thepage}{}{}
 \makeoddfoot{mypage}{}{}{\footnotesize\sffamily\thepage}
+%\makeheadrule{mypage}{\headwidth}{0em}
+%\makefootrule{mypage}{\headwidth}{0em}
 
 \pagestyle{mypage}
 
 %% format plain
 \makerunningwidth{plain}{\headwidth}
+%\makeheadrule{plain}{\headwidth}{0em}
+%\makefootrule{plain}{\headwidth}{0em}
 \makeevenfoot{plain}{\footnotesize\sffamily\thepage}{}{}
 \makeoddfoot{plain}{}{}{\footnotesize\sffamily\thepage}
 
