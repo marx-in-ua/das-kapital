@@ -6,9 +6,6 @@
 \semiisopage
 \checkandfixthelayout
 
-%% styling
-\setlength{\parskip}{0em}
-
 % languages support
 \RequirePackage[no-math]{fontspec}
 \RequirePackage{polyglossia}
@@ -187,8 +184,36 @@
 %% styling
 \setlength{\skip\footinsZ}{0pt}
 \setlength{\footmarkwidth}{-1sp}
-\setlength{\footmarksep}{0}
+\setlength{\footmarksep}{0em}
 % \footmarkstyle{{\flushright{}#1\enspace{}}}
+
+%% styling
+\setlength{\parskip}{0em}
+
+%% pagestyle
+\setlength{\headwidth}{\textwidth}
+  \addtolength{\headwidth}{-1.8em}
+  \addtolength{\headwidth}{-1.8em}
+
+\makepagestyle{mypage}
+\makerunningwidth{mypage}{\headwidth}
+\makepsmarks{mypage}{%
+  \nouppercaseheads
+  \createmark{chapter}{both}{nonumber}{}{}
+  \createmark{section}{right}{nonumber}{}{}
+  \createplainmark{toc}{both}{\contentsname}
+  \createplainmark{lof}{both}{\listfigurename}
+  \createplainmark{lot}{both}{\listtablename}
+  \createplainmark{bib}{both}{\bibname}
+  \createplainmark{index}{both}{\indexname}
+  \createplainmark{glossary}{both}{\glossaryname}}
+
+\makeevenhead{mypage}{\footnotesize\sffamily\leftmark}{}{}
+\makeoddhead{mypage}{}{}{\footnotesize\sffamily\rightmark}}
+\makeevenfoot{mypage}{\footnotesize\sffamily\thepage}{}{}
+\makeoddfoot{mypage}{}{}{\footnotesize\sffamily\thepage}
+
+\pagestyle{mypage}
 
 %% indexes 
 \RequirePackage{amsmidx}
