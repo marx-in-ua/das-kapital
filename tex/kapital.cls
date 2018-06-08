@@ -2,9 +2,12 @@
 \ProvidesClass{kapital}[2017/04/15 Das Kapital]
 
 % page size 70×100/16
-\LoadClass[b5paper, final]{memoir}
+\LoadClass[11pt, b5paper, final]{memoir}
 \semiisopage
 \checkandfixthelayout
+
+%% styling
+\setlength{\parskip}{0}
 
 % languages support
 \RequirePackage[no-math]{fontspec}
@@ -22,7 +25,8 @@
   Extension = .ttf ,
   BoldFont = *-bold ,
   ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic
+  BoldItalicFont = *-bolditalic,
+  Scale = 0.867
 ]
 \setsansfont{sans}[
   Path = fonts/ ,
