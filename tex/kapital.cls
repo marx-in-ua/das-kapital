@@ -73,10 +73,11 @@
 \counterwithout{chapter}{part}
 
 \setsecnumdepth{paragraph}
-% \renewcommand{\thechapter}{\roman{chapter}}
-\renewcommand{\thesection}{\arabic{subsection}. }
-\renewcommand{\thesubsection}{\arabic{subsection}. }
-\renewcommand{\thesubsubsection}{\alph{subsubsection}. }
+% \renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}. }
+\renewcommand{\thesubsection}{\alph{subsection}) }
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}. }
+\renewcommand{\theparagraph}{\Alph{subsubsection}) }
 
 % math
 \RequirePackage{xfrac}

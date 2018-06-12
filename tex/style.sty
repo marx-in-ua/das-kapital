@@ -9,11 +9,16 @@
 %% styling
 \setlength{\parskip}{0em}
 
+%% grid
+\newlength{\defindent}
+\setlength{\defindent}{\parindent}
+
 %% pagestyle
-\setlength{\headwidth}{\textwidth - 3.6em}
+\newlength{\narrowtext}
+\setlength{\narrowtext}{\textwidth - 2\defindent}
 
 %% format plain
-\makerunningwidth{plain}{\headwidth}
+\makerunningwidth{plain}{\narrowtext}
 \makeevenfoot{plain}{\footnotesize\sffamily\thepage}{}{}
 \makeoddfoot{plain}{}{}{\footnotesize\sffamily\thepage}
 
@@ -50,8 +55,19 @@
 
 %% Rozdil
 
-\renewcommand{\printchapternum}{\UkrNumToName{\thechapter}}
-\renewcommand{\beforechapskip}{0em}
-\renewcommand{\chapnumfont}{\normalfont\sffamily}
+%\renewcommand{\printchapternum}{\UkrNumToName{\thechapter}}
+%\renewcommand{\beforechapskip}{0em}
+%\renewcommand{\chapnumfont}{\normalfont\sffamily}
+
+\setsecheadstyle{\Large\bfseries\sffamily\raggedright}
+
+\setsubsecheadstyle{\large\bfseries\sffamily\raggedright}
+
+\setsubsubsecheadstyle{\bfseries\sffamily\raggedright}
+
+\setparaheadstyle{\bfseries\raggedright}
+\setafterparaskip{1.5ex plus 1ex minus .2ex}
+
+\setsecnumformat{\makebox[\defindent][r]{\csname the#1\endcsname~}}
 
 \endinput
