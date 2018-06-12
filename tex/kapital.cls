@@ -3,17 +3,21 @@
 
 \LoadClass[11pt, b5paper, final, openany]{memoir}
 
-% 1889
-% 2893
-% 11.8082 px in mm
 
-% 1422 2190 + 56
+
+
+
+% 2893px 1889px
+% 11.8082 px in mm
 \setstocksize{245mm}{160mm}
 \settrimmedsize{\stockheight}{\stockwidth}{*}
 
+% 1422px (2190 + 56)px
 \settypeblocksize{*}{120.42mm}{1.5795}
-\setlrmargins{*}{*}{1.5}
-\setulmargins{*}{*}{1.5}
+% 178px 297px
+\setlrmargins{*}{*}{1.67}
+% (349 - 56)px 360px
+\setulmargins{*}{*}{1.23}
 \checkandfixthelayout
 
 % languages support
