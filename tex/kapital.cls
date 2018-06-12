@@ -23,7 +23,7 @@
 \setotherlanguage{greek}
 \setotherlanguage{german}
 \setotherlanguage{english}
-% Temporary disable dut to franch footnotes
+% Temporary disable due to franch footnotes
 % \setotherlanguage{french}
 
 % fonts
@@ -69,8 +69,6 @@
 
 \addto\captionsukrainian{\renewcommand{\partname}{Відділ}}
 
-\chapterstyle{bianchi}
-\renewcommand{\printchapternum}{\UkrNumToName{\thechapter}. }
 
 \counterwithout{section}{chapter}
 % \renewcommand{\thesection}{\UkrNumToName{\value{section}} }
@@ -200,51 +198,6 @@
 \def\footnoteA{\refstepcounter{footalt}%
    \Footnotedefault{\thefootalt}}
 
-%% styling
-\setlength{\skip\footinsZ}{0pt}
-\setlength{\footmarkwidth}{-0.5em}
-\setlength{\footmarksep}{-\footmarkwidth}
-% \setlength{\footnotemargin}{1em}
-% \footmarkstyle{{\flushright{}#1\enspace{}}}
-
-%% styling
-\setlength{\parskip}{0em}
-
-%% pagestyle
-\setlength{\headwidth}{\textwidth - 3.6em}
-  %\addtolength{\headwidth}{-1.8em}
-  %\addtolength{\headwidth}{-1.8em}
-
-\makepagestyle{mypage}
-\makerunningwidth{mypage}{\headwidth}
-\makepsmarks{mypage}{%
-  \nouppercaseheads
-  \createmark{chapter}{both}{nonumber}{}{}
-  \createmark{section}{right}{nonumber}{}{}
-  \createplainmark{toc}{both}{\contentsname}
-  \createplainmark{lof}{both}{\listfigurename}
-  \createplainmark{lot}{both}{\listtablename}
-  \createplainmark{bib}{both}{\bibname}
-  \createplainmark{index}{both}{\indexname}
-  \createplainmark{glossary}{both}{\glossaryname}}
-
-\makeevenhead{mypage}{\footnotesize\sffamily\leftmark}{}{}
-\makeoddhead{mypage}{}{}{\footnotesize\sffamily\rightmark}
-\makeevenfoot{mypage}{\footnotesize\sffamily\thepage}{}{}
-\makeoddfoot{mypage}{}{}{\footnotesize\sffamily\thepage}
-%\makeheadrule{mypage}{\headwidth}{0em}
-%\makefootrule{mypage}{\headwidth}{0em}
-
-\pagestyle{mypage}
-
-%% format plain
-\makerunningwidth{plain}{\headwidth}
-%\makeheadrule{plain}{\headwidth}{0em}
-%\makefootrule{plain}{\headwidth}{0em}
-\makeevenfoot{plain}{\footnotesize\sffamily\thepage}{}{}
-\makeoddfoot{plain}{}{}{\footnotesize\sffamily\thepage}
-
-
 %% indexes 
 \RequirePackage{amsmidx}
 \makeindex{franko}
@@ -256,5 +209,8 @@
 %% Breaks
 \newcommand{\parbreak}{¬ \emph{(абзац продовжується на наступній сторінці)}}
 \newcommand{\parcont}{\noindent \emph{(абзац починається на попередній сторінці) ¶}}
+
+%% styling
+\RequirePackage{style}
 
 \endinput

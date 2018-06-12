@@ -1,0 +1,55 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{style}[2017/04/15 Das Kapital style]
+
+%% styling
+\setlength{\skip\footinsZ}{0pt}
+\setlength{\footmarkwidth}{-0.5em}
+\setlength{\footmarksep}{-\footmarkwidth}
+
+%% styling
+\setlength{\parskip}{0em}
+
+%% pagestyle
+\setlength{\headwidth}{\textwidth - 3.6em}
+
+%% format plain
+\makerunningwidth{plain}{\headwidth}
+%\makeheadrule{plain}{\headwidth}{0em}
+%\makefootrule{plain}{\headwidth}{0em}
+\makeevenfoot{plain}{\footnotesize\sffamily\thepage}{}{}
+\makeoddfoot{plain}{}{}{\footnotesize\sffamily\thepage}
+
+\copypagestyle{mypage}{plain}
+\makerunningwidth{mypage}{\headwidth}
+\makepsmarks{mypage}{%
+  \nouppercaseheads
+  \createmark{chapter}{both}{nonumber}{}{}
+  \createmark{section}{right}{nonumber}{}{}
+  \createplainmark{toc}{both}{\contentsname}
+  \createplainmark{lof}{both}{\listfigurename}
+  \createplainmark{lot}{both}{\listtablename}
+  \createplainmark{bib}{both}{\bibname}
+  \createplainmark{index}{both}{\indexname}
+  \createplainmark{glossary}{both}{\glossaryname}}
+
+\makeevenhead{mypage}{\footnotesize\sffamily\leftmark}{}{}
+\makeoddhead{mypage}{}{}{\footnotesize\sffamily\rightmark}
+
+\pagestyle{mypage}
+
+\aliaspagestyle{part}{empty}
+
+%% viddil page
+%%
+
+% \renewcommand{\printpartnum}{\UkrNumToName{\thepart}}
+% \renewcommand{\partnamefont}{\normalfont\large\sffamily}
+% \renewcommand{\partnumfont}{\normalfont\large\sffamily}
+
+%% Rozdil
+
+\renewcommand{\printchapternum}{\UkrNumToName{\thechapter}}
+\renewcommand{\beforechapskip}{0em}
+\renewcommand{\chapnumfont}{\normalfont\sffamily}
+
+\endinput
