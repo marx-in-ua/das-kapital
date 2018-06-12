@@ -68,12 +68,13 @@
 \let\chapter\part
 
 \addto\captionsukrainian{\renewcommand{\partname}{Відділ}}
+\renewcommand{\thepart}{\UkrNumToName{\value{part}}}
 
-
-\counterwithout{section}{chapter}
-% \renewcommand{\thesection}{\UkrNumToName{\value{section}} }
+\counterwithout{chapter}{part}
 
 \setsecnumdepth{paragraph}
+% \renewcommand{\thechapter}{\roman{chapter}}
+\renewcommand{\thesection}{\arabic{subsection}. }
 \renewcommand{\thesubsection}{\arabic{subsection}. }
 \renewcommand{\thesubsubsection}{\alph{subsubsection}. }
 
