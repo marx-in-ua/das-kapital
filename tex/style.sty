@@ -46,18 +46,27 @@
 
 \aliaspagestyle{part}{empty}
 
-%% viddil page
-%%
+%% Viddil
 
-% \renewcommand{\printpartnum}{\UkrNumToName{\thepart}}
-% \renewcommand{\partnamefont}{\normalfont\large\sffamily}
-% \renewcommand{\partnumfont}{\normalfont\large\sffamily}
+%\renewcommand*{\beforepartskip}{50pt}
+%\renewcommand*{\midpartskip}{10pt}
+
+\renewcommand{\partnamefont}{\large\sffamily\raggedright}
+\renewcommand{\partnumfont}{\large\sffamily}
+\renewcommand{\parttitlefont}{\Huge\bfseries\sffamily\raggedright}
 
 %% Rozdil
 
-%\renewcommand{\printchapternum}{\UkrNumToName{\thechapter}}
-%\renewcommand{\beforechapskip}{0em}
-%\renewcommand{\chapnumfont}{\normalfont\sffamily}
+\makechapterstyle{default}{%
+  \renewcommand*{\chapnumfont}{\large\sffamily}
+  \renewcommand*{\chapnamefont}{\large\sffamily}
+  \renewcommand*{\chaptitlefont}{\huge\bfseries\sffamily}
+  \setlength{\beforechapskip}{0pt}
+  \setlength{\midchapskip}{10pt}
+  \setlength{\afterchapskip}{50pt}
+}
+\chapterstyle{default}
+
 
 \setsecheadstyle{\Large\bfseries\sffamily\raggedright}
 

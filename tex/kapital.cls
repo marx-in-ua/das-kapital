@@ -73,7 +73,7 @@
 \counterwithout{chapter}{part}
 
 \setsecnumdepth{paragraph}
-% \renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\thesection}{\arabic{section}. }
 \renewcommand{\thesubsection}{\alph{subsection}) }
 \renewcommand{\thesubsubsection}{\arabic{subsubsection}. }
@@ -146,7 +146,7 @@
 %% Typography
 %% ======
 
-\usepackage{microtype}
+\usepackage[tracking=true]{microtype}
 \frenchspacing
 
 % Do not break line at mdash
