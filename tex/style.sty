@@ -55,10 +55,20 @@
 
 %\renewcommand*{\beforepartskip}{50pt}
 %\renewcommand*{\midpartskip}{10pt}
+\newcommand{\capsspace}{\addfontfeatures{LetterSpace=50, WordSpace=10}}
 
 \renewcommand{\partnamefont}{\large\sffamily\raggedright}
 \renewcommand{\partnumfont}{\large\sffamily}
-\renewcommand{\parttitlefont}{\Huge\bfseries\sffamily\raggedright}
+\renewcommand{\parttitlefont}{\HUGE\bfseries\sffamily\raggedright\capsspace\MakeUppercase}
+\renewcommand*{\printparttitle}[1]{
+  \hfill\begin{minipage}{\dimexpr\textwidth-3cm}
+  \parttitlefont{#1}
+  \end{minipage}
+}
+
+\renewcommand*{\beforepartskip}{\null\vskip 0pt plus 0.3fil\hspace{10em}}
+\renewcommand*{\midpartskip}{\vskip 10pt}
+\renewcommand*{\afterpartskip}{\vskip 0pt plus 0.7fil \newpage}
 
 %% Rozdil
 

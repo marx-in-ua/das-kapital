@@ -49,6 +49,7 @@
   SmallCapsFont=*SC-Regular,
   Scale=MatchLowercase,
 ]
+\addfontfeature{LetterSpace=2.0}
 %\setsansfont{sans}[
 %  Path = fonts/ ,
 %  Extension = .ttf ,
