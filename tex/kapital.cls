@@ -15,7 +15,7 @@
 \setlrmargins{42pt}{*}{*}
 % (349 - 56)px 360px
 \setulmargins{*}{*}{1.23}
-\setfootins{24\p@ \@plus 8\p@ \@minus 8\p@}
+\setfootins{18\p@ \@plus 4\p@ \@minus 4\p@}
 % \setheaderspaces{*}{25pt}{*}
 \checkandfixthelayout
 
