@@ -1,12 +1,17 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{style}[2017/04/15 Das Kapital style]
 
-%% styling
-\setlength{\skip\footinsZ}{0pt}
+%% footnotes
+\setlength{\skip\footinsZ}{5.2pt}
 \setlength{\footmarkwidth}{-0.5em}
 \setlength{\footmarksep}{-\footmarkwidth}
 
-%% styling
+\renewcommand*{\footnoterule}{%
+  \kern-3pt%
+  \hrule width 0.4\columnwidth
+  \kern 5.2pt}
+
+%% paragraph
 \setlength{\parskip}{0em}
 
 %% grid
