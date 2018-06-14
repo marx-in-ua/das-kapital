@@ -2,13 +2,13 @@
 \ProvidesPackage{style}[2017/04/15 Das Kapital style]
 
 %% footnotes
-\setlength{\skip\footinsZ}{5.2pt}
+\setlength{\skip\footinsZ}{0pt}
 \setlength{\footmarkwidth}{-0.5em}
 \setlength{\footmarksep}{-\footmarkwidth}
 
 \renewcommand*{\footnoterule}{%
   \kern-3pt%
-  \hrule width 0.4\columnwidth
+  \hrule width 0.3\columnwidth
   \kern 5.2pt}
 
 %% paragraph
@@ -24,8 +24,8 @@
 
 %% format plain
 \makerunningwidth{plain}{\narrowtext}
-\makeevenfoot{plain}{\small\sffamily\thepage}{}{}
-\makeoddfoot{plain}{}{}{\small\sffamily\thepage}
+\makeevenfoot{plain}{\sffamily\thepage}{}{}
+\makeoddfoot{plain}{}{}{\sffamily\thepage}
 
 \copypagestyle{mypage}{plain}
 
@@ -44,8 +44,8 @@
   \createplainmark{glossary}{both}{\glossaryname}
 }
 
-\makeevenhead{mypage}{\small\sffamily\scshape\leftmark}{}{}
-\makeoddhead{mypage}{}{}{\small\sffamily\scshape\rightmark}
+\makeevenhead{mypage}{\footnotesize\sffamily\scshape\leftmark}{}{}
+\makeoddhead{mypage}{}{}{\footnotesize\sffamily\scshape\rightmark}
 
 \pagestyle{mypage}
 
@@ -55,20 +55,21 @@
 
 %\renewcommand*{\beforepartskip}{50pt}
 %\renewcommand*{\midpartskip}{10pt}
-\newcommand{\capsspace}{\addfontfeatures{LetterSpace=50, WordSpace=10}}
+\newcommand{\capsspace}{\addfontfeatures{LetterSpace=5, WordSpace=2}}
 
-\renewcommand{\partnamefont}{\large\sffamily\raggedright}
-\renewcommand{\partnumfont}{\large\sffamily}
+\renewcommand{\partnamefont}{\raggedright\large\sffamily\capsspace\MakeUppercase}
+\renewcommand{\partnumfont}{\large\sffamily\capsspace\MakeUppercase}
+
 \renewcommand{\parttitlefont}{\HUGE\bfseries\sffamily\raggedright\capsspace\MakeUppercase}
 \renewcommand*{\printparttitle}[1]{
-  \hfill\begin{minipage}{\dimexpr\textwidth-3cm}
+  \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
   \parttitlefont{#1}
   \end{minipage}
 }
 
-\renewcommand*{\beforepartskip}{\null\vskip 0pt plus 0.3fil\hspace{10em}}
+\renewcommand*{\beforepartskip}{\null\vspace{3cm}\noindent\hspace{1.5cm}}
 \renewcommand*{\midpartskip}{\vskip 10pt}
-\renewcommand*{\afterpartskip}{\vskip 0pt plus 0.7fil \newpage}
+\renewcommand*{\afterpartskip}{\vfill\newpage}
 
 %% Rozdil
 
@@ -78,7 +79,7 @@
   \renewcommand*{\chaptitlefont}{\huge\bfseries\sffamily}
   \setlength{\beforechapskip}{0pt}
   \setlength{\midchapskip}{10pt}
-  \setlength{\afterchapskip}{50pt}
+  \setlength{\afterchapskip}{50\p@ \@plus 10\p@ \@minus 10\p@}
 }
 \chapterstyle{default}
 

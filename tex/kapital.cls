@@ -4,20 +4,19 @@
 \LoadClass[11pt, b5paper, final, openany]{memoir}
 
 
-
-
-
 % 2893px 1889px
 % 11.8082 px in mm
-\setstocksize{245mm}{160mm}
+\setstocksize{235mm}{155mm}
 \settrimmedsize{\stockheight}{\stockwidth}{*}
 
 % 1422px (2190 + 56)px
 \settypeblocksize{*}{120.42mm}{1.5795}
 % 178px 297px
-\setlrmargins{*}{*}{1.67}
+\setlrmargins{42pt}{*}{*}
 % (349 - 56)px 360px
 \setulmargins{*}{*}{1.23}
+\setfootins{24\p@ \@plus 8\p@ \@minus 8\p@}
+% \setheaderspaces{*}{25pt}{*}
 \checkandfixthelayout
 
 % languages support
