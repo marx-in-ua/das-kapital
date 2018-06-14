@@ -19,8 +19,8 @@
 
 %% format plain
 \makerunningwidth{plain}{\narrowtext}
-\makeevenfoot{plain}{\footnotesize\sffamily\thepage}{}{}
-\makeoddfoot{plain}{}{}{\footnotesize\sffamily\thepage}
+\makeevenfoot{plain}{\small\sffamily\thepage}{}{}
+\makeoddfoot{plain}{}{}{\small\sffamily\thepage}
 
 \copypagestyle{mypage}{plain}
 
@@ -39,8 +39,8 @@
   \createplainmark{glossary}{both}{\glossaryname}
 }
 
-\makeevenhead{mypage}{\footnotesize\sffamily\leftmark}{}{}
-\makeoddhead{mypage}{}{}{\footnotesize\sffamily\rightmark}
+\makeevenhead{mypage}{\small\sffamily\scshape\leftmark}{}{}
+\makeoddhead{mypage}{}{}{\small\sffamily\scshape\rightmark}
 
 \pagestyle{mypage}
 

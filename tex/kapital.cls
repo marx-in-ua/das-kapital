@@ -39,13 +39,23 @@
   BoldItalicFont = *-bolditalic,
   Scale = 0.867
 ]
-\setsansfont{sans}[
+\setsansfont{AlegreyaSans}[
   Path = fonts/ ,
-  Extension = .ttf ,
-  BoldFont = *-bold ,
-  ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+  SmallCapsFont=*SC-Regular,
+  Scale=MatchLowercase,
 ]
+%\setsansfont{sans}[
+%  Path = fonts/ ,
+%  Extension = .ttf ,
+%  BoldFont = *-bold ,
+%  ItalicFont = *-italic ,
+%  BoldItalicFont = *-bolditalic
+%]
 \newfontfamily{\greekfont}{NotoSerif}[
   Path = fonts/ ,
   Script=Greek,
@@ -150,7 +160,7 @@
 %% Typography
 %% ======
 
-\usepackage[tracking=true]{microtype}
+\usepackage{microtype} % [tracking=true]
 \frenchspacing
 
 % Do not break line at mdash
