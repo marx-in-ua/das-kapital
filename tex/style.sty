@@ -18,14 +18,11 @@
 \newlength{\defindent}
 \setlength{\defindent}{\parindent}
 
-%% pagestyle
-\newlength{\narrowtext}
-\setlength{\narrowtext}{\textwidth - 2\defindent}
+\newcommand{\defhspace}{\hspace{\defindent}}
 
-%% format plain
-\makerunningwidth{plain}{\narrowtext}
-\makeevenfoot{plain}{\sffamily\thepage}{}{}
-\makeoddfoot{plain}{}{}{\sffamily\thepage}
+%% format plain pagestyle
+\makeevenfoot{plain}{\null\defhspace{}\sffamily\thepage}{}{}
+\makeoddfoot{plain}{}{}{\sffamily\thepage\defhspace{}}
 
 \copypagestyle{mypage}{plain}
 
@@ -44,8 +41,8 @@
   \createplainmark{glossary}{both}{\glossaryname}
 }
 
-\makeevenhead{mypage}{\footnotesize\sffamily\scshape\leftmark}{}{}
-\makeoddhead{mypage}{}{}{\footnotesize\sffamily\scshape\rightmark}
+\makeevenhead{mypage}{\null\defhspace{}\footnotesize\sffamily\scshape\leftmark}{}{}
+\makeoddhead{mypage}{}{}{\footnotesize\sffamily\scshape\rightmark\null\defhspace{}}
 
 \pagestyle{mypage}
 
