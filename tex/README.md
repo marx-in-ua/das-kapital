@@ -35,6 +35,7 @@ Commands
 - math-1
 - dots, ndash
 ? ~ in K. Marx
+? minus and ndash
 
 ### II (done)
 
@@ -50,13 +51,6 @@ Commands
 - math-1
 - dots, ndash
 ? ~ in K. Marx
-
-## notes on II
-poznacjhky u zagolovkax
-rozraydka
-splitfrac
-numbers in button headers
-tracking in microtype
 
 Task load:
  
@@ -89,3 +83,5 @@ Fix footnotes on:
 	small font size in peredmova dates
 	footnotes on i/0532
 	find where the col space set to 0
+	join 0644 with previous - footnote break
+	joion note on 657
