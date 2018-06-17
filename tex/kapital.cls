@@ -15,8 +15,8 @@
 \setlrmargins{42pt}{*}{*}
 % (349 - 56)px 360px
 \setulmargins{*}{*}{1.23}
-\setfootins{18\p@ \@plus 4\p@ \@minus 4\p@}
-% \setheaderspaces{*}{25pt}{*}
+\setfootins{18\p@ \@plus 4\p@ \@minus 4\p@}{\bigskipamount}
+\setheaderspaces{*}{13pt}{*}
 \checkandfixthelayout
 
 % languages support
