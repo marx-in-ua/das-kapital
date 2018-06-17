@@ -53,14 +53,10 @@
 
 %% Viddil
 
-%\renewcommand*{\beforepartskip}{50pt}
-%\renewcommand*{\midpartskip}{10pt}
-\newcommand{\capsspace}{\addfontfeatures{LetterSpace=5, WordSpace=2}}
-
 \renewcommand{\partnamefont}{\raggedright\Large\sffamily\scshape}
 \renewcommand{\partnumfont}{\Large\sffamily\scshape}
 
-\renewcommand{\parttitlefont}{\HUGE\bfseries\sffamily\raggedright\capsspace\MakeUppercase}
+\renewcommand{\parttitlefont}{\HUGE\bfseries\letterspacefont\raggedright\MakeUppercase}
 \renewcommand*{\printparttitle}[1]{
   \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
   \parttitlefont{#1}

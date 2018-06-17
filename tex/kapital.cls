@@ -48,14 +48,18 @@
   SmallCapsFont=*SC-Regular,
   Scale=MatchLowercase,
 ]
-\addfontfeature{LetterSpace=2.0}
-%\setsansfont{sans}[
-%  Path = fonts/ ,
-%  Extension = .ttf ,
-%  BoldFont = *-bold ,
-%  ItalicFont = *-italic ,
-%  BoldItalicFont = *-bolditalic
-%]
+\newfontfamily{\letterspacefont}{AlegreyaSans}[
+  Path = fonts/ ,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+  Scale=MatchLowercase,
+  LetterSpace=5,
+  WordSpace=2
+]
+
 \newfontfamily{\greekfont}{NotoSerif}[
   Path = fonts/ ,
   Script=Greek,
