@@ -1,0 +1,95 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{style}[2017/04/15 Das Kapital style]
+
+%% footnotes
+\setlength{\skip\footinsZ}{0pt}
+\setlength{\footmarkwidth}{-0.5em}
+\setlength{\footmarksep}{-\footmarkwidth}
+
+\renewcommand*{\footnoterule}{%
+  \kern-3pt%
+  \hrule width 0.3\columnwidth
+  \kern 5.2pt}
+
+%% paragraph
+\setlength{\parskip}{0em}
+
+%% grid
+\newlength{\defindent}
+\setlength{\defindent}{\parindent}
+
+\newcommand{\defhspace}{\hspace{\defindent}}
+
+%% format plain pagestyle
+\makeevenfoot{plain}{\null\defhspace{}\sffamily\thepage}{}{}
+\makeoddfoot{plain}{}{}{\sffamily\thepage\defhspace{}}
+
+\copypagestyle{mypage}{plain}
+
+\makepsmarks{mypage}{%
+  \nouppercaseheads
+  \clearmark{part}
+  \clearmark{chapter}
+  \clearmark{section}
+  \createmark{part}{left}{shownumber}{\partname\ }{. }
+  \createmark{chapter}{right}{shownumber}{\@chapapp\ }{. }
+  \createplainmark{toc}{both}{\contentsname}
+  \createplainmark{lof}{both}{\listfigurename}
+  \createplainmark{lot}{both}{\listtablename}
+  \createplainmark{bib}{both}{\bibname}
+  \createplainmark{index}{both}{\indexname}
+  \createplainmark{glossary}{both}{\glossaryname}
+}
+
+\makeevenhead{mypage}{\null\defhspace{}\footnotesize\sffamily\scshape\leftmark}{}{}
+\makeoddhead{mypage}{}{}{\footnotesize\sffamily\scshape\rightmark\null\defhspace{}}
+
+\pagestyle{mypage}
+
+\aliaspagestyle{part}{empty}
+
+%% Viddil
+
+\renewcommand{\partnamefont}{\raggedright\Large\sffamily\scshape}
+\renewcommand{\partnumfont}{\Large\sffamily\scshape}
+
+\renewcommand{\parttitlefont}{\HUGE\bfseries\letterspacefont\raggedright\MakeUppercase}
+\renewcommand*{\printparttitle}[1]{
+  \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
+  \parttitlefont{#1}
+  \end{minipage}
+}
+
+\renewcommand*{\beforepartskip}{\null\vspace{3cm}\noindent\hspace{1.5cm}}
+\renewcommand*{\midpartskip}{\vskip 10pt}
+\renewcommand*{\afterpartskip}{\vfill\newpage}
+
+%% Rozdil
+
+\makechapterstyle{default}{%
+  \renewcommand*{\chapnumfont}{\large\sffamily}
+  \renewcommand*{\chapnamefont}{\large\sffamily}
+  \renewcommand*{\chaptitlefont}{\huge\bfseries\sffamily}
+  \setlength{\beforechapskip}{0pt}
+  \setlength{\midchapskip}{10pt}
+  \setlength{\afterchapskip}{50\p@ \@plus 10\p@ \@minus 10\p@}
+}
+\chapterstyle{default}
+
+
+\setsecheadstyle{\Large\bfseries\sffamily\raggedright}
+
+\setsubsecheadstyle{\large\bfseries\sffamily\raggedright}
+
+\setsubsubsecheadstyle{\bfseries\raggedright}
+
+\setparaheadstyle{\itshape\raggedright}
+\setbeforeparaskip{-3.5ex plus -1ex minus -.2ex}
+\setafterparaskip{1.5ex plus 1ex minus .2ex}
+
+\setsecnumformat{\makebox[\defindent][r]{\csname the#1\endcsname~}}
+
+%% Letterine
+%% \usepackage{lettrine}
+
+\endinput

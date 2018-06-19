@@ -1,9 +1,22 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{kapital}[2017/04/15 Das Kapital]
 
-% page size 70×100/16
-\LoadClass[b5paper, final]{memoir}
-\semiisopage
+\LoadClass[11pt, b5paper, final, openany]{memoir}
+
+
+% 2893px 1889px
+% 11.8082 px in mm
+\setstocksize{235mm}{155mm}
+\settrimmedsize{\stockheight}{\stockwidth}{*}
+
+% 1422px (2190 + 56)px
+\settypeblocksize{*}{120.42mm}{1.5795}
+% 178px 297px
+\setlrmargins{42pt}{*}{*}
+% (349 - 56)px 360px
+\setulmargins{*}{*}{1.23}
+\setfootins{18\p@ \@plus 4\p@ \@minus 4\p@}{\bigskipamount}
+\setheaderspaces{*}{13pt}{*}
 \checkandfixthelayout
 
 % languages support
@@ -13,7 +26,7 @@
 \setotherlanguage{greek}
 \setotherlanguage{german}
 \setotherlanguage{english}
-% Temporary disable dut to franch footnotes
+% Temporary disable due to franch footnotes
 % \setotherlanguage{french}
 
 % fonts
@@ -22,15 +35,31 @@
   Extension = .ttf ,
   BoldFont = *-bold ,
   ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic
+  BoldItalicFont = *-bolditalic,
+  Scale = 0.867
 ]
-\setsansfont{sans}[
+\setsansfont{AlegreyaSans}[
   Path = fonts/ ,
-  Extension = .ttf ,
-  BoldFont = *-bold ,
-  ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+  SmallCapsFont=*SC-Regular,
+  Scale=MatchLowercase,
 ]
+\newfontfamily{\letterspacefont}{AlegreyaSans}[
+  Path = fonts/ ,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+  Scale=MatchLowercase,
+  LetterSpace=5,
+  WordSpace=2
+]
+
 \newfontfamily{\greekfont}{NotoSerif}[
   Path = fonts/ ,
   Script=Greek,
@@ -42,26 +71,36 @@
   Scale=MatchLowercase,
 ]
 
-% titles
+%% titles
 \newcommand\UkrNumToName[1]{%
 \ifcase#1\relax % case 0
 \or перший\or другий\or третій%
 \else Not implemented\fi}
 
-\addto\captionsukrainian{\renewcommand{\chaptername}{Відділ}}
-\chapterstyle{bianchi}
-\renewcommand{\printchapternum}{\UkrNumToName{\thechapter}. }
+%% We move headings one level up
+\let\subparagraph\paragraph
+\let\paragraph\subsubsection
+\let\subsubsection\subsection
+\let\subsection\section
+\let\section\chapter
+\let\chapter\part
 
-\counterwithout{section}{chapter}
-\renewcommand{\thesection}{Розділ \UkrNumToName{\value{section}} }
+\addto\captionsukrainian{\renewcommand{\partname}{Відділ}}
+\renewcommand{\thepart}{\UkrNumToName{\value{part}}}
 
-\setsecnumdepth{subsubsection}
-\renewcommand{\thesubsection}{\arabic{subsection}. }
-\renewcommand{\thesubsubsection}{\alph{subsubsection}. }
+\counterwithout{chapter}{part}
+
+\setsecnumdepth{paragraph}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}. }
+\renewcommand{\thesubsection}{\alph{subsection}) }
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}. }
+\renewcommand{\theparagraph}{\Alph{subsubsection}) }
 
 % math
 \RequirePackage{xfrac}
 \RequirePackage{amsmath}
+\usepackage{abraces}
 
 \usepackage{unicode-math}
 %\setmathfont{serif}[
@@ -101,6 +140,7 @@
 % in text mode
 \newcommand{\splitfrac}[2]{\ifmmode\splitfracm{#1}{#2}\else$\splitfracm{#1}{#2}$\fi}
 
+
 %% ======
 %% Tables
 %% ======
@@ -126,7 +166,7 @@
 %% Typography
 %% ======
 
-\usepackage{microtype}
+\usepackage{microtype} % [tracking=true]
 \frenchspacing
 
 % Do not break line at mdash
@@ -191,5 +231,8 @@
 %% Breaks
 \newcommand{\parbreak}{¬ \emph{(абзац продовжується на наступній сторінці)}}
 \newcommand{\parcont}{\noindent \emph{(абзац починається на попередній сторінці) ¶}}
+
+%% styling
+\RequirePackage{style}
 
 \endinput
