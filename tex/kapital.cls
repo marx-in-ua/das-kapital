@@ -100,6 +100,7 @@
 % math
 \RequirePackage{xfrac}
 \RequirePackage{amsmath}
+\usepackage{abraces}
 
 \usepackage{unicode-math}
 %\setmathfont{serif}[
@@ -138,6 +139,7 @@
 \newcommand{\splitfracm}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
 % in text mode
 \newcommand{\splitfrac}[2]{\ifmmode\splitfracm{#1}{#2}\else$\splitfracm{#1}{#2}$\fi}
+
 
 %% ======
 %% Tables
