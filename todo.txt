@@ -1,7 +1,6 @@
 All
 
 - greek reproof
-- replace minus with mdash
 
 III.1
 
@@ -9,5 +8,4 @@ III.1
 
 III.2
 
-- noted errors + image
 - add tables on page 160 
