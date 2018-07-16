@@ -21,6 +21,10 @@ Commands
 
 	rename 's/\.txt$/\.tex/' *.txt
 
+## Fix in I and II
+ ? minus and ndash
+ ? ~ in K. Marx
+
 ## Todo for any book
 
 - wrap100
@@ -37,10 +41,11 @@ Commands
 ? ~ in K. Marx
 ? minus and ndash
 
-### II (done)
+### III (done)
 
 - wrap100
 - copy and rename
+
 - percent
 - footnotes
 - join
@@ -50,7 +55,7 @@ Commands
 - math-2
 - math-1
 - dots, ndash
-? ~ in K. Marx
+
 
 Task load:
  
