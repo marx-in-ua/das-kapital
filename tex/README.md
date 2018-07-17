@@ -46,8 +46,8 @@ Commands
 - wrap100
 - copy and rename
 - percent
-
 - footnotes
+
 - join
 - fix whitespace
 - red
