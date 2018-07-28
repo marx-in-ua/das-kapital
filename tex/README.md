@@ -47,15 +47,17 @@ Commands
 - copy and rename
 - percent
 - footnotes
-
 - join
 - fix whitespace
+
 - red
 - fraction
 - math-2
 - math-1
 - dots, ndash
-
+? minus and ndash
+iii.1 Red ukr per, Prym red nim vud F.E.
+iii.2 Prym red.
 
 Task load:
  
