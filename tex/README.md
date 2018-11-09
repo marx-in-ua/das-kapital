@@ -92,3 +92,4 @@ Fix footnotes on:
 	find where the col space set to 0
 	join 0644 with previous - footnote break
 	joion note on 657
+	footnotes in iii 252 253
