@@ -22,8 +22,10 @@ Commands
 	rename 's/\.txt$/\.tex/' *.txt
 
 ## Fix in I and II
- ? minus and ndash
+ ? minus and ndash (\sfrac - ndash)
  ? ~ in K. Marx
+  и т.ʼд.
+  replace X with muliplication sign
 
 ## Todo for any book
 
@@ -93,3 +95,5 @@ Fix footnotes on:
 	join 0644 with previous - footnote break
 	joion note on 657
 	footnotes in iii 252 253
+	page ref 392 on iii.1.423
+	footnote ref on i.210
