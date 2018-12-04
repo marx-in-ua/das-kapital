@@ -22,8 +22,10 @@ Commands
 	rename 's/\.txt$/\.tex/' *.txt
 
 ## Fix in I and II
- ? minus and ndash
+ ? minus and ndash (\sfrac - ndash)
  ? ~ in K. Marx
+  и т.ʼд.
+  replace X with muliplication sign
 
 ## Todo for any book
 
@@ -47,15 +49,17 @@ Commands
 - copy and rename
 - percent
 - footnotes
-
 - join
 - fix whitespace
+
 - red
 - fraction
 - math-2
 - math-1
 - dots, ndash
-
+? minus and ndash
+iii.1 Red ukr per, Prym red nim vud F.E.
+iii.2 Prym red.
 
 Task load:
  
@@ -90,3 +94,6 @@ Fix footnotes on:
 	find where the col space set to 0
 	join 0644 with previous - footnote break
 	joion note on 657
+	footnotes in iii 252 253
+	page ref 392 on iii.1.423
+	footnote ref on i.210
