@@ -25,7 +25,7 @@ Commands
  ? minus and ndash (\sfrac - ndash)
  ? ~ in K. Marx
   и т.ʼд.
-  replace X with muliplication sign
+  replace " with proper quote
 
 ## Todo for any book
 
@@ -61,39 +61,10 @@ Commands
 iii.1 Red ukr per, Prym red nim vud F.E.
 iii.2 Prym red.
 
-Task load:
- 
- load i - _0189_0190_0191_0192.tex
- restore Task #3028 ii/_0010_0011_0012
- restore Task #3029 ii/_0013
- restore Task #3030 ii/_0014
- restore Task #3032 ii/_0016
- restore Task id: 2768 i/_0290
- restore Task id: 2769 i/_0291
- restore Task id: 2770 i/_0292
- restore Task id: 2771 i/_0293
- restore Task id: 2772 i/_0294
-
-Fix footnotes on:
-	text/i/0290.txt
-	text/i/0291.txt
-	text/i/0292.txt
-	text/i/0293.txt
-	text/i/0294.txt 
-
-	text/ii/0010.txt
-	text/ii/0011.txt 
-	text/ii/0013.txt
-	text/ii/0014.txt
-	text/ii/0016.txt 
-
 Аfter 
 	!0090, !0101- fix link to pages in footnote
 	small font size in peredmova dates
 	footnotes on i/0532
 	find where the col space set to 0
-	join 0644 with previous - footnote break
-	joion note on 657
-	footnotes in iii 252 253
 	page ref 392 on iii.1.423
 	footnote ref on i.210
