@@ -154,7 +154,10 @@
 %% Tables
 %% ======
 
-\usepackage[font=bf]{caption}
+\usepackage{caption}
+\DeclareCaptionFont{tablefont}{\tablefont}
+\captionsetup{font=tablefont, textfont=bf}
+
 \usepackage{makecell}
 \usepackage{dcolumn}
 
@@ -236,6 +239,9 @@
    \Footnotedefault{\thefootalt}}
 
 %% indexes 
+%% hack to prevent warning
+\newcommand{\indexchap}[1]{}
+
 \RequirePackage{amsmidx}
 \makeindex{franko}
 \makeindex{i}
