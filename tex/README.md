@@ -62,8 +62,7 @@ iii.1 Red ukr per, Prym red nim vud F.E.
 iii.2 Prym red.
 
 Аfter 
-	!0090, !0101- fix link to pages in footnote
-	small font size in peredmova dates
+	I. !100 - !0101 - fix link to pages in footnote
 	footnotes on i/0532
 	find where the col space set to 0
 	page ref 392 on iii.1.423
