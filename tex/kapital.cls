@@ -59,7 +59,16 @@
   LetterSpace=5,
   WordSpace=2
 ]
-
+\newfontfamily{\tablefont}{AlegreyaSans}[
+  Path = fonts/ ,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+  Scale=MatchLowercase,
+  Numbers={Monospaced,Lining}
+]
 \newfontfamily{\greekfont}{NotoSerif}[
   Path = fonts/ ,
   Script=Greek,
@@ -148,6 +157,12 @@
 \usepackage[font=bf]{caption}
 \usepackage{makecell}
 \usepackage{dcolumn}
+
+\AtBeginEnvironment{tabularx}{\tablefont}
+
+%% default hangindent 
+\newcommand{\indentdef}{\hspace{1em}}
+\newcommand{\hangindentdef}{\hangindent=1em}
 
 %% same width
 %% \samewidth{of_what}{text}
