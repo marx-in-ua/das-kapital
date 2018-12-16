@@ -64,6 +64,5 @@ iii.2 Prym red.
 Аfter 
 	I. !100 - !0101 - fix link to pages in footnote
 	footnotes on i/0532
-	find where the col space set to 0
 	page ref 392 on iii.1.423
 	footnote ref on i.210
