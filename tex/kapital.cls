@@ -160,8 +160,10 @@
 
 \usepackage{makecell}
 \usepackage{dcolumn}
+\usepackage{multirow}
 
 \AtBeginEnvironment{tabularx}{\tablefont}
+\AtBeginEnvironment{tabular}{\tablefont}
 
 %% default hangindent 
 \newcommand{\indentdef}{\hspace{1em}}
@@ -178,6 +180,18 @@
 \newcommand{\dittomark}{>>}
 \newcommand{\ditto}[1]{
   \samewidth{#1}{\dittomark{}}%
+}
+
+%% temp length
+\newlength{\myheight}
+
+%% cells
+\newcommand{\makevertcell}[2]{
+  \rotatebox[origin=c]{90}{\parbox[c]{#1}{#2}}%
+}
+%% paragrraph cell
+\newcommand{\makehangcell}[1]{
+ \noindent\parbox[b]{\hsize}{\strut\hangindentdef{}#1\strut} %
 }
 
 %% ======
