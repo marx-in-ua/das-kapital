@@ -161,6 +161,7 @@
 \usepackage{makecell}
 \usepackage{dcolumn}
 \usepackage{multirow}
+\usepackage{rotating}
 
 \AtBeginEnvironment{tabularx}{\tablefont}
 \AtBeginEnvironment{tabular}{\tablefont}
@@ -194,6 +195,10 @@
  \noindent\parbox[b]{\hsize}{\strut\hangindentdef{}#1\strut} %
 }
 
+%% caption2
+\newcommand{\captionnew}[1]{
+{\bfseries\sffamily #1}%
+}
 %% ======
 %% Typography
 %% ======
