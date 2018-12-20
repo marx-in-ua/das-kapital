@@ -161,10 +161,12 @@
 \usepackage{makecell}
 \usepackage{dcolumn}
 \usepackage{multirow}
+\usepackage{longtable}
 \usepackage{rotating}
 
 \AtBeginEnvironment{tabularx}{\tablefont}
 \AtBeginEnvironment{tabular}{\tablefont}
+\AtBeginEnvironment{longtable}{\tablefont}
 
 %% default hangindent 
 \newcommand{\indentdef}{\hspace{1em}}
