@@ -173,15 +173,11 @@
 %% same width
 %% \samewidth{of_what}{text}
 \usepackage{calc}
-\newcommand{\samewidth}[2]{
-  \makebox[\widthof{#1}][c]{#2}%
-}
+\newcommand{\samewidth}[2]{\makebox[\widthof{#1}][c]{#2}}
 
 %% ditto mark
 \newcommand{\dittomark}{>>}
-\newcommand{\ditto}[1]{
-  \samewidth{#1}{\dittomark{}}%
-}
+\newcommand{\ditto}[1]{\samewidth{#1}{\dittomark{}}}
 
 %% temp length
 \newlength{\myheight}
@@ -194,6 +190,8 @@
 \newcommand{\makehangcell}[1]{
  \noindent\parbox[b]{\hsize}{\strut\hangindentdef{}#1\strut} %
 }
+%% hang out of align
+\newcommand{\hang}[2]{\makebox[0pt][#1]{#2}}
 
 %% caption2
 \newcommand{\captionnew}[1]{
