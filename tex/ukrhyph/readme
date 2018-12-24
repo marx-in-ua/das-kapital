@@ -22,3 +22,5 @@ ukrhypmp.tex    Ukrainian TeX hyphenation patterns by Maksym Polyakov
 ukrhypfa.tex    Ukrainian TeX hyphenation patterns derived from Russian
                 patterns by Dimitri Vulis by substitution Russian vowels
                 with corresponding Ukrainian ones.
+
+hyph-uk.pat.txt Current Tex patterns from /usr/local/texlive/2017/texmf-dist/tex/generic/hyph-utf8/patterns/txt/hyph-uk.pat.txt 
