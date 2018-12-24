@@ -1,0 +1,24 @@
+ukrhypsm.tex    Ukrainian TeX hyphenation patterns by Andrij Shvaika
+                (modern rules,  see file `rules90{.tex,.ps,.pdf}'). These
+                patterns are based on a file of more than 84000 Ukrainian
+                words hyphenated according to the modern
+                (liberal, may be too liberal :) rules.
+
+ukrhypst.tex    Ukrainian TeX hyphenation patterns by Andrij Shvaika
+                (modern rules with some corrections). These patterns are
+                based on a file of more than 84000 Ukrainian words
+                hyphenated according to the modern rules with removed
+                ``suspicious breaks''.
+
+
+ukrhypmt.tex    Ukrainian TeX hyphenation patterns by Maksym Polyakov
+                (old rules, see file `rules60{.tex,.ps,.pdf}').
+
+ukrhypmp.tex    Ukrainian TeX hyphenation patterns by Maksym Polyakov
+                (old rules, see file `rules60{.tex,.ps,.pdf}',
+                breaking into syllables according to phonetical principles,
+                see file `rules_ph{.tex,.ps,.pdf}').
+
+ukrhypfa.tex    Ukrainian TeX hyphenation patterns derived from Russian
+                patterns by Dimitri Vulis by substitution Russian vowels
+                with corresponding Ukrainian ones.
