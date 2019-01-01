@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  latex:
+    image: blang/latex:ctanfull
+    command: ["/bin/sh", "-c", "sleep infinity"]
+    user: 1000:1000
+    volumes:
+      - .:/data

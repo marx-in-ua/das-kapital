@@ -195,6 +195,8 @@
 %% hang out of align
 \newcommand{\hang}[2]{\makebox[0pt][#1]{#2}}
 
+\newcommand{\md}{\textemdash{}}
+
 %% caption2
 \newcommand{\captionnew}[1]{
 {\bfseries\sffamily #1}%

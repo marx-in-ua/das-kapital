@@ -24,3 +24,7 @@ ukrhypfa.tex    Ukrainian TeX hyphenation patterns derived from Russian
                 with corresponding Ukrainian ones.
 
 hyph-uk.pat.txt Current Tex patterns from /usr/local/texlive/2017/texmf-dist/tex/generic/hyph-utf8/patterns/txt/hyph-uk.pat.txt 
+
+docker cp ukrhyph/ukrhypmp.pat.txt latex_daemon:/usr/local/texlive/2017/texmf-dist/tex/generic/hyph-utf8/patterns/txt/hyph-uk.pat.txt 
+
+
