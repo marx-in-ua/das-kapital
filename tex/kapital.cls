@@ -184,6 +184,10 @@
 %% temp length
 \newlength{\myheight}
 
+%% default tabcolsep
+\newlength{\tabcolsepdef}
+\setlength{\tabcolsepdef}{\tabcolsep}
+
 %% cells
 \newcommand{\makevertcell}[2]{
   \rotatebox[origin=c]{90}{\parbox[c]{#1}{#2}}%
