@@ -159,7 +159,7 @@
 \captionsetup{font=tablefont, textfont=bf}
 
 \usepackage{makecell}
-\usepackage{dcolumn}
+\usepackage{bigdelim}
 \usepackage{multirow}
 \usepackage{longtable}
 \usepackage{rotating}
@@ -196,6 +196,7 @@
 \newcommand{\makehangcell}[1]{
  \noindent\parbox[b]{\hsize}{\strut\hangindentdef{}#1\strut} %
 }
+
 %% hang out of align
 \newcommand{\hang}[2]{\makebox[0pt][#1]{#2}}
 
