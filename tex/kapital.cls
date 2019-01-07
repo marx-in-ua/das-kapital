@@ -200,7 +200,7 @@
 \newcommand{\hang}[2]{\makebox[0pt][#1]{#2}}
 
 \newcommand{\md}{\textemdash{}}
-
+\newcommand{\emptycell}{\makecell{\textemdash{}}}
 %% caption2
 \newcommand{\captionnew}[1]{
 {\bfseries\sffamily #1}%
