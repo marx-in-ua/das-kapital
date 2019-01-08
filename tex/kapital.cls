@@ -263,6 +263,9 @@
 \def\thefootalt{\thefootnote \alph{footalt}}
 \def\footnoteA{\refstepcounter{footalt}%
    \Footnotedefault{\thefootalt}}
+\def\footnotemarkA{\refstepcounter{footalt}%
+   \Footnotemarkdefault{\thefootalt}}
+\def\footnotetextA{\Footnotetextdefault{\thefootalt}}
 
 %% indexes 
 %% hack to prevent warning
