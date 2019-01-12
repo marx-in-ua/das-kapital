@@ -109,7 +109,12 @@
 % math
 \RequirePackage{xfrac}
 \RequirePackage{amsmath}
-\usepackage{abraces}
+\usepackage{abraces} % do we need it (?)
+
+% braces
+\usepackage{tikz}
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{na} = [baseline=-.5ex]
 
 \usepackage{unicode-math}
 %\setmathfont{serif}[
