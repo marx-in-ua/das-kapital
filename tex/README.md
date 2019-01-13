@@ -14,6 +14,8 @@ Image from https://github.com/blang/latex-docker
 	# or 
 	docker exec -it latex_daemon lualatex --interaction=nonstopmode --output-directory=test/ 0001.tex
 
+	# --interaction=errorstopmode
+
 	# Stop the daemon
 	docker stop latex_daemon
 
@@ -63,6 +65,7 @@ iii.2 Prym red.
 
 Аfter 
 	I. !100 - !0101 - fix link to pages in footnote
-	footnotes on i/0532
+	remove note on i/0540 Див. стор. 736.
 	page ref 392 on iii.1.423
 	footnote ref on i.210
+
