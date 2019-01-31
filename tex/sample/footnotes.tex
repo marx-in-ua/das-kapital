@@ -1,7 +1,11 @@
 \documentclass{kapital}
-\usepackage{lipsum}
+\setmainlanguage{english}
+\usepackage[pangram]{blindtext}
 \input{../final.tex}
 \begin{document}
-  text\footnote{one\footnoteB{one other}}\footnote{second}
-  text 2 \footnoteB{second other}
+\blindtext[20]\footnote{\blindtext[40]}
+\blindtext[10]\footnote{
+\blindtext[20]\footnote*{\blindtext[2]}
+\blindtext[60]}
+\blindtext[20]\footnote{\blindtext[80]}
 \end{document}
