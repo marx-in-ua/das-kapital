@@ -299,6 +299,10 @@
 \makeindex{iii1}
 \makeindex{iii2}
 
+%% fix spacing on index
+\let\oldmyindex\index
+\renewcommand*{\index}[2]{\unskip\oldmyindex{#1}{#1}\ignorespaces}
+
 %% Breaks
 \newcommand{\parbreak}{¬ \emph{(абзац продовжується на наступній сторінці)}}
 \newcommand{\parcont}{\noindent \emph{(абзац починається на попередній сторінці) ¶}}
