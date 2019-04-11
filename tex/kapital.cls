@@ -214,10 +214,18 @@
 
 \newcommand{\md}{\textemdash{}}
 \newcommand{\emptycell}{\makecell{\textemdash{}}}
+
 %% caption2
 \newcommand{\captionnew}[1]{
 {\bfseries\sffamily #1}%
 }
+
+%% line color 75%
+\definecolor{gray75}{rgb}{0.75, 0.75, 0.750}
+%% Set table line color
+%% see p. 12 http://mirror.datacenter.by/pub/mirrors/CTAN/macros/latex/contrib/booktabs/booktabs.pdf
+\newcommand{\CT@arc@}{\color{gray75}}
+
 
 %% ======
 %% Typography
