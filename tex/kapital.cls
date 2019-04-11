@@ -169,9 +169,16 @@
 \usepackage{longtable}
 \usepackage{rotating}
 
-\AtBeginEnvironment{tabularx}{\tablefont}
-\AtBeginEnvironment{tabular}{\tablefont}
-\AtBeginEnvironment{longtable}{\tablefont}
+%% set font
+\newcommand{\settablefont}{%
+  \sisetup{group-minimum-digits=3,detect-all,text-rm=\tablefont}%
+  \tablefont%
+}
+
+\AtBeginEnvironment{tabularx}{\settablefont}
+\AtBeginEnvironment{tabular}{\settablefont}
+\AtBeginEnvironment{longtable}{\settablefont}
+
 
 %% default hangindent 
 \newcommand{\indentdef}{\hspace{1em}}
@@ -211,6 +218,7 @@
 \newcommand{\captionnew}[1]{
 {\bfseries\sffamily #1}%
 }
+
 %% ======
 %% Typography
 %% ======
@@ -229,6 +237,18 @@
 \setbox\z@\hbox{\SOUL@tt-}
 \SOUL@ttwidth\wd\z@
 \makeatother
+
+%
+% numbers
+%
+\RequirePackage{siunitx}
+
+%% Book I
+\sisetup{
+  detect-all,
+  input-ignore={.},
+  input-decimal-markers={,}
+}
 
 % footnotes 
 \RequirePackage{bigfoot}
