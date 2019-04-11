@@ -154,6 +154,8 @@
 % in text mode
 \newcommand{\splitfrac}[2]{\ifmmode\splitfracm{#1}{#2}\else$\splitfracm{#1}{#2}$\fi}
 
+%% pound
+\newcommand{\pound}[1]{\,£}
 
 %% ======
 %% Tables
