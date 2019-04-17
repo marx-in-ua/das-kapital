@@ -80,11 +80,7 @@
   Scale=MatchLowercase,
 ]
 
-%% titles
-\newcommand\UkrNumToName[1]{%
-\ifcase#1\relax % case 0
-\or перший\or другий\or третій%
-\else Not implemented\fi}
+\RequirePackage{counters}
 
 %% We move headings one level up
 \let\subparagraph\paragraph
@@ -267,38 +263,6 @@
 \usepackage{xpatch}
 \makeatletter
 \patchcmd\FN@allmarks{266}{256}{}{\fail}
-\makeatother
-
-\makeatletter
-\def\@fnsymbolsingle#1{%
-  %\ensuremath{%
-    \ifcase#1% 0
-      *
-    \or % 1
-      *%   
-    \or % 2
-      **
-    \or % 3  
-      ***
-    \or % 4   
-      ****
-    \or % 5
-      *****
-    \or % 6
-      ******
-    \or % 7
-      *******
-    \or % 8
-      ********
-    \or % 9
-      *********
-    \or % 10
-      **********
-    \else % > 10
-      undefined
-    \fi
-  %}%   
-}   
 \makeatother
 
 % 100 note
