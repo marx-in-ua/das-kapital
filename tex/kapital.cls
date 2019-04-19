@@ -65,6 +65,7 @@
 
 %% Alllow cyrilic letters in math
 \DeclareSymbolFont{cyrletters}{\encodingdefault}{\familydefault}{m}{it}
+%% All letters
 \newcommand{\makecyrmathletter}[1]{%
   \begingroup\lccode`a=#1\lowercase{\endgroup
   \Umathcode`a}="0 \csname symcyrletters\endcsname\space #1
@@ -74,6 +75,19 @@
   \advance\count255 by 1
   \makecyrmathletter{\count255}
 \repeat
+
+%% Fake slant fot г, д, п, т
+\DeclareSymbolFont{cyrlettersup}{\encodingdefault}{\familydefault}{m}{n}
+\newcommand{\makecyrmathletterup}[1]{%
+  \begingroup\lccode`a=#1\lowercase{\endgroup
+  \Umathcode`a}="0 \csname symcyrlettersup\endcsname\space #1
+}
+\makecyrmathletterup{"433} % г
+\makecyrmathletterup{"434} % д
+\makecyrmathletterup{"43F} % п
+\makecyrmathletterup{"442} % т
+
+
 
 %% frac in text mode
 \let\oldfrac\frac
