@@ -10,6 +10,9 @@
   BoldFont = *-bold ,
   ItalicFont = *-italic ,
   BoldItalicFont = *-bolditalic,
+  % Fake slanted
+  SlantedFont = serif,
+  SlantedFeatures={FakeSlant=0.21},
   Scale = 0.867
 ]
 \setsansfont{AlegreyaSans}[
@@ -74,3 +77,28 @@
 %   script-features={},
 %   sscript-features={}
 % ]
+
+%% Alllow cyrilic letters in math
+\DeclareSymbolFont{cyrletters}{\encodingdefault}{\familydefault}{m}{it}
+%% All letters
+\newcommand{\makecyrmathletter}[1]{%
+  \begingroup\lccode`a=#1\lowercase{\endgroup
+  \Umathcode`a}="0 \csname symcyrletters\endcsname\space #1
+}
+\count255="409
+\loop\ifnum\count255<"44F
+  \advance\count255 by 1
+  \makecyrmathletter{\count255}
+\repeat
+
+%% Fake slant fot г, д, п, т
+
+\DeclareSymbolFont{cyrletterssl}{\encodingdefault}{\familydefault}{m}{sl}
+\newcommand{\makecyrmathlettersl}[1]{%
+  \begingroup\lccode`a=#1\lowercase{\endgroup
+  \Umathcode`a}="0 \csname symcyrletterssl\endcsname\space #1
+}
+\makecyrmathlettersl{"433} % г
+\makecyrmathlettersl{"434} % д
+\makecyrmathlettersl{"43F} % п
+\makecyrmathlettersl{"442} % т
