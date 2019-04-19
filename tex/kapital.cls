@@ -29,8 +29,6 @@
 % Temporary disable due to franch footnotes
 % \setotherlanguage{french}
 
-\input{fonts.tex}
-
 \RequirePackage{counters}
 
 %% We move headings one level up
@@ -62,6 +60,8 @@
 \usepackage{tikz}
 \tikzstyle{every picture}+=[remember picture]
 \tikzstyle{na} = [baseline=-.5ex]
+
+\input{fonts.tex}
 
 %% Alllow cyrilic letters in math
 \DeclareSymbolFont{cyrletters}{\encodingdefault}{\familydefault}{m}{it}
