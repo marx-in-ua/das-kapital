@@ -217,7 +217,7 @@
 
 %% fix spacing on index
 \let\oldmyindex\index
-\renewcommand*{\index}[2]{\unskip\oldmyindex{#1}{#1}\ignorespaces}
+\renewcommand*{\index}[2]{\unskip\oldmyindex{#1}{#2}\ignorespaces}
 
 %% Breaks
 \newcommand{\parbreak}{¬ \emph{(абзац продовжується на наступній сторінці)}}
