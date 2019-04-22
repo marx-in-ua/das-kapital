@@ -5,15 +5,27 @@
 % 
 % Text fonts
 %
-\setmainfont{serif}[
-  Extension = .ttf ,
-  BoldFont = *-bold ,
-  ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic,
-  % Fake slanted
-  SlantedFont = serif,
+
+% PT Serif
+% \setmainfont{serif}[
+%   Extension = .ttf ,
+%   BoldFont = *-bold ,
+%   ItalicFont = *-italic ,
+%   BoldItalicFont = *-bolditalic,
+%   % Fake slanted
+%   SlantedFont = serif,
+%   SlantedFeatures={FakeSlant=0.21},
+%   Scale = 0.867
+% ]
+
+\setmainfont{Alegreya}[
+  Extension=.otf,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+  SlantedFont = Alegreya,
   SlantedFeatures={FakeSlant=0.21},
-  Scale = 0.867
+  Scale = 0.93925
 ]
 \setsansfont{AlegreyaSans}[
   Extension=.otf,
@@ -58,25 +70,22 @@
 \setmathfont{STIX2Math}[% default fall back
   Extension = .otf ,
   StylisticSet = 01 ,
+  Scale=MatchLowercase,
 ]
 
-%
-% this produces bad nums in fractions
-%
+\setmathfont{Alegreya.otf}[% numbers
+  range = {up},
+  Script=Latin,
+  script-features={},
+  sscript-features={}
+]
 
-% \setmathfont{serif.ttf}[% numbers
-%   range = {up},
-%   Script=Latin,
-%   script-features={},
-%   sscript-features={}
-% ]
-
-% \setmathfont{serif.ttf}[% italic letters
-%   range = {it},
-%   Script=Latin,
-%   script-features={},
-%   sscript-features={}
-% ]
+\setmathfont{Alegreya-Italic.otf}[% italic letters
+  range = {it},
+  Script=Latin,
+  script-features={},
+  sscript-features={}
+]
 
 %% Alllow cyrilic letters in math
 \DeclareSymbolFont{cyrletters}{\encodingdefault}{\familydefault}{m}{it}
