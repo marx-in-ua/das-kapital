@@ -1,16 +1,14 @@
 \documentclass{kapital}
-\makeatletter
-\renewcommand{\parbreak}{\unskip\ignorespaces}
-\renewcommand{\parcont}{}
-\let\oldindex\index
-\renewcommand*{\index}[2]{\unskip\oldindex{#1}{#1}\ignorespaces}
-\makeatother
-
+\input{../final.tex}
 \begin{document}
   abc
   \parbreak{}
   \index{franko}{0085}
   \parcont{}
+  abc abc
+
+  abc
+  \index{franko}{0085}
   abc abc
 
   abc
