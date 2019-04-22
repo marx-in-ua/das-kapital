@@ -1,0 +1,7 @@
+\select@language {ukrainian}
+\contentsline {part}{\partnumberline {перший}Товар і гроші}{4}
+\contentsline {chapter}{\chapternumberline {I}Товар}{5}
+\contentsline {section}{\numberline {1. }Два фактори товару: споживна вартість і вартість (субстанція вартости, величина вартости)}{5}
+\contentsline {part}{\partnumberline {другий}Перетворення грошей на капітал}{6}
+\contentsline {chapter}{\chapternumberline {II}Перетворення грошей на капітал}{7}
+\contentsline {section}{\numberline {1. }Загальна формула капіталу}{7}
