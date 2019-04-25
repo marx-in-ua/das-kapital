@@ -58,6 +58,7 @@
 
 % braces
 \usepackage{tikz}
+\usetikzlibrary{hobby}
 \tikzstyle{every picture}+=[remember picture]
 \tikzstyle{na} = [baseline=-.5ex]
 
