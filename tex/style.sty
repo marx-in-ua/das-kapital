@@ -108,6 +108,13 @@
   \cleardoublepage
 }
 
+%% Sections without num
+\newcommand{\nonumsection}[3]{
+  \section*{#1}
+  \markboth{#1}{#3}
+  \cftaddnumtitleline{toc}{chapter}{}{#1#2#3}{\thepage}
+}
+
 %% TOC
 \renewcommand{\cftpartname}{Відділ~}
 \renewcommand{\cftchaptername}{Розділ~}
