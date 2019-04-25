@@ -93,6 +93,21 @@
 %% Letterine
 %% \usepackage{lettrine}
 
+%% Book title page
+\newcommand{\bookpaget}[2]{
+  \cleardoublepage
+  \thispagestyle{empty}
+  \cftaddnumtitleline{toc}{book}{#1}{#2}{}
+  \null\vspace{3cm}
+  \noindent\htitlespace{\LARGE\scshape #1}
+  
+  \vspace{10pt}
+  \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
+  \Huge\letterspacefont\raggedright\bfseries\MakeUppercase{#2}
+  \end{minipage}
+  \cleardoublepage
+}
+
 %% TOC
 \renewcommand{\cftpartname}{Відділ~}
 \renewcommand{\cftchaptername}{Розділ~}
