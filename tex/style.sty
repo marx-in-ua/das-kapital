@@ -45,8 +45,12 @@
 \makeoddhead{mypage}{}{}{\footnotesize\sffamily\scshape\rightmark\null\defhspace{}}
 
 \pagestyle{mypage}
-
 \aliaspagestyle{part}{empty}
+
+%% no page numbers on TOC
+\renewcommand{\aftertoctitle}{%
+   \thispagestyle{empty}
+   \afterchaptertitle}
 
 \newcommand{\htitlespace}{\hspace{1.5cm}}
 %% Viddil
@@ -115,10 +119,34 @@
   \cftaddnumtitleline{toc}{chapter}{}{#1#2#3}{\thepage}
 }
 
+%%
 %% TOC
-\renewcommand{\cftpartname}{Відділ~}
-\renewcommand{\cftchaptername}{Розділ~}
-\renewcommand{\cftpartaftersnumb}{\\}
+%%
+
+% book
+\renewcommand*{\cftbookpresnum}{\normalsize\rmfamily\scshape\mdseries}
+\renewcommand*{\cftbookfont}{\Large\bfseries\sffamily}
+\renewcommand*{\cftbookname}{~}
+\renewcommand\booknumberlinebox[2]{#2}
+\renewcommand{\cftbookaftersnumb}{\\}
+
+% Viddil
+\renewcommand{\cftpartname}{\normalsize\scshape\mdseries Відділ~}
+\renewcommand*{\cftpartpresnum}{}
+\renewcommand*{\cftpartfont}{\sffamily}
+\renewcommand\partnumberlinebox[2]{#2}
+\renewcommand{\cftpartaftersnumb}{\\ \Large\bfseries}
+\cftpagenumbersoff{part}
+% \setlength{\cftpartnumwidth}{\textwidth}
+
+% rozdil
+
+\renewcommand{\cftchaptername}{\footnotesize{} Розділ~}
+\renewcommand*{\cftchapterpresnum}{}
+\renewcommand{\cftchapterleader}{\mdseries\cftdotfill{\cftdotsep}}
+\renewcommand*{\cftchapterfont}{\normalsize\mdseries\scshape}
+\renewcommand*{\cftchapterpagefont}{\mdseries}
+\setlength{\cftbeforechapterskip}{\smallskipamount}
 
 %% Polish
 \newcommand{\bouillondot}{%
