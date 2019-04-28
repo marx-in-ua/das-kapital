@@ -1,8 +1,18 @@
 \documentclass{kapital}
 \input{../final.tex}
 \begin{document}
+  \frontmatter
+  \input{common/title.tex}
+  \input{common/license.tex}
   \tableofcontents*
-  \input{part.0.tex}
+  \cleardoublepage
+  \pagestyle{mypage}
+  \input{common/about.tex}
+  \input{common/foreword.tex}
+  \mainmatter
+  \input{common/epi.tex}
+  \input{i/part.0.tex}
+  \bookpaget{Книга перша}{Процес продукції капіталу}
   \input{part.1.tex}
   \input{_0101_0102.tex}
   \input{_0103.tex}
@@ -371,4 +381,6 @@
   \input{_0661_0662_0663.tex}
   \input{_0664_0665.tex}
   \input{_0666_0667_0668.tex}
+  \bookpaget{Додаток}{Фрагмент «Капіталу» у~перекладі Івана~Франка}
+  \input{franko/part.1.tex}
 \end{document}
