@@ -73,10 +73,14 @@
 % in text mode
 \newcommand{\splitfrac}[2]{\ifmmode\splitfracm{#1}{#2}\else$\splitfracm{#1}{#2}$\fi}
 
-%% pound
+%% LSD
 \newcommand{\pound}[1]{\,£}
 \newcommand{\shil}[1]{\,ш.}
 \newcommand{\pens}[1]{\,п.}
+
+%% arb
+\newcommand{\abbr}[1]{\mbox{#1}}
+\newcommand{\elli}[1]{\mbox{#1}}
 
 %% ======
 %% Tables
