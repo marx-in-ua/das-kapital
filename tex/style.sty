@@ -127,8 +127,9 @@
 
 \newlength\tocindent
 \setlength\tocindent{2em}
+\newcommand{\tocspace}{\hspace*{\tocindent}}
 
-\renewcommand{\printtoctitle}[1]{\printchaptertitle{\hspace*{\tocindent}#1}}
+\renewcommand{\printtoctitle}[1]{\printchaptertitle{\tocspace{}#1}}
 
 % rozdil
 \renewcommand{\cftchaptername}{\itshape\small Розділ~}
@@ -158,10 +159,10 @@
 \cftpagenumbersoff{book}
 \setlength{\cftbooknumwidth}{\numlen}
 \renewcommand*{\cftbookpresnum}{%
-  \hfill\itshape%
+  \tocspace\hfill\itshape%
 }
 \renewcommand{\cftbookaftersnumb}{%
-  \\\hspace*{-\numlen}\hfil\letterspacefont\MakeUppercase%
+  \\\hspace*{-\numlen}\tocspace\hfil\letterspacefont\MakeUppercase%
 }
 \renewcommand{\cftbookaftersnum}{\hfill}
 \renewcommand*{\cftbookfont}{\large\sffamily}
@@ -174,11 +175,11 @@
 \setlength{\cftpartnumwidth}{\numlen}
 \setlength{\cftpartindent}{0pt}
 \renewcommand*{\cftpartname}{}
-\renewcommand*{\cftpartpresnum}{\hfill\tocviddil}
+\renewcommand*{\cftpartpresnum}{\tocspace\hfill\tocviddil}
 \renewcommand*{\cftpartfont}{}
 \renewcommand{\cftpartaftersnum}{\hfill}
 \renewcommand{\cftpartaftersnumb}{%
-  \\\hspace*{-\numlen}\hfil\large\bfseries\scshape%
+  \\\hspace*{-\numlen}\tocspace\hfil\large\bfseries\scshape%
 }
 \setlength{\cftbeforepartskip}{\medskipamount}
 
