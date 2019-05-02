@@ -75,6 +75,8 @@
 
 %% pound
 \newcommand{\pound}[1]{\,£}
+\newcommand{\shil}[1]{\,ш.}
+\newcommand{\pens}[1]{\,п.}
 
 %% ======
 %% Tables
