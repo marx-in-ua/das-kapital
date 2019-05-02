@@ -101,6 +101,7 @@
 \newcommand{\bookpaget}[2]{
   \cleardoublepage
   \thispagestyle{empty}
+  % \addcontentsline{toc}{book}{\protect\booknumberline{#1}{\protect\ignorespaces#2}}{}
   \cftaddnumtitleline{toc}{book}{#1}{#2}{}
   \null\vspace{3cm}
   \noindent\htitlespace{\LARGE\scshape #1}
@@ -123,7 +124,8 @@
 %% ======
 %% TOC
 %% ======
-
+\newlength\tocindent
+\setlength\tocindent{2em}
 
 % rozdil
 \newlength\rozdwidth
@@ -134,57 +136,55 @@
 \settowidth\rozdnumwidth{\upshape\tiny XXXVIII.} %% largest  number
 \show\rozdnumwidth
 
-\setlength{\cftchapternumwidth}{\rozdnumwidth}
-\renewcommand{\cftchaptername}{\upshape\footnotesize Розділ~\tiny}
-\renewcommand*{\cftchapteraftersnum}{}
+
+% \setlength{\cftchapternumwidth}{\rozdnumwidth}
+\renewcommand{\cftchaptername}{\itshape Розділ~}
+\renewcommand*{\cftchapteraftersnum}{.~}
 \renewcommand{\cftchapterleader}{\mdseries\cftdotfill{\cftdotsep}}
-\renewcommand*{\cftchapterfont}{\normalsize\mdseries\scshape}
+\renewcommand*{\cftchapterfont}{\normalsize\mdseries}
 \renewcommand*{\cftchapterpresnum}{}
 \renewcommand*{\cftchapterpagefont}{\mdseries}
 \setlength{\cftbeforechapterskip}{\smallskipamount}
 
-% book
-\newlength\rozdfullwidth
-\setlength\rozdfullwidth\rozdwidth
-\addtolength\rozdfullwidth\rozdnumwidth
-\show\rozdfullwidth
+\renewcommand\chapternumberlinebox[2]{#2}
+\setlength{\cftchapterindent}{\tocindent}
 
+% klength without margin
 \newlength\numlen
-\setlength\numlen{0.5\textwidth}
+\setlength\numlen{\textwidth}
+\addtolength\numlen{-\@tocrmarg}
 
+% book
+\cftpagenumbersoff{book}
 \setlength{\cftbooknumwidth}{\numlen}
 \renewcommand*{\cftbookpresnum}{%
-  \hspace*{\rozdfullwidth}%
-  \small\rmfamily\scshape\mdseries%
+  \hfill\itshape%
 }
 \renewcommand{\cftbookaftersnumb}{%
-  \\\hspace*{-\numlen}\hspace*{\rozdfullwidth}%
+  \\\hspace*{-\numlen}\hfil\letterspacefont\MakeUppercase%
 }
-\renewcommand*{\cftbookfont}{\large\bfseries\sffamily}
+\renewcommand{\cftbookaftersnum}{\hfill}
+\renewcommand*{\cftbookfont}{\large\sffamily}
 \renewcommand*{\cftbookname}{}
 \setlength{\cftbeforebookskip}{\bigskipamount}
 
 % Viddil
-\newcommand{\tocviddil}{\footnotesize\scshape\mdseries Відділ~}
-\newlength\viddilwidth
-\settowidth\viddilwidth{\tocviddil}
-%\setlength\viddilwidth\rozdfullwidth
-\addtolength\viddilwidth\numlen
-
 \cftpagenumbersoff{part}
+\newcommand{\tocviddil}{\footnotesize\itshape\mdseries Відділ~}
 \setlength{\cftpartnumwidth}{\numlen}
-\renewcommand*{\cftpartname}{\hspace*{\rozdfullwidth}\tocviddil}
-\renewcommand*{\cftpartpresnum}{}
-\renewcommand*{\cftpartfont}{\sffamily\bfseries}
-%\renewcommand\partnumberlinebox[2]{#2}
+\setlength{\cftpartindent}{0pt}
+\renewcommand*{\cftpartname}{}
+\renewcommand*{\cftpartpresnum}{\hfill\tocviddil}
+\renewcommand*{\cftpartfont}{}
+\renewcommand{\cftpartaftersnum}{\hfill}
 \renewcommand{\cftpartaftersnumb}{%
-  \\\hspace*{-\viddilwidth}~~%\hspace*{\rozdfullwidth}%
+  \\\hspace*{-\numlen}\hfil\large\bfseries\scshape%
 }
 \setlength{\cftbeforepartskip}{\medskipamount}
 
 % Pidrozdil
-\setlength{\cftsectionindent}{\rozdwidth}
-\setlength{\cftsectionnumwidth}{\rozdnumwidth}
+\setlength{\cftsectionindent}{0}
+\setlength{\cftsectionnumwidth}{1em}
 \renewcommand*{\cftsectionpresnum}{\hfill}
 
 %% Polish
