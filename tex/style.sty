@@ -47,11 +47,6 @@
 \pagestyle{mypage}
 \aliaspagestyle{part}{empty}
 
-%% no page numbers on TOC
-\renewcommand{\aftertoctitle}{%
-   \thispagestyle{empty}
-   \afterchaptertitle}
-
 \newcommand{\htitlespace}{\hspace{1.5cm}}
 %% Viddil
 
@@ -65,9 +60,9 @@
   \end{minipage}
 }
 
-\renewcommand*{\beforepartskip}{\null\vspace{3cm}\noindent\hspace{1.5cm}}
+\renewcommand*{\beforepartskip}{\cleardoublepage\null\vspace{3cm}\noindent\hspace{1.5cm}}
 \renewcommand*{\midpartskip}{\vskip 10pt}
-\renewcommand*{\afterpartskip}{\vfill\newpage}
+\renewcommand*{\afterpartskip}{\vfill\cleardoublepage}
 
 %% Rozdil
 
@@ -125,11 +120,19 @@
 %% TOC
 %% ======
 
+
 \newlength\tocindent
 \setlength\tocindent{2em}
 \newcommand{\tocspace}{\hspace*{\tocindent}}
 
+
 \renewcommand{\printtoctitle}[1]{\printchaptertitle{\tocspace{}#1}}
+%% no page numbers on TOC
+\renewcommand{\aftertoctitle}{%
+   \thispagestyle{empty}%
+   \pagestyle{empty}%
+   \afterchaptertitle}
+
 
 % rozdil
 \renewcommand{\cftchaptername}{\itshape\small Розділ~}
