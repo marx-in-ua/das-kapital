@@ -152,6 +152,8 @@
 %% Typography
 %% ======
 
+\usepackage[all]{nowidow}
+
 \usepackage{microtype} % [tracking=true]
 \frenchspacing
 
