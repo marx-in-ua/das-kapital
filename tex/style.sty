@@ -117,39 +117,39 @@
 \newcommand{\nonumsection}[3]{
   \section*{#1}
   \markboth{#1}{#3}
-  \cftaddnumtitleline{toc}{chapter}{}{#1#2#3}{\thepage}
+  \cftaddnumtitleline{toc}{section}{}{#1#2\emph{#3}}{\thepage}
   \setcounter{section}{0}
 }
 
 %% ======
 %% TOC
 %% ======
+
 \newlength\tocindent
 \setlength\tocindent{2em}
 
+\renewcommand{\printtoctitle}[1]{\printchaptertitle{\hspace*{\tocindent}#1}}
+
 % rozdil
-\newlength\rozdwidth
-\settowidth\rozdwidth{\upshape\footnotesize Розділ~}
-\show\rozdwidth
-
-\newlength\rozdnumwidth
-\settowidth\rozdnumwidth{\upshape\tiny XXXVIII.} %% largest  number
-\show\rozdnumwidth
-
-
-% \setlength{\cftchapternumwidth}{\rozdnumwidth}
-\renewcommand{\cftchaptername}{\itshape Розділ~}
-\renewcommand*{\cftchapteraftersnum}{.~}
-\renewcommand{\cftchapterleader}{\mdseries\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchaptername}{\itshape\small Розділ~}
+\renewcommand*{\cftchapteraftersnum}{%
+  \itshape\small\addfontfeature{LetterSpace=0}.~\bfseries\upshape\normalsize%
+}
+\renewcommand{\cftchapterleader}{\tiny\mdseries\cftdotfill{\cftdotsep}}
 \renewcommand*{\cftchapterfont}{\normalsize\mdseries}
-\renewcommand*{\cftchapterpresnum}{}
+\renewcommand*{\cftchapterpresnum}{\footnotesize\addfontfeature{LetterSpace=5}}
 \renewcommand*{\cftchapterpagefont}{\mdseries}
 \setlength{\cftbeforechapterskip}{\smallskipamount}
 
 \renewcommand\chapternumberlinebox[2]{#2}
 \setlength{\cftchapterindent}{\tocindent}
 
-% klength without margin
+\newlength\rozdwidth
+\settowidth\rozdwidth{\itshape\small Розділ~}
+\setlength{\cftchapternumwidth}{-\rozdwidth}
+
+
+% length without margin
 \newlength\numlen
 \setlength\numlen{\textwidth}
 \addtolength\numlen{-\@tocrmarg}
@@ -183,9 +183,10 @@
 \setlength{\cftbeforepartskip}{\medskipamount}
 
 % Pidrozdil
-\setlength{\cftsectionindent}{0}
-\setlength{\cftsectionnumwidth}{1em}
+\setlength{\cftsectionindent}{0pt}
+\setlength{\cftsectionnumwidth}{\tocindent}
 \renewcommand*{\cftsectionpresnum}{\hfill}
+\renewcommand{\cftsectionleader}{\tiny\mdseries\cftdotfill{\cftdotsep}}
 
 %% Polish
 \newcommand{\bouillondot}{%
