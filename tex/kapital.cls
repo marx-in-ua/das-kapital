@@ -87,6 +87,7 @@
 %% ======
 
 \usepackage{caption}
+\usepackage{here}
 \DeclareCaptionFont{tablefont}{\tablefont}
 \captionsetup{font=tablefont, textfont=bf}
 
@@ -223,10 +224,16 @@
 \makeindex{ii}
 \makeindex{iii1}
 \makeindex{iii2}
+\makeindex{complex}
 
 %% fix spacing on index
 \let\oldmyindex\index
 \renewcommand*{\index}[2]{\unskip\oldmyindex{#1}{#2}}
+
+%% tables index
+\AtBeginEnvironment{tabularx}{\index{complex}{table}}
+\AtBeginEnvironment{tabular}{\index{complex}{table}}
+\AtBeginEnvironment{longtable}{\index{complex}{table}}
 
 %% Breaks
 \newcommand{\parbreak}{¬ \emph{(абзац продовжується на наступній сторінці)}}
