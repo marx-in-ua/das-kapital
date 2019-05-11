@@ -1,25 +1,26 @@
 \setlength{\tabcolsep}{4.5pt}
 \index{i}{0605}  %% посилання на сторінку оригінального видання
-\begin{table}
+
+\begin{table}[H]
 \begin{flushright}
   \emph{Таблиця D}
 \end{flushright}
 
 \caption*{Доходи, що підлягають оподаткуванню, у фунтах стерлінґів}
 \footnotesize
-  \noindent\begin{tabularx}{\textwidth}{Xcccccc}
+  \noindent\begin{tabularx}{\textwidth}{@{}Xrrrrrr@{}}
   \toprule
     & 1860 & 1861 & 1862 & 1863 & 1864 & 1865 \\
-  \cmidrule(rl){2-7}
+  \cmidrule(l){2-7}
 
   \makecell{Рубрика А} \\
 
-  \makehangcell{Земельна рента} & \num{13.893.829} & \num{13.003.554} & \num{13.398.938} & \num{13.494.091} & \num{13.470.700} & \num{13.801.616} \\
+  \makehangcell{Земельна рента\dotfill{}} & \num{13.893.829} & \num{13.003.554} & \num{13.398.938} & \num{13.494.091} & \num{13.470.700} & \num{13.801.616} \\
 
   \addlinespace
   \makecell{Рубрика В} \\
 
-  \makehangcell{Зиски фармерів} 
+  \makehangcell{Зиски фармерів\dotfill{}} 
     & \phantom{0}\num{2.765.387} & \phantom{0}\num{2.773.644} & \phantom{0}\num{2.937.899} 
     & \phantom{0}\num{2.938.823} & \phantom{0}\num{2.930.874} & \phantom{0}\num{2.946.072} \\
 
@@ -40,13 +41,13 @@
 1866.}
 \setlength{\tabcolsep}{\tabcolsepdef}
 
-Під рубрикою D збільшення прибутку від 1853 до 1864~\abbr{р.}
+\noindent{}Під рубрикою D збільшення прибутку від 1853 до 1864~\abbr{р.}
 становило пересічно лише 0,93\%, тимчасом як у Великобрітанії
 воно за той самий період становило 4,58\%. Дальша таблиця показує
 розподіл зисків (за винятком зисків фармерів) у 1864 і
 1865~\abbr{рр.}
 
-\begin{table}
+\begin{table}[H]
 
   \begin{flushright}
     \emph{Таблиця Е}
@@ -57,21 +58,23 @@
   
   \small
 
-  \settowidth{\myheight}{\small\tablefont \num{4.368.610}, розподілений}
-  \noindent\begin{tabularx}{\textwidth}{X>{\hangindentdef}p{\myheight}>{\hangindentdef}p{\myheight}}
+  \settowidth{\myheight}{\small\tablefont\num{4.368.610}, розподілений}
+  \addtolength{\myheight}{2pt}
+  \noindent\begin{tabularx}{\textwidth}{@{}X>{\hangindentdef}p{\myheight}>{\hangindentdef}p{\myheight}@{}}
 
   \toprule
-    & \makecell{1864~\abbr{р.}} & \makecell{1865~\abbr{р.}} \\
-    & \makecell{Фунтів стерлінґів} & \makecell{Фунтів стерлінґів} \\
+
+    & 1864~\abbr{р.}, \pound{Фунтів стерлінґів}
+    & 1865~\abbr{р.}, \pound{Фунтів стерлінґів}  \\
     \midrule
   
   \makehangcell{Загальний річний дохід\dotfill{}} &
-  \num{4.368.610}, розподілений між особами \num{17.467} &
+  \num{4.368.610}, розподілений між \num{17.467} особами &
   \num{4.669.979}, розподілений між \num{18.081} особою \\
 
-  \makehangcell{Річний дохід понад 60 ф. ст. і нижче за 100 ф. ст\dotfill{}} &
-  \samewidth{0.}{~}\num{238.626}, розподілений між \num{5.015} особами &
-  \samewidth{0.}{~}\num{222.575}, розподілений між \num{4.703} особами \\
+  \makehangcell{Річний дохід понад 60\pound{ ф. ст.} і нижче за 100\pound{ ф. ст}\dotfill{}} &
+  \samewidth{0\,}{~}\num{238.626}, розподілений між \num{5.015} особами &
+  \samewidth{0\,}{~}\num{222.575}, розподілений між \num{4.703} особами \\
 
   \makehangcell{Із загального річного доходу\dotfill{}} &
   \num{1.979.066}, розподілений між \num{11.321} особами &
@@ -90,16 +93,16 @@
   \num{1.320.996}, розподілений між 186 особами \\
 
   &
-  \samewidth{0.}{~}\num{430.535}, розподілений між 105 особами &
-  \samewidth{0.}{~}\num{584.458}, розподілений між 122 особами \\
+  \samewidth{0\,}{~}\num{430.535}, розподілений між 105 особами &
+  \samewidth{0\,}{~}\num{584.458}, розподілений між 122 особами \\
 
   &
-  \samewidth{0.}{~}\num{646.377}, розподілений між 26 особами &
-  \samewidth{0.}{~}\num{736.448}, розподілений між 28 особами \\
+  \samewidth{0\,}{~}\num{646.377}, розподілений між 26 особами &
+  \samewidth{0\,}{~}\num{736.448}, розподілений між 28 особами \\
 
   &
-  \samewidth{0.}{~}\num{262.610}, розподілений між 3 особами &
-  \samewidth{0.}{~}\num{274.528}, розподілений між 3 особами\footnotemark{} \\
+  \samewidth{0\,}{~}\num{262.610}, розподілений між 3 особами &
+  \samewidth{0\,}{~}\num{274.528}, розподілений між 3 особами\footnotemark{} \\
 
   \end{tabularx}
 \end{table}

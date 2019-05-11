@@ -30,19 +30,19 @@ Somerset, Witts, Stafford, Oxford, Berks і Herts. «Кількість
 це видно з нижченаведеної таблиці.
 
 
-\begin{center}
-\captionnew{Тижневе споживання вуглецю й азоту пересічно \\ на одного сільського робітника}
-
-\noindent\begin{tabularx}{0.6\textwidth}{Xcc}
+\begin{table}[H]
+\centering
+\caption*{Тижневе споживання вуглецю й азоту пересічно \\ на одного сільського робітника}
+\noindent\begin{tabular}{lrr}
 \toprule
-& \makecell{Вуглецю\\(грани)} & \makecell{Азоту\\(грани)} \\
+& \makecell[r]{Вуглецю\\(грани)} & \makecell[r]{Азоту\\(грани)} \\
 \cmidrule{2-3}
 Англія\dotfill{} & 40,673 & 1,594 \\
 Велз\dotfill{} & 48,354 & 2,031 \\
 Шотляндія\dotfill{} & 48,980 & 2,348 \\
 Ірляндія\dotfill{} & 43,366 & 2,439\hang{l}{\footnotemark{}}\\
-\end{tabularx}
-\end{center}
+\end{tabular}
+\end{table}
 
 \footnotetext{
 Там же, стор. 17. Англійський сільський робітник дістає лише
@@ -94,20 +94,20 @@ Somerset, Witts, Stafford, Oxford, Berks і Herts. «Кількість
 свою чисельність на тому самому рівні. Так, у Cardiganshire було:
 
 \begin{center}
-\noindent\begin{tabularx}{0.4\textwidth}{X@{}cc}
-& 1851~\abbr{р.} & 1861~\abbr{р.} \\
+\noindent\begin{tabular}{lrr}
+& \emph{1851~\abbr{р.}} & \emph{1861~\abbr{р.}} \\
 Чоловічої статі\dotfill{}& \num{45.155} & \num{44.446} \\
-Жіночої статі\dotfill{}& \num{22.459} & \num{52.955} \\
+Жіночої статі & \num{22.459} & \num{52.955} \\
 \cmidrule(r){2-3}
 & \num{97.614} & \num{97.401}
-\end{tabularx}
+\end{tabular}
 \end{center}
 (Звіт д-ра Гентера в «Public Health. Seventh Report 1864», London
 1865, p. 498--502 passim.).
 }
 
 \index{i}{0587}  %% посилання на сторінку оригінального видання
-«Кожна сторінка звіту д-ра Гентера, — каже д-р Сімон
+\noindent{}«Кожна сторінка звіту д-ра Гентера, — каже д-р Сімон
 у своєму офіціяльному санітарному звіті, — свідчить про недостатню
 кількість і злиденну якість помешкань нашого сільського
 робітника. І ось уже багато років, як стан його з цього боку проґресивно
