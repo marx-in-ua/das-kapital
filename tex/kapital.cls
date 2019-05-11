@@ -134,7 +134,7 @@
 }
 %% paragrraph cell
 \newcommand{\makehangcell}[1]{
- \noindent\parbox[b]{\hsize}{\strut\hangindentdef{}#1\strut} %
+ \noindent\parbox[b]{\hsize}{\strut\raggedright\hangindentdef{}#1\strut} %
 }
 
 %% hang out of align
