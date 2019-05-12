@@ -125,6 +125,10 @@
 \setlength\tocindent{2em}
 \newcommand{\tocspace}{\hspace*{\tocindent}}
 
+%% No hyphen in TOC
+\setrmarg{2.55em plus 1fil}
+%% hack to center space
+\newcommand{\cntspace}{\hfil\hfil\hspace{0em plus 1fil}}
 
 \renewcommand{\printtoctitle}[1]{\printchaptertitle{\tocspace{}#1}}
 %% no page numbers on TOC
@@ -165,7 +169,7 @@
   \tocspace\hfill\itshape%
 }
 \renewcommand{\cftbookaftersnumb}{%
-  \\\hspace*{-\numlen}\tocspace\hfil\letterspacefont\MakeUppercase%
+  \\\hspace*{-\numlen}\tocspace\cntspace{}\letterspacefont\MakeUppercase%
 }
 \renewcommand{\cftbookaftersnum}{\hfill}
 \renewcommand*{\cftbookfont}{\large\sffamily}
@@ -182,7 +186,7 @@
 \renewcommand*{\cftpartfont}{}
 \renewcommand{\cftpartaftersnum}{\hfill}
 \renewcommand{\cftpartaftersnumb}{%
-  \\\hspace*{-\numlen}\tocspace\hfil\large\bfseries\scshape%
+  \\\hspace*{-\numlen}\tocspace\cntspace{}\large\bfseries\scshape%
 }
 \setlength{\cftbeforepartskip}{\medskipamount}
 
