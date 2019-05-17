@@ -29,6 +29,10 @@
 % Temporary disable due to franch footnotes
 % \setotherlanguage{french}
 
+% similar to [babelshorthands=true]
+\newcommand{\dash}{\nobreak-\hskip\z@skip}
+
+
 \RequirePackage{counters}
 
 %% We move headings one level up
