@@ -55,7 +55,10 @@
 \renewcommand{\thesubsubsection}{\arabic{subsubsection}. }
 \renewcommand{\theparagraph}{\Alph{subsubsection}) }
 
-% math
+%% ======
+%% Math
+%% ======
+
 \RequirePackage{xfrac}
 \RequirePackage{amsmath}
 \usepackage{abraces} % do we need it (?)
@@ -82,9 +85,27 @@
 \newcommand{\shil}[1]{\,ш.}
 \newcommand{\pens}[1]{\,п.}
 
-%% arb
+%% abbr
 \newcommand{\abbr}[1]{\mbox{#1}}
 \newcommand{\elli}[1]{\mbox{#1}}
+
+%% Duplicate signs
+\newcommand\duplicatemath[1]{#1\discretionary{}{\the\textfont0 #1}{}}
+\newcommand\duplicate[1]{\relax
+\ifmmode
+\duplicatemath#1%
+\else
+\ifhmode\unskip\fi\nobreak\ $\duplicatemath#1$\nobreak
+\fi}
+
+\newcommand{\deq}{\duplicate{=}}
+\newcommand{\dplus}{\duplicate{+}}
+
+% Do not break line at mdash
+\usepackage{newunicodechar}
+\newunicodechar{×}{\duplicate{\times}}
+\newunicodechar{—}{\unskip\ifmmode\duplicatemath\minus\else~---\fi}
+
 
 %% ======
 %% Tables
@@ -167,10 +188,6 @@
 
 \usepackage{microtype} % [tracking=true]
 \frenchspacing
-
-% Do not break line at mdash
-\usepackage{newunicodechar}
-\newunicodechar{—}{\unskip\ifmmode-\else~---\fi}
 
 % L e t t e r  s p a c e (\so)
 \RequirePackage{soul} 
