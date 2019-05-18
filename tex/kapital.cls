@@ -71,14 +71,27 @@
 
 \input{fonts.tex}
 
-%% frac in text mode
+%% sfrac
+\let\oldsfrac\sfrac
+\renewcommand{\sfrac}[2]{\ensuremath{\oldsfrac{#1}{#2}}}
+
+%% frac 
+%% The latest fixes the linespace in inline fractions
 \let\oldfrac\frac
-\renewcommand{\frac}[2]{\ifmmode{\oldfrac{#1}{#2}}\else$\oldfrac{#1}{#2}$\fi}
+\renewcommand{\frac}[2]{\ensuremath{%
+\mathchoice{%
+\oldfrac{#1}{#2}}{%
+\smash{\oldfrac{#1}{%
+  \raisebox{1.5pt}{$\scriptstyle #2$}}%
+}}{%
+\oldfrac{#1}{#2}}{%
+\oldfrac{#1}{#2}}}%
+}
 
 %% split frac
 \newcommand{\splitfracm}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
 % in text mode
-\newcommand{\splitfrac}[2]{\ifmmode\splitfracm{#1}{#2}\else$\splitfracm{#1}{#2}$\fi}
+\newcommand{\splitfrac}[2]{\ensuremath{\splitfracm{#1~}{#2}}}
 
 %% LSD
 \newcommand{\pound}[1]{\,£}
@@ -95,7 +108,7 @@
 \ifmmode
 \duplicatemath#1%
 \else
-\ifhmode\unskip\fi\nobreak\ $\duplicatemath#1$\nobreak
+\ifhmode\unskip\fi\nobreak\ $\duplicatemath#1$\nobreak%
 \fi}
 
 \newcommand{\deq}{\duplicate{=}}
