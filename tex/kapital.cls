@@ -81,9 +81,9 @@
 \renewcommand{\frac}[2]{\ensuremath{%
 \mathchoice{%
 \oldfrac{#1}{#2}}{%
-\smash{\oldfrac{#1}{%
+\oldfrac{#1}{%
   \raisebox{1.5pt}{$\scriptstyle #2$}}%
-}}{%
+}{%
 \oldfrac{#1}{#2}}{%
 \oldfrac{#1}{#2}}}%
 }
