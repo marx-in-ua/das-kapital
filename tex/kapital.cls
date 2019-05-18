@@ -231,6 +231,11 @@
 \patchcmd\FN@allmarks{266}{256}{}{\fail}
 \makeatother
 
+% allow marks to be sans serif
+\makeatletter
+\patchcmd{\@makefnmark}{\normalfont}{\scriptsize}{}{}
+\makeatother
+
 % 100 note
 \DeclareNewFootnote{default}
 
