@@ -67,5 +67,4 @@ iii.2 Prym red.
 	I. !100 - !0101 - fix link to pages in footnote
 	remove note on i/0540 Див. стор. 736.
 	page ref 392 on iii.1.423
-	footnote ref on i.210
-    ряд парафіни: on page 246
+	644  - join note
