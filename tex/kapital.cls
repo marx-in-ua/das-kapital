@@ -239,6 +239,11 @@
 % 100 note
 \DeclareNewFootnote{default}
 
+\counterwithout{footnote}{chapter}
+\makeatletter
+\@addtoreset{footnote}{part}
+\makeatother
+
 % ** note
 \DeclareNewFootnote{Z}[fnsymbolsingle]
 \MakeSortedPerPage{footnoteZ}
