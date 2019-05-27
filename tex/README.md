@@ -64,7 +64,4 @@ iii.1 Red ukr per, Prym red nim vud F.E.
 iii.2 Prym red.
 
 Аfter 
-	I. !100 - !0101 - fix link to pages in footnote
-	remove note on i/0540 Див. стор. 736.
 	page ref 392 on iii.1.423
-	644  - join note
