@@ -224,6 +224,7 @@
 
 % footnotes 
 \RequirePackage{bigfoot}
+
 % fix bug in bigfoot 2015/08/30 2.1
 % see https://tex.stackexchange.com/questions/471379/footnote-marks-missplaced-with-bigfoot/
 \usepackage{xpatch}
@@ -233,7 +234,7 @@
 
 % allow marks to be sans serif
 \makeatletter
-\patchcmd{\@makefnmark}{\normalfont}{\scriptsize}{}{}
+\renewcommand{\@makefnmark}{\hbox{\@textsuperscript{\scriptsize\@thefnmark}\!}}
 \makeatother
 
 % 100 note
