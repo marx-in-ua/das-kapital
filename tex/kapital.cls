@@ -284,6 +284,8 @@
 \newcommand{\parbreak}{¬ \emph{(абзац продовжується на наступній сторінці)}}
 \newcommand{\parcont}{\noindent \emph{(абзац починається на попередній сторінці) ¶}}
 
+\newcommand{\manualpagebreak}{\newpage}
+
 %% styling
 \RequirePackage{style}
 
