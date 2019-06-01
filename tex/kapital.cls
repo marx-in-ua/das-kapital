@@ -88,6 +88,12 @@
 \oldfrac{#1}{#2}}}%
 }
 
+%% oversets
+\newcommand{\oversetn}[2]{\overset{\raisebox{-2pt}{$\scriptstyle #1$}}{#2}}
+\newcommand{\oversetl}[3]{\oversetn{#1~\tikz[na] \coordinate (#2);}{#3}}
+\newcommand{\oversetr}[3]{\oversetn{\tikz[na] \coordinate (#2);~#1}{#3}}
+
+
 %% split frac
 \newcommand{\splitfracm}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
 % in text mode
@@ -119,6 +125,8 @@
 \newunicodechar{×}{\duplicate{\times}}
 \newunicodechar{—}{\unskip\ifmmode\duplicatemath\minus\else~---\fi}
 
+% linerule
+\newcommand{\linerule}[1]{\rule[0.5ex]{#1em}{0.8pt}}
 
 %% ======
 %% Tables

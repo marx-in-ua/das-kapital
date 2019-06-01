@@ -27,17 +27,16 @@ to these factories». (Там же, стор. 20).
 округах порівняно з «рільничими округами з нормальним здоров'ям».
 На доказ подаю, між іншим, оцю таблицю з його звіту від 1861~\abbr{р.}:
 
-
-\setlength{\myheight}{9.5em}
-
-\noindent\begin{tabularx}{\textwidth}{Xccccc}
+\setlength{\tabcolsep}{3pt}
+\medskip
+\noindent\begin{tabularx}{\textwidth}{@{}Xrr@{\hspace{12pt}}rrl@{}}
   \toprule
-  \makecell{Назва округ} &
-  \makevertcell{\myheight}{Відсоток дорослих чоловіків, що працюють у мануфактурі} &
-  \makevertcell{\myheight}{Смертність від нез\-ду\-жан\-ня на легені на кожні \num{100.000} чоловік.} &
-  \makevertcell{\myheight}{Відсоток дорослих жінок, що працюють у мануфактурі} &
-  \makevertcell{\myheight}{Смертність від нез\-ду\-жан\-ня на легені на кожні \num{100.000} жінок} &
-  \makecell{Рід праці \\ жінок }\\
+  \makecell[l]{~\\~\\~\\~\\Назва округ} &
+  \makecell[r]{~\\\% дорослих\\ чоловіків,\\ що працюють\\ у мануфактурі} &
+  \makecell[r]{Смертність від\\ нездужання \\ на легені\\ на кожні \\ \num{100.000} чоловік} &
+  \makecell[r]{~\\\% дорослих\\ жінок,\\ що працюють\\ у мануфактурі} &
+  \makecell[r]{Смертність від \\ нездужання \\ на легені\\ на кожні \\ \num{100.000} жінок} &
+  \makecell[l]{~\\~\\~\\Рід праці \\ жінок }\\
   \midrule
   Wigam\dotfill{}            & 14,9 & 598 & 18,0 & 644 & бавовна \\
   Blackburn\dotfill{}        & 42,6 & 708 & 34,9 & 734 & \ditto{бавовна} \\
@@ -47,9 +46,10 @@ to these factories». (Там же, стор. 20).
   Leck\dotfill{}             & 14,9 & 588 & 17,9 & 705 & \ditto{шовк} \\
   Stoke-upon-Trent\dotfill{} & 36,6 & 721 & 19,3 & 665 & ганчарство \\
   Woolstanton\dotfill{}      & 30,4 & 726 & 13,9 & 727 & \ditto{ганчарство} \\
-  8 здорових рільничих округ\dotfill{} &  \textemdash & 305 & \textemdash & 340 & \textemdash \\
+  8 здорових \\ 
+  \indentdef{}рільничих округ\dotfill{} &  \textemdash & 305 & \textemdash & 340 & \textemdash \\
 \end{tabularx}
-
+\setlength{\tabcolsep}{\tabcolsepdef}
 }. Незважаючи на протести фабричних
 інспекторів, які повторювалися щопівроку, це неподобство
 триває й досі\footnote{
