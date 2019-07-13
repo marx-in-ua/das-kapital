@@ -142,6 +142,7 @@
 \usepackage{multirow}
 \usepackage{longtable}
 \usepackage{rotating}
+\usepackage{ragged2e}
 
 %% set font
 \newcommand{\settablefont}{%
