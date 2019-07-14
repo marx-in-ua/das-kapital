@@ -1,7 +1,6 @@
 \noindent{}З попередньої таблиці маємо такий результат:
 \index{i}{0603}  %% посилання на сторінку оригінального видання
 
-\begin{center}
   \noindent\begin{tabular}{rrrr}
       Коні & Рогата худоба & Вівці & Свині \\
       Абсолютне & Абсолютне & Абсолютне & Абсолютне \\
@@ -9,9 +8,8 @@
       \num{72.358} & \num{116.626} & \num{146.608} & \num{28.819}\hang{l}{\footnotemark{}}\\
   \end{tabular}
   \footnotetext{Результат був би ще несприятливіший, коли б ми пішли ще далі
-      назад. Так, овець 1865~\abbr{р.} було \num{3.688.742}, а року 1856 — \num{3.694.294}; свиней
+      назад. Так овець 1865~\abbr{р.} було \num{3.688.742}, а року 1856 — \num{3.694.294}; свиней
       року 1865 було \num{1.299.893}, а року 1858 — \num{1.409.833}.}
-\end{center}
 
 \noindent{}Звернімось тепер до рільництва, що постачає засоби існування
 для худоби й людей. У дальшій таблиці обчислено збільшення
@@ -20,7 +18,7 @@
 ячмінь, жито, квасолю й горох, зеленина — картоплю, турнепс,
 білі й червоні буряки, капусту, моркву, пастернак, вику й~\abbr{т. ін.}
 
-\setlength{\tabcolsep}{2pt}
+\setlength{\tabcolsep}{3pt}
 
 \begin{table}[H]\small
   \settowidth\rotheadsize{шення}
@@ -29,13 +27,13 @@
     \emph{Таблиця В}
   \end{flushright}
   \caption*{Збільшення або зменшення засівної площі й лук (зглядно толок) в акрах}
-  \noindent\begin{tabular}{cccccccccc}
+  \noindent\begin{tabularx}{\textwidth}{X*{9}{r}}
   \toprule
-    \multirowcell{2}{\makecell{Роки}} &
-    Збіжжя &
-    \multicolumn{2}{c}{Зеленина} &
-    \multicolumn{2}{c}{\makecell{Луки й ко-\\нюшина}} &
-    \multicolumn{2}{c}{Льон} &
+    \multirowcell{2}{\makecell[l]{Роки}} &
+    \makecell{~\\~\\Збіжжя} &
+    \multicolumn{2}{c}{\makecell{~\\~\\Зеленина}} &
+    \multicolumn{2}{c}{\makecell{~\\Луки й\\конюшина}} &
+    \multicolumn{2}{c}{\makecell{~\\~\\Льон}} &
     \multicolumn{2}{c}{\makecell{Загальна кількість \\ землі для рільни-\\цтва і скотарства}} \\
 
     \cmidrule(l){2-2}
@@ -44,15 +42,15 @@
     \cmidrule(l){7-8}
     \cmidrule(l){9-10}
    &
-  \makecell{Змен-\\шення} &
-  \makecell{Змен-\\шення} &
-  \makecell{Збіль-\\шення} &
-  \makecell{Змен-\\шення} &
-  \makecell{Збіль-\\шення} &
-  \makecell{Змен-\\шення} &
-  \makecell{Збіль-\\шення} &
-  \makecell{Змен-\\шення} &
-  \makecell{Збіль-\\шення} \\
+  \makecell[r]{Змен-\\шення} &
+  \makecell[r]{Змен-\\шення} &
+  \makecell[r]{Збіль-\\шення} &
+  \makecell[r]{Змен-\\шення} &
+  \makecell[r]{Збіль-\\шення} &
+  \makecell[r]{Змен-\\шення} &
+  \makecell[r]{Збіль-\\шення} &
+  \makecell[r]{Змен-\\шення} &
+  \makecell[r]{Збіль-\\шення} \\
   \midrule
     1861 & \phantom{0}\num{15.701} & \phantom{0}\num{36.974} & \textemdash{} & \num{47.969} & \textemdash{} & \textemdash{} &  \phantom{0}\num{19.271} & \phantom{0}\num{81.873} & \textemdash{} \\
     
@@ -64,8 +62,8 @@
     
     1865 & \phantom{0}\num{72.450} & \textemdash{} & \num{25.241} & \textemdash{} & \num{68.970} & \num{50.159} & \textemdash{} & \phantom{0}\num{28.218} & \textemdash{} \\
     
-    1861\textemdash{}1865 & \num{428.041} & \num{107.984} & \textemdash{} & \textemdash{} & \num{82.834} & \textemdash{} & \num{122.850} & \num{330.860} & \textemdash{} \\
-  \end{tabular}
+    1861\textendash{}1865 & \num{428.041} & \num{107.984} & \textemdash{} & \textemdash{} & \num{82.834} & \textemdash{} & \num{122.850} & \num{330.860} & \textemdash{} \\
+  \end{tabularx}
 \end{table}
 
 \setlength{\tabcolsep}{\tabcolsepdef}
