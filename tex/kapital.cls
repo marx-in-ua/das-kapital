@@ -75,6 +75,9 @@
 \let\oldsfrac\sfrac
 \renewcommand{\sfrac}[2]{\ensuremath{\oldsfrac{#1}{#2}}}
 
+%% fraction in tables
+\newcommand{\tbfrac}[2]{\sfrac{\textsf{#1}}{\textsf{#2}}}
+
 %% frac 
 %% The latest fixes the linespace in inline fractions
 \let\oldfrac\frac
@@ -100,6 +103,7 @@
 \newcommand{\splitfrac}[2]{\ensuremath{\splitfracm{#1~}{#2}}}
 
 %% LSD
+\newcommand{\poundsign}[1]{£}
 \newcommand{\pound}[1]{\,£}
 \newcommand{\shil}[1]{\,ш.}
 \newcommand{\pens}[1]{\,п.}
@@ -267,6 +271,9 @@
 \def\footnotemarkA{\refstepcounter{footalt}%
    \Footnotemarkdefault{\thefootalt}}
 \def\footnotetextA{\Footnotetextdefault{\thefootalt}}
+
+%% fix footnotes on minipage
+\renewcommand\thempfootnote{\arabic{footnote}}
 
 %% indexes 
 %% hack to prevent warning
