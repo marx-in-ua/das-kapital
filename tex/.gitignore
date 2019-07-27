@@ -5,3 +5,8 @@
 *.aux
 .texlive*/
 */*/*
+# latex mk
+*.ilg
+*.ind
+*.fdb_latexmk
+*.fls
