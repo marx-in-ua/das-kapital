@@ -11,7 +11,7 @@ Image from https://github.com/blang/latex-docker
 	$ docker exec -it latex_daemon lualatex --interaction=nonstopmode --output-directory=test/ 0001.tex
 
 	# Final build
-	$ docker exec -it latex_daemon latexmk -lualatex -outdir=i/ i/main.tex
+	$ ./build.sh i/ book.i
 
 	# Stop the daemon
 	docker stop latex_daemon
