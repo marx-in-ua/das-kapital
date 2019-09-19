@@ -3,31 +3,100 @@
 залежно від специфічної родючости землі кожного типу, пропорційно величині
 додаткового капіталу. В XXXIX розділі ми виходили з такої таблиці І:
 
-Таблиця І
+\begin{table}[h]
+  \begin{center}
+    \emph{Таблиця І}
+    \footnotesize
 
-Рід землі    Акри Капітал    Ціна продукц. Продукт в кварт.
-Продажна  ціна    Здобуток    Рента    Норма  надзиску
-        1 ф. ст. ф. ст. ф. ст. ф. ст. ф. ст. Кварт. ф. ст.
-А....    1    2 1/2    1/2    3    1    3    3    0    0    0
-В....    1    2 1/2    1/2    3    2    3    6    1    3    120\%\footnote*{
-В німецькому тексті тут стоїть «12\%, 24\%, 36\%». Очевидна помилка. Прим. Ред.
-}
-C....    1    2 1/2    1/2    3    3    3    9    2    6    240\%
-D....    1    2 1/2    1/2    3    4    3    12    3    9    360\%
-Разом. .4    10               12    10        30    6    18
+  \begin{tabular}{c c c c c c c c c c c}
+    \toprule
+      \multirowcell{2}{\makecell{Рід \\землі}} &
+      \multirowcell{2}{\rotatebox[origin=c]{90}{Акри}} &
+      \rotatebox[origin=c]{90}{Капітал} &
+      \rotatebox[origin=c]{90}{Зиск} &
+      \rotatebox[origin=c]{90}{\makecell{Ціна про- \\ дукції}} &
+      \multirowcell{2}{\rotatebox[origin=c]{90}{\makecell{Продукт \\ в кварт.}}} &
+      \rotatebox[origin=c]{90}{\makecell{Продажна \\ ціна}} &
+      \rotatebox[origin=c]{90}{Здобуток} &
+      \multicolumn{2}{c}{Рента} &
+      \multirowcell{2}{\makecell{Норма \\надзиску}} \\
+
+      \cmidrule(rl){3-3}
+      \cmidrule(rl){4-4}
+      \cmidrule(rl){5-5}
+      \cmidrule(rl){7-7}
+      \cmidrule(rl){8-8}
+      \cmidrule(rl){9-10}
+
+       &  &  ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &  \\
+      \midrule
+
+      A & 1 &  \phantom{0}2\sfrac{1}{2} & \sfrac{1}{2} & \phantom{0}3 & \phantom{0}1 & 3 & \phantom{0}3 & 0 & \phantom{0}0 & \phantom{00}0\\
+      B & 1 &  \phantom{0}2\sfrac{1}{2} & \sfrac{1}{2} & \phantom{0}3 & \phantom{0}2 & 3 & \phantom{0}6 & 1 & \phantom{0}3 & 120\% \footnotemarkZ{}\\ % ця мітка у заголовку \\
+      C & 1 &  \phantom{0}2\sfrac{1}{2} & \sfrac{1}{2} & \phantom{0}3 & \phantom{0}3 & 3 & \phantom{0}9 & 2 & \phantom{0}6 & 240\%\\
+      D & 1 &  \phantom{0}2\sfrac{1}{2} & \sfrac{1}{2} & \phantom{0}3 & \phantom{0}4 & 3 & 12           & 3 & \phantom{0}9 & 360\%\\
+     \cmidrule(rl){1-1}
+     \cmidrule(rl){2-2}
+     \cmidrule(rl){3-3}
+     \cmidrule(rl){5-5}
+     \cmidrule(rl){6-6}
+     \cmidrule(rl){8-8}
+     \cmidrule(rl){9-9}
+     \cmidrule(rl){10-10}
+
+     Разом & 4 & 10 & & 12 & 10 & & 30 & 6 & 18 &\\
+  \end{tabular}
+
+  \end{center}
+\end{table}
+\footnotetextZ{В німецькому тексті тут стоїть «12\%, 24\%, 36\%». Очевидна помилка. \emph{Прим. Ред.}} % текст примітки прямо під заголовком
 
 Тепер ця таблиця перетворюється на:
+\begin{table}[h]
+  \begin{center}
+    \emph{Таблиця ІI}
+    \footnotesize
 
-Таблиця II
+  \begin{tabular}{c c c c c c c c c c c}
+    \toprule
+      \multirowcell{2}{\makecell{Рід \\землі}} &
+      \multirowcell{2}{\rotatebox[origin=c]{90}{Акри}} &
+      Капітал &
+      \rotatebox[origin=c]{90}{Зиск} &
+      \rotatebox[origin=c]{90}{\makecell{Ціна про- \\ дукції}} &
+      \multirowcell{2}{\rotatebox[origin=c]{90}{\makecell{Продукт \\ в кварт.}}} &
+      \rotatebox[origin=c]{90}{\makecell{Продажна \\ ціна}} &
+      \rotatebox[origin=c]{90}{Здобуток} &
+      \multicolumn{2}{c}{Рента} &
+      \multirowcell{2}{\rotatebox[origin=c]{90}{\makecell{Норма \\ надзиску}}} \\
 
-Рід  землі    Акри  Капітал    Зиск    Ціна продукції Продукт в кварт.
-Продажна  ціна    Здобуток    Рента    Норма  надзиску
-        ф. ст. ф. ст. ф. ст. ф. ст. ф. ст. Кварт. ф. ет.
-А. . .    1    2 1/2 + 2 1/2 = 5    1    6    2    3    6    0    0    0
-В. . .    1    2 1/2 + 2 1/2 = 5    1    6    4    3    12    2    6    120\%
-С. . .    1    2 1/2 + 2 1/2 = 5    1    6    6    3    18    4    12    240\%
-D. . .    1    2 1/2 + 2 1/2 = 5    1    6    8    3    24    6    18    360\%
-Разом.    4          20            20        20            60    12    36
+      \cmidrule(rl){3-3}
+      \cmidrule(rl){4-4}
+      \cmidrule(rl){5-5}
+      \cmidrule(rl){7-7}
+      \cmidrule(rl){8-8}
+      \cmidrule(rl){9-10}
+
+       &  &  ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &  \\
+      \midrule
+
+      A & 1 & 2\sfrac{1}{2} + 2\sfrac{1}{2} = 5 & 1 & 6 & \phantom{0}2 & 3 & \phantom{0}6 & \phantom{0}0 & \phantom{0}0 & \phantom{00}0\phantom{\%}\\
+      B & 1 & 2\sfrac{1}{2} + 2\sfrac{1}{2} = 5 & 1 & 6 & \phantom{0}4 & 3 & 12           & \phantom{0}2 & \phantom{0}6 & 120\% \\ % ця мітка у заголовку \\
+      C & 1 & 2\sfrac{1}{2} + 2\sfrac{1}{2} = 5 & 1 & 6 & \phantom{0}6 & 3 & 18           & \phantom{0}4 & 12 & 240\%\\
+      D & 1 & 2\sfrac{1}{2} + 2\sfrac{1}{2} = 5 & 1 & 6 & \phantom{0}8 & 3 & 25           & \phantom{0}6 & 18 & 360\%\\
+     \cmidrule(rl){1-1}
+     \cmidrule(rl){2-2}
+     \cmidrule(rl){3-3}
+     \cmidrule(rl){6-6}
+     \cmidrule(rl){8-8}
+     \cmidrule(rl){9-9}
+     \cmidrule(rl){10-10}
+
+     Разом & 4 & \phantom{2\sfrac{1}{2} + 2\sfrac{1}{2} =}20 & & & 20 & & 60 & 12 & 36 &\\
+  \end{tabular}
+
+  \end{center}
+\end{table}
 
 Тут немає потреби в тому, щоб капітал вкладати у кожний з типів землі
 в подвоєному розмірі, як це є в таблиці. Закон лишається той самий, скоро
@@ -42,4 +111,4 @@ D. . .    1    2 1/2 + 2 1/2 = 5    1    6    8    3    24    6    18    360\%
 збільшилася б, оброблючись з такою самою витратою капіталу, з якою давніш оброблялись земельні
 дільниці тієї самої якости. В випадку, поданому в таблиці II, наприклад, наслідок був би той самий,
 коли б додатковий капітал,
-в 2 1/2 ф. стерл. на акр було вкладено в другі акри земель B, C і D.
+в 2\sfrac{1}{2} ф. стерл. на акр було вкладено в другі акри земель B, C і D.
