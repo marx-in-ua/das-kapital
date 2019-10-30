@@ -61,7 +61,7 @@
 
 \RequirePackage{xfrac}
 \RequirePackage{amsmath}
-\usepackage{abraces} % do we need it (?)
+%% \usepackage{abraces} % do we need it (?)
 
 % braces
 \usepackage{tikz}
