@@ -61,7 +61,7 @@
 
 \RequirePackage{xfrac}
 \RequirePackage{amsmath}
-\usepackage{abraces} % do we need it (?)
+%% \usepackage{abraces} % do we need it (?)
 
 % braces
 \usepackage{tikz}
@@ -105,6 +105,8 @@
 %% LSD
 \newcommand{\poundsign}[1]{£}
 \newcommand{\pound}[1]{\,£}
+\newcommand{\usdsign}[1]{\$}
+\newcommand{\usd}[1]{\,\$}
 \newcommand{\shil}[1]{\,ш.}
 \newcommand{\pens}[1]{\,п.}
 
