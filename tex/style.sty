@@ -94,20 +94,22 @@
 
 %% Book title page
 \newcommand{\bookpaget}[2]{
-  \color{white}
-  \pagecolor{black}
   \cleardoublepage
   \thispagestyle{empty}
+  \pagecolor{black}
+  
   % \addcontentsline{toc}{book}{\protect\booknumberline{#1}{\protect\ignorespaces#2}}{}
   \cftaddnumtitleline{toc}{book}{#1}{#2}{}
   \null\vspace{3cm}
-  \noindent\htitlespace{\LARGE\scshape #1}
+  {\color{white}\noindent\htitlespace{\LARGE\scshape #1}}
   
   \vspace{10pt}
   \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
+  \color{white}
   \Huge\letterspacefont\raggedright\bfseries\MakeUppercase{#2}
   \end{minipage}
   \cleardoublepage
+  \nopagecolor
 }
 
 %% Sections without num
