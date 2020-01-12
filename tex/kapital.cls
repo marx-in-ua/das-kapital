@@ -102,6 +102,9 @@
 % in text mode
 \newcommand{\splitfrac}[2]{\ensuremath{\splitfracm{#1~}{#2}}}
 
+%% Roman numbers
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
 %% LSD
 \newcommand{\poundsign}[1]{£}
 \newcommand{\pound}[1]{\,£}
