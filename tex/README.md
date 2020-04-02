@@ -5,16 +5,16 @@
 Image from https://github.com/blang/latex-docker
 
 	# Start a daemon container on this path
-	$ ./latexdockerdaemon.sh
+	$ ./start.sh
 
-	# Execute the command in the daemon container (or --interaction=errorstopmode)
-	$ docker exec -it latex_daemon lualatex --interaction=nonstopmode --output-directory=test/ 0001.tex
+	# Execute latex (or --interaction=errorstopmode)
+	$ ./run.sh sample/check.tex 
 
 	# Final build
 	$ ./build.sh i/ book.i
 
 	# Stop the daemon
-	docker stop latex_daemon
+	$ ./stop.sh
 
 Commands
 
