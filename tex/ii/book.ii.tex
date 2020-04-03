@@ -4,14 +4,24 @@
 \newcommand{\VolumeNumber}{Том ІІ}
 \newcommand{\BookNumber}{Книга друга}
 \newcommand{\BookTitle}{Процес циркуляції капіталу}
+\newcommand{\BookSource}{Переклад з другого німецького видання}
+\newcommand{\BookAuthors}{за редакцією Д. Рабіновіча та С. Трикоза}
 
 \begin{document}
   \frontmatter
   \input{common/title.tex}
+  \input{common/license.tex}
+  \tableofcontents*
+  \cleardoublepage
+  \pagestyle{mypage}
+  \input{common/about.tex}
   \mainmatter
-  \input{part.0.tex}
-%  \bookpaget{Книга перша}{Процес продукції капіталу}
-  \input{part.1.tex}
-  \input{part.2.tex}
-  \input{part.3.tex}
+  \input{common/epi.tex}
+  \input{ii/part.0.tex}
+  \bookpaget{\BookNumber{}}{\BookTitle{}}
+  \input{ii/part.1.tex}
+  \input{ii/part.2.tex}
+  \input{ii/part.3.tex}
+  \cleardoublepage
+  \input{common/fonts.tex}
 \end{document}
