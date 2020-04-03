@@ -41,8 +41,8 @@
   \createplainmark{glossary}{both}{\glossaryname}
 }
 
-\makeevenhead{mypage}{\null\defhspace{}\footnotesize\sffamily\scshape\leftmark}{}{}
-\makeoddhead{mypage}{}{}{\footnotesize\sffamily\scshape\rightmark\null\defhspace{}}
+\makeevenhead{mypage}{\null\defhspace{}\footnotesize\scsans\leftmark}{}{}
+\makeoddhead{mypage}{}{}{\footnotesize\scsans\rightmark\null\defhspace{}}
 
 \pagestyle{mypage}
 \aliaspagestyle{part}{empty}
@@ -50,8 +50,8 @@
 \newcommand{\htitlespace}{\hspace{1.5cm}}
 %% Viddil
 
-\renewcommand{\partnamefont}{\raggedright\Large\sffamily\scshape}
-\renewcommand{\partnumfont}{\Large\sffamily\scshape}
+\renewcommand{\partnamefont}{\raggedright\Large\scsans}
+\renewcommand{\partnumfont}{\Large\scsans}
 
 \renewcommand{\parttitlefont}{\Huge\letterspacefont\raggedright\MakeUppercase}
 \renewcommand*{\printparttitle}[1]{
@@ -96,12 +96,12 @@
 \newcommand{\bookpaget}[2]{
   \cleardoublepage
   \thispagestyle{empty}
-  \pagecolor{black}
+  \pagecolor{darkgray}
   
   % \addcontentsline{toc}{book}{\protect\booknumberline{#1}{\protect\ignorespaces#2}}{}
   \cftaddnumtitleline{toc}{book}{#1}{#2}{}
   \null\vspace{3cm}
-  {\color{white}\noindent\htitlespace{\LARGE\scshape #1}}
+  {\color{white}\noindent\htitlespace{\LARGE\scmain #1}}
   
   \vspace{10pt}
   \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
@@ -190,7 +190,7 @@
 \renewcommand*{\cftpartfont}{}
 \renewcommand{\cftpartaftersnum}{\hfill}
 \renewcommand{\cftpartaftersnumb}{%
-  \\\hspace*{-\numlen}\tocspace\cntspace{}\large\bfseries\scshape%
+  \\\hspace*{-\numlen}\tocspace\cntspace{}\large\bfseries\scmain%
 }
 \setlength{\cftbeforepartskip}{\medskipamount}
 

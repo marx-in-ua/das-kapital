@@ -5,14 +5,25 @@
 \newcommand{\VolumeNumber}{Том ІІ}
 \newcommand{\BookNumber}{Книга друга}
 \newcommand{\BookTitle}{Процес циркуляції капіталу}
+\newcommand{\BookSource}{Переклад з другого німецького видання}
+\newcommand{\BookAuthors}{за редакцією Д. Рабіновіча та С. Трикоза}
+
 \begin{document}
   \frontmatter
   \input{common/title.tex}
+  \tableofcontents*
+  \cleardoublepage
+  \pagestyle{mypage}
+  \input{common/thanks.tex}
   \mainmatter
+  \bookpaget{\BookNumber{}}{\BookTitle{}}
+  \input{common/epi.tex}
+  \input{ii/_0003.tex}
+  \input{ii/_0004_0005_0006.tex}
   % \tableofcontents*
   % \cleardoublepage
   % \input{ii/part.1.tex}
-\input{ii/_0030.tex}
+% \input{ii/_0030.tex}
 % \input{ii/_0031c.tex}
 % \input{ii/_0032.tex}
 % \input{ii/_0033_0034c.tex}
