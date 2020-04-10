@@ -64,6 +64,25 @@
 \renewcommand*{\midpartskip}{\vskip 10pt}
 \renewcommand*{\afterpartskip}{\vfill\cleardoublepage}
 
+%% spesial command like part, but writes nothing to toc and 
+%% page headers
+\newcommand{\chapteronly}[1]{%
+  \@setuppart%
+  \phantomsection%
+  \refstepcounter{part}%
+  \partmark{#1}%
+  {\centering
+   \interlinepenalty \@M
+   \parskip\z@
+   \normalfont
+   \ifnum \c@secnumdepth >-2\relax
+     \printpartname \partnamenum \printpartnum
+     \midpartskip
+   \fi
+   \printparttitle{#1}\par}%
+  \@endpart}
+
+
 %% Rozdil
 
 \makechapterstyle{default}{%
