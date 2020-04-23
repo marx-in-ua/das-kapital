@@ -11,7 +11,7 @@ Image from https://github.com/blang/latex-docker
 	$ ./run.sh sample/check.tex 
 
 	# Final build
-	$ ./build.sh i/ book.i
+	$ ./build.sh i/book.i.tex
 
 	# Stop the daemon
 	$ ./stop.sh
