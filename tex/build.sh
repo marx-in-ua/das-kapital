@@ -1,20 +1,24 @@
 # exit when any command fails
 set -e
 
-DIR=$1
-BASE=$2
-TEX=$1$2".tex"
+FULL=$1
+DIR=`dirname "$FULL"`/
+TEX=`basename "$FULL"`
+BASE=$DIR"${TEX%.*}"
 
+echo $DIR
+echo $TEX
+echo $BASE
 # Exit if there are uncommited changes
 # git diff --exit-code --name-status
 
 # build pdf
-docker exec -it latex_daemon latexmk -lualatex -outdir=$DIR $TEX
+docker exec -it latex_daemon latexmk -lualatex -outdir=$DIR $FULL
 
 # copy pdf to version file
-PDF=$1$2".pdf"
+PDF=$BASE".pdf"
 COMMIT_ID=$(git rev-parse --short HEAD)
-VERSIONPDF=$1$2"."$COMMIT_ID".pdf"
+VERSIONPDF=$BASE"."$COMMIT_ID".pdf"
 echo $VERSIONPDF
 rm -f $VERSIONPDF
 cp $PDF $VERSIONPDF
