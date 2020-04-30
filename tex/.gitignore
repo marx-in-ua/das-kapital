@@ -12,3 +12,4 @@
 *.fls
 *.out
 *.up*
+common/version.tex
