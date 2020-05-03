@@ -113,6 +113,10 @@
 \newcommand{\shil}[1]{\,ш.}
 \newcommand{\pens}[1]{\,п.}
 
+%% misc
+\newcommand{\Red}{\emph{Ред.}}
+\newcommand{\stor}{cтор.~}
+
 %% abbr
 \newcommand{\abbr}[1]{\mbox{#1}}
 \newcommand{\elli}[1]{\mbox{#1}}
