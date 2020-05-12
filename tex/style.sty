@@ -33,7 +33,7 @@
   \clearmark{section}
   \createmark{part}{left}{shownumber}{\partname\ }{. }
   \createmark{chapter}{right}{shownumber}{\@chapapp\ }{. }
-  \createplainmark{toc}{both}{\contentsname}
+  \createplainmark{toc}{both}{~}
   \createplainmark{lof}{both}{\listfigurename}
   \createplainmark{lot}{both}{\listtablename}
   \createplainmark{bib}{both}{\bibname}
@@ -41,8 +41,8 @@
   \createplainmark{glossary}{both}{\glossaryname}
 }
 
-\makeevenhead{mypage}{\null\defhspace{}\footnotesize\sffamily\scshape\leftmark}{}{}
-\makeoddhead{mypage}{}{}{\footnotesize\sffamily\scshape\rightmark\null\defhspace{}}
+\makeevenhead{mypage}{\null\defhspace{}\footnotesize\scsans\leftmark}{}{}
+\makeoddhead{mypage}{}{}{\footnotesize\scsans\rightmark\null\defhspace{}}
 
 \pagestyle{mypage}
 \aliaspagestyle{part}{empty}
@@ -50,8 +50,8 @@
 \newcommand{\htitlespace}{\hspace{1.5cm}}
 %% Viddil
 
-\renewcommand{\partnamefont}{\raggedright\Large\sffamily\scshape}
-\renewcommand{\partnumfont}{\Large\sffamily\scshape}
+\renewcommand{\partnamefont}{\raggedright\Large\scsans}
+\renewcommand{\partnumfont}{\Large\scsans}
 
 \renewcommand{\parttitlefont}{\Huge\letterspacefont\raggedright\MakeUppercase}
 \renewcommand*{\printparttitle}[1]{
@@ -63,6 +63,25 @@
 \renewcommand*{\beforepartskip}{\cleardoublepage\null\vspace{3cm}\noindent\hspace{1.5cm}}
 \renewcommand*{\midpartskip}{\vskip 10pt}
 \renewcommand*{\afterpartskip}{\vfill\cleardoublepage}
+
+%% spesial command like part, but writes nothing to toc and 
+%% page headers
+\newcommand{\chapteronly}[1]{%
+  \@setuppart%
+  \phantomsection%
+  \refstepcounter{part}%
+  \partmark{#1}%
+  {\centering
+   \interlinepenalty \@M
+   \parskip\z@
+   \normalfont
+   \ifnum \c@secnumdepth >-2\relax
+     \printpartname \partnamenum \printpartnum
+     \midpartskip
+   \fi
+   \printparttitle{#1}\par}%
+  \@endpart}
+
 
 %% Rozdil
 
@@ -96,12 +115,12 @@
 \newcommand{\bookpaget}[2]{
   \cleardoublepage
   \thispagestyle{empty}
-  \pagecolor{black}
+  \pagecolor{darkgray}
   
   % \addcontentsline{toc}{book}{\protect\booknumberline{#1}{\protect\ignorespaces#2}}{}
   \cftaddnumtitleline{toc}{book}{#1}{#2}{}
   \null\vspace{3cm}
-  {\color{white}\noindent\htitlespace{\LARGE\scshape #1}}
+  {\color{white}\noindent\htitlespace{\LARGE\scmain #1}}
   
   \vspace{10pt}
   \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
@@ -190,9 +209,13 @@
 \renewcommand*{\cftpartfont}{}
 \renewcommand{\cftpartaftersnum}{\hfill}
 \renewcommand{\cftpartaftersnumb}{%
-  \\\hspace*{-\numlen}\tocspace\cntspace{}\large\bfseries\scshape%
+  \\\hspace*{-\numlen}\tocspace\cntspace{}\large\bfseries\scmain%
 }
 \setlength{\cftbeforepartskip}{\medskipamount}
+
+\newcommand{\partnumberlineadd}[1]{
+\cntspace\large\bfseries\scmain{#1}\hfill%
+}
 
 % Pidrozdil
 \setlength{\cftsectionindent}{0pt}
@@ -202,6 +225,6 @@
 
 %% Polish
 \newcommand{\bouillondot}{%
-\begin{tikzpicture}[x=0.7pt, y=0.7pt, baseline=-1pt, use Hobby shortcut]\fill ([closed=true]0,0) .. (1,3) .. ([tension=1.4]0,4) .. (-1,3);\end{tikzpicture}}
+\begin{tikzpicture}[x=0.5pt, y=0.5pt, baseline=-1pt, use Hobby shortcut]\fill ([closed=true]0,0) .. (1,3) .. ([tension=1.4]0,4) .. (-1,3);\end{tikzpicture}}
 
 \endinput

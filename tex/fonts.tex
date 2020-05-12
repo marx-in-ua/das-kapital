@@ -1,93 +1,86 @@
 \defaultfontfeatures{ 
-  Path = fonts/ ,
+  Path=fonts/,
   Scale=MatchLowercase,
+  Extension=.otf,
 }
 
 % 
 % Text fonts
 %
-
-% PT Serif
-% \setmainfont{serif}[
-%   Extension = .ttf ,
-%   BoldFont = *-bold ,
-%   ItalicFont = *-italic ,
-%   BoldItalicFont = *-bolditalic,
-%   % Fake slanted
-%   SlantedFont = serif,
-%   SlantedFeatures={FakeSlant=0.21},
-%   Scale = 0.867
-% ]
-
 \setmainfont{Alegreya}[
-  Extension=.otf,
   ItalicFont=*-Italic,
   BoldFont=*-Bold,
   BoldItalicFont=*-BoldItalic,
-  BoldFeatures={SmallCapsFont=*SC-Bold},
-  SmallCapsFont=*SC-Regular,
-  SmallCapsFeatures={%
-    LetterSpace=1,
-  },
-  SlantedFont = Alegreya,
+  SlantedFont=Alegreya,
   SlantedFeatures={FakeSlant=0.13},
-  Scale = 0.93925
+  Scale=0.93925,
 ]
+
 \setsansfont{AlegreyaSans}[
-  Extension=.otf,
   UprightFont=*-Regular,
   ItalicFont=*-Italic,
   BoldFont=*-Bold,
-  BoldFeatures={SmallCapsFont=*SC-Bold},
   BoldItalicFont=*-BoldItalic,
-  SmallCapsFont=*SC-Regular,
-  SmallCapsFeatures={%
-    LetterSpace=1,
-  },
 ]
+
+\newfontfamily{\scmain}{AlegreyaSC}[
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  LetterSpace=10,
+  WordSpace=2.5,
+]
+
+\newfontfamily{\scsans}{AlegreyaSansSC}[
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  LetterSpace=10,
+  WordSpace=3,
+]
+
 \newfontfamily{\letterspacefont}{AlegreyaSans}[
-  Extension=.otf,
   UprightFont=*-ExtraBold,
-  ItalicFont=*-Italic,
   BoldFont=*-Black,
-  BoldItalicFont=*-BoldItalic,
-  LetterSpace=5,
-  WordSpace=2
+  LetterSpace=15,
+  WordSpace=4
 ]
+
 \newfontfamily{\tablefont}{AlegreyaSans}[
-  Extension=.otf,
   UprightFont=*-Regular,
   ItalicFont=*-Italic,
   BoldFont=*-Bold,
   BoldItalicFont=*-BoldItalic,
   Numbers={Monospaced,Lining}
 ]
+
 \newfontfamily{\greekfont}{Alegreya}[
   Script=Latin,
-  Extension=.otf,
 ]
 
 % 
 % Math fonts
 %
+\defaultfontfeatures{ 
+  Path=fonts/,
+  Scale=MatchLowercase,
+  Extension=.otf,
+}
 
 \usepackage{unicode-math}
 
 \setmathfont{STIX2Math}[% operators
-  Extension = .otf ,
-  StylisticSet = 01 ,
+  StylisticSet=01 ,
   Scale=MatchLowercase,
 ]
 
 \setmathfont{Alegreya.otf}[% numbers
-  range = {up},
+  range={up},
   Script=Latin,
   script-features={},
   sscript-features={}
 ]
 
 \setmathfont{Alegreya-Italic.otf}[% italic letters
-  range = {it},
+  range={it},
   Script=Latin,
   script-features={},
   sscript-features={}

@@ -61,6 +61,7 @@
 
 \RequirePackage{xfrac}
 \RequirePackage{amsmath}
+\RequirePackage{mathtools}
 %% \usepackage{abraces} % do we need it (?)
 
 % braces
@@ -100,7 +101,8 @@
 %% split frac
 \newcommand{\splitfracm}[2]{<\genfrac{}{}{0pt}{1}{#1}{#2}}
 % in text mode
-\newcommand{\splitfrac}[2]{\ensuremath{\splitfracm{#1~}{#2}}}
+% mathtools contains \splitfrac command
+\renewcommand{\splitfrac}[2]{\ensuremath{\splitfracm{#1~}{#2}}}
 
 %% Roman numbers
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
@@ -209,7 +211,8 @@
 }
 
 %% line color 75%
-\definecolor{gray75}{rgb}{0.75, 0.75, 0.750}
+\definecolor{gray75}{rgb}{0.75, 0.75, 0.75}
+\definecolor{darkgray}{rgb}{0.25, 0.25, 0.25}
 %% Set table line color
 %% see p. 12 http://mirror.datacenter.by/pub/mirrors/CTAN/macros/latex/contrib/booktabs/booktabs.pdf
 \newcommand{\CT@arc@}{\color{gray75}}

@@ -10,3 +10,6 @@
 *.ind
 *.fdb_latexmk
 *.fls
+*.out
+*.up*
+common/version.tex
