@@ -124,12 +124,17 @@
 
 %% Book title page
 \newcommand{\bookpaget}[2]{
-  \cleardoublepage
+  \bookpages{#1}{#2}
+  \cftaddnumtitleline{toc}{book}{#1}{#2}{}
+}
+
+\newcommand{\bookpages}[2]{
+    \cleardoublepage
   \thispagestyle{empty}
   \pagecolor{darkgray}
   
   % \addcontentsline{toc}{book}{\protect\booknumberline{#1}{\protect\ignorespaces#2}}{}
-  \cftaddnumtitleline{toc}{book}{#1}{#2}{}
+
   \null\vspace{3cm}
   {\color{white}\noindent\htitlespace{\LARGE\scmain #1}}
   
