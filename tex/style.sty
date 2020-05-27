@@ -82,6 +82,17 @@
    \printparttitle{#1}\par}%
   \@endpart}
 
+\newcommand{\chaptertwoline}[3]{%
+  \chapteronly{#1 #2}%
+
+\addcontentsline{toc}{part}%
+  {\protect\partnumberline{\thepart}#1}%
+\addtocontents{toc}{\protect\vspace{-0.7em}}
+\addcontentsline{toc}{part}%
+  {\protect\partnumberlineadd{#2}}%
+
+\markboth{Відділ \thepart. #3}{\rightmark}
+}
 
 %% Rozdil
 
