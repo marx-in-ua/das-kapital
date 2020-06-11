@@ -5,16 +5,14 @@
 \newcommand{\BookNumber}{Книга друга}
 \newcommand{\BookTitle}{Процес циркуляції капіталу}
 \newcommand{\BookSource}{Переклад з другого німецького видання}
-\newcommand{\BookAuthors}{за редакцією Д. Рабіновіча та С. Трикоза}
+\newcommand{\BookAuthors}{за редакцією Д. Рабіновіча і С. Трикоза}
+\newcommand{\Biblio}{Т. ІІ. — Кн. ІІ: Процес циркуляції капіталу /
+Пер. із 2 нім. вид.; За ред. Д. Рабіновича і С. Трикоза.}
 
 \begin{document}
-  \frontmatter
-  \input{common/title.tex}
-  \input{common/license.tex}
-  \tableofcontents*
-  \cleardoublepage
-  \pagestyle{mypage}
-  \input{common/thanks.tex}
+  \input{common/front.tex}
+
+  \pagenumbering{arabic}
   \mainmatter
   \input{ii/part.0.tex}
   \bookpaget{\BookNumber{}}{\BookTitle{}}
