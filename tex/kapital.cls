@@ -227,13 +227,16 @@
 \usepackage{microtype} % [tracking=true]
 \frenchspacing
 
-% L e t t e r  s p a c e (\so)
-\RequirePackage{soul} 
-\makeatletter
-\font\SOUL@tt="PTserif"
-\setbox\z@\hbox{\SOUL@tt-}
-\SOUL@ttwidth\wd\z@
-\makeatother
+% % L e t t e r  s p a c e (\so)
+% \RequirePackage{soul} 
+% \makeatletter
+% \font\SOUL@tt="PTserif"
+% \setbox\z@\hbox{\SOUL@tt-}
+% \SOUL@ttwidth\wd\z@
+% \makeatother
+
+%% no so
+\newcommand{\so}[1]{\emph{#1}}
 
 %
 % numbers
@@ -253,27 +256,23 @@
 % fix bug in bigfoot 2015/08/30 2.1
 % see https://tex.stackexchange.com/questions/471379/footnote-marks-missplaced-with-bigfoot/
 \usepackage{xpatch}
-\makeatletter
 \patchcmd\FN@allmarks{266}{256}{}{\fail}
-\makeatother
+
 
 % allow marks to be sans serif
-\makeatletter
 \renewcommand{\@makefnmark}{\hbox{\@textsuperscript{\scriptsize\@thefnmark}\!}}
-\makeatother
+
 
 % 100 note
 \DeclareNewFootnote{default}
 
 \counterwithout{footnote}{chapter}
-\makeatletter
 \@addtoreset{footnote}{part}
-\makeatother
 
 % ** note
 \DeclareNewFootnote{Z}[fnsymbolsingle]
 \MakeSortedPerPage{footnoteZ}
-\WithSuffix\newcommand\footnote*[1]{\footnoteZ{#1}}
+
 
 % 100a note
 \newcounter{footalt}[footnote]
@@ -286,6 +285,22 @@
 
 %% fix footnotes on minipage
 \renewcommand\thempfootnote{\arabic{footnote}}
+
+\WithSuffix\newcommand\footnote*[1]{\footnoteZ{#1}}
+
+%% continuation marks
+\renewcommand\FN@afterbreak{\smallskip{}%
+\noindent{}\hspace{-1em}\raisebox{-8pt}[0pt][0pt]{\footnotesize{\dots{}}}%
+}
+
+%\renewcommand\FN@beforebreak{\hbox{%
+%\raisebox{13pt}[0pt][0pt]{\hspace\textwidth~\footnotesize{\dots{}}}%
+%}}
+
+% https://tex.stackexchange.com/questions/547447/improper-prevdepth-with-bigfoot-package/547450
+\renewcommand\FN@beforebreak{%
+  \vbox to 0pt{\vss\hbox to\hsize{\hss\rlap{\footnotesize{~\dots}}}\vskip\baselineskip}%
+}
 
 %% indexes 
 %% hack to prevent warning
@@ -316,5 +331,8 @@
 
 %% styling
 \RequirePackage{style}
+
+%% page numbering
+\usepackage{pageslts}
 
 \endinput
