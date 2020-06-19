@@ -1,7 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{counters}[2017/04/15 Das Kapital counters]
 
-\makeatletter
 \def\@fnsymbolsingle#1{%
   %\ensuremath{%
     \ifcase#1% 0
@@ -31,7 +30,6 @@
     \fi%
   %}%   
 }   
-\makeatother
 
 \newcommand\UkrNumToName[1]{%
 \ifcase#1\relax % case 0
