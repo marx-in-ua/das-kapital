@@ -289,18 +289,20 @@
 \WithSuffix\newcommand\footnote*[1]{\footnoteZ{#1}}
 
 %% continuation marks
-\renewcommand\FN@afterbreak{\smallskip{}%
+\renewcommand\FN@afterbreak{%
 \noindent{}\hspace{-1em}\raisebox{-8pt}[0pt][0pt]{\footnotesize{\dots{}}}%
 }
+% \renewcommand\FN@afterbreak{\begingroup\nobreak%
+%   \baselineskip\z@skip \lineskiplimit-\maxdimen%
+%   \llap{\hspace{-1em}\dots}%
+% \endgroup}
 
-%\renewcommand\FN@beforebreak{\hbox{%
-%\raisebox{13pt}[0pt][0pt]{\hspace\textwidth~\footnotesize{\dots{}}}%
-%}}
-
-% https://tex.stackexchange.com/questions/547447/improper-prevdepth-with-bigfoot-package/547450
-\renewcommand\FN@beforebreak{%
-  \vbox to 0pt{\vss\hbox to\hsize{\hss\rlap{\footnotesize{~\dots}}}\vskip\baselineskip}%
-}
+%%
+%% https://tex.stackexchange.com/questions/550185/unwanted-vertical-space-with-fnbeforebreak-in-bigfoot
+\renewcommand\FN@beforebreak{\begingroup\nobreak%
+  \baselineskip\z@skip \lineskiplimit-\maxdimen%
+  \rlap{\hspace\textwidth\footnotesize{}~~\dots}%
+\endgroup}
 
 %% indexes 
 %% hack to prevent warning
