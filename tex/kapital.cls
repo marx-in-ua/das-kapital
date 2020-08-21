@@ -144,6 +144,58 @@
 \newcommand{\linerule}[1]{\rule[0.5ex]{#1em}{0.8pt}}
 
 %% ======
+%% Rotating + fix
+%% https://tex.stackexchange.com/questions/23635/set-up-sidewaysfigure-to-have-the-bottom-of-the-figure-toward-the-spine
+%% ======
+
+\usepackage{rotating}
+
+\renewcommand\end@rotfloat{%
+   \end{minipage}\end{lrbox}%
+   \stepcounter{r@tfl@t}%
+   \rot@label{RF\ther@tfl@t}%
+   \rot@pageref{RF\ther@tfl@t}{\R@@page}%
+   \edef\@tempa{Adding my sideways \@captype\space on page \R@@page\space}
+   \rot@mess@toks\expandafter{\@tempa}
+   \wd\rot@float@box\z@
+   \ht\rot@float@box\z@
+   \dp\rot@float@box\z@
+   \vbox to \textheight{%
+    \setkeys{Grot}{units=360}%
+    \if@rot@twoside
+    \else
+      \let\R@@page\rot@LR
+    \fi
+    \ifthenelse{\isodd{\R@@page}}{%
+      \if@rot@twoside
+        \rot@mess@toks\expandafter{\the\rot@mess@toks (my right hand page)}%
+      \fi
+      \@@line{%
+        \hskip\rotFPbot
+        \rotatebox{-90}{\box\rot@float@box}%
+        \hskip\rotFPtop
+      }%
+      \vfill      
+    }{%
+      \if@rot@twoside
+        \rot@mess@toks\expandafter{\the\rot@mess@toks (my left hand page)}%
+      \fi
+      \vfill
+      \@@line{%
+        \hskip\rotFPtop
+        \rotatebox{90}{\box\rot@float@box}%
+        \hskip\rotFPbot
+      }%
+    }%
+    \rot@message{\the\rot@mess@toks}
+  }%
+  \end@float
+}
+
+\let\endsidewaysfigure\end@rotfloat
+\let\endsidewaystable\end@rotfloat
+
+%% ======
 %% Tables
 %% ======
 
@@ -156,8 +208,9 @@
 \usepackage{bigdelim}
 \usepackage{multirow}
 \usepackage{longtable}
-\usepackage{rotating}
 \usepackage{ragged2e}
+
+
 
 %% set font
 \newcommand{\settablefont}{%
