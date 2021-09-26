@@ -35,12 +35,114 @@
 
 \RequirePackage{counters}
 
+\def\ChapSpaceFactor{0.6666}
+\def\MyClearpage{\clearpage}
+
+\let\oldsection\section
+\newsavebox\mySBox
+\def\msection{%
+\@ifstar{\@StarredS}{\@nonStarredS}%
+}
+\def\@StarredS{%
+\@ifnextchar[%
+{\GenericWarning{}{Warning: A starred section can not have optional parameters. I am going to ignore them!}\@StarredWithS}%
+{\@StarredWithoutS}%
+}
+\def\@StarredWithS[#1]#2{%
+  \storebox\mySBox{\vbox{\oldsection*{#2}}}%
+}
+\def\@StarredWithoutS#1{
+  \storebox\mySBox{\vbox{\oldsection*{#1}}}%
+}
+\def\@nonStarredS{%
+\@ifnextchar[%
+{\@nonStarredWithS}%
+{\@nonStarredWithoutS}%
+}
+\def\@nonStarredWithS[#1]#2{%
+  \storebox\mySBox{\vbox{\oldsection[#1]{#2}}}%
+}
+\def\@nonStarredWithoutS#1{%
+  \storebox\mySBox{\let\par\oldpar\vbox{\oldsection{#1}}}%
+}
+
+
+\gdef\e@ch@ck#1#2#3#4{%
+  \ifnum#1<#2\else
+    \ifnum#1=#2\relax%
+      \global#1\@cclvi%
+      \ifx\count#4\global\advance#1 10 \fi%
+    \fi%
+    \ifnum#1<#3\relax%
+    \else%
+      \errmessage{No room for a new \string#4}%
+    \fi%
+    \fi}%
+
+
+%% Create a box register and globally store ans empty hbox
+\newcommand{\storebox}[1]{%
+    \expandafter\global\expandafter\setbox#1\vbox
+}%
+
+
+\let\oldchapter\chapter
+\newsavebox\myChBox
+\def\mchapter{%
+\@ifstar{\@Starred}{\@nonStarred}%
+}
+\def\@Starred{%
+\@ifnextchar[%
+{\GenericWarning{}{Warning: A starred chapter can not have parameters. I am going to ignore them!}\@StarredWith}%
+{\@StarredWithout}%
+}
+\def\@StarredWith[#1]#2{%
+  \storebox\mySBox{\hbox{}}%
+  \let\oldpar\par%
+  \storebox\myChBox{\vbox{\oldchapter*{#2}}}%
+  \ignorespacesafterend\let\subsection\msection
+  \def\par{\let\par\oldpar\noindent\MyClearpage\unvbox\myChBox\unvbox\mySBox\let\subsection\oldsection\expandafter\null\vskip\dimexpr\textheight-\pagetotal-\ChapSpaceFactor\textheight\relax\relax\noindent}%
+  \ignorespacesafterend%
+}
+\def\@StarredWithout#1{
+  \storebox\mySBox{\hbox{}}%
+  \let\oldpar\par%
+  \storebox\myChBox{\vbox{\oldchapter*{#1}}}%
+  \ignorespacesafterend\let\subsection\msection
+  \def\par{\let\par\oldpar\noindent\MyClearpage\unvbox\myChBox\unvbox\mySBox\let\subsection\oldsection\expandafter\null\vskip\dimexpr\textheight-\pagetotal-\ChapSpaceFactor\textheight\relax\relax\noindent}%
+  \ignorespacesafterend%
+}
+\def\@nonStarred{%
+\@ifnextchar[%
+{\@nonStarredWith}%
+{\@nonStarredWithout}%
+}
+\def\@nonStarredWith[#1]#2{%
+  \storebox\mySBox{\hbox{}}%
+  \let\oldpar\par%
+  \storebox\myChBox{\vbox{\oldchapter[#1]{#2}}}%
+  \ignorespacesafterend\let\subsection\msection
+  \def\par{\let\par\oldpar\noindent\MyClearpage\unvbox\myChBox\unvbox\mySBox\let\subsection\oldsection\expandafter\null\vskip\dimexpr\textheight-\pagetotal-\ChapSpaceFactor\textheight\relax\relax\noindent}%
+  \ignorespacesafterend%
+}
+
+\newcounter{parCounter}
+\def\@nonStarredWithout#1{%
+  \storebox\mySBox{\hbox{}}%
+  \let\oldpar\par%
+  \storebox\myChBox{\vbox{\oldchapter{#1}}}%
+  \ignorespacesafterend\let\subsection\msection
+  \def\par{\let\par\oldpar\noindent\MyClearpage\unvbox\myChBox\unvbox\mySBox\let\subsection\oldsection\expandafter\null\vskip\dimexpr\textheight-\pagetotal-\ChapSpaceFactor\textheight\relax\relax\noindent}%
+  \ignorespacesafterend%
+}
+
+
 %% We move headings one level up
 \let\subparagraph\paragraph
 \let\paragraph\subsubsection
 \let\subsubsection\subsection
 \let\subsection\section
-\let\section\chapter
+\let\section\mchapter
 \let\chapter\part
 
 \addto\captionsukrainian{\renewcommand{\partname}{Відділ}}
