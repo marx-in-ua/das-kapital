@@ -1,0 +1,29 @@
+\documentclass{kapital}
+\input{../final.tex}
+\begin{document}
+  \pagenumbering{arabic}
+  \mainmatter
+  
+  \nonumsection{Section without number}{}{}
+
+  Text on same height
+  
+  \section{Section with number}
+
+  Text on same height
+
+  \section{Section with number that should exceed one line of text}
+
+  Text on same height
+
+  \section{Section with number that should exceed one line of text}
+  \subsection{And subsection}
+
+  Text on same height
+
+  \section[Simple section with footnote]{Simple section with footnote\footnotemark}
+  \footnotetext{Footnote.}
+
+  Text on same height
+
+\end{document}
