@@ -20,6 +20,26 @@
 
 \newcommand{\defhspace}{\hspace{\defindent}}
 
+%%
+%% Main book space
+%%
+
+\newlength{\mainbookheight}
+\setlength{\mainbookheight}{25\baselineskip}
+
+\newcommand{\headerwrapper}[1]{%
+  \noindent{}\begin{minipage}[t][\mainbookheight][t]{\textwidth}%
+  #1%
+  \@afterindentfalse%
+  \end{minipage}}
+
+\newcommand{\msection}[1]{%
+  \clearforchapter%
+  \thispagestyle{chapter}%
+  \headerwrapper{\@m@mchapter{#1}}%
+  \chaptermark{#1}%
+}
+
 %% format plain pagestyle
 \makeevenfoot{plain}{\null\defhspace{}\sffamily\thepage}{}{}
 \makeoddfoot{plain}{}{}{\sffamily\thepage\defhspace{}}
@@ -105,7 +125,6 @@
   \setlength{\afterchapskip}{50\p@ \@plus 10\p@ \@minus 10\p@}
 }
 \chapterstyle{default}
-
 
 \setsecheadstyle{\Large\bfseries\sffamily\raggedright}
 

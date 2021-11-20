@@ -1,29 +1,47 @@
 \documentclass{kapital}
 \input{../final.tex}
+\usepackage{lua-visual-debug}
 \begin{document}
   \pagenumbering{arabic}
+  \tableofcontents*
   \mainmatter
-  
-  \nonumsection{Section without number}{}{}
+
+  \section{Usual section}
 
   Text on same height
-  
-  \section{Section with number}
+  \clearpage
+  Other text
+    \clearpage
+  Other text
+    \clearpage
+  Other text
 
-  Text on same height
+  \msection{Section with number}
 
-  \section{Section with number that should exceed one line of text}
+  \noindent{}Text on same height
+  \clearpage
+  Other text
+    \clearpage
+  Other text
+    \clearpage
+  Other text
 
-  Text on same height
+  % \mchapter{Section with number}
 
-  \section{Section with number that should exceed one line of text}
-  \subsection{And subsection}
+  % Text on same height
 
-  Text on same height
+  % \section{Section with number that should exceed one line of text}
 
-  \section[Simple section with footnote]{Simple section with footnote\footnotemark}
-  \footnotetext{Footnote.}
+  % Text on same height
 
-  Text on same height
+  % \section{Section with number that should exceed one line of text}
+  % \subsection{And subsection}
+
+  % Text on same height
+
+  % \section[Simple section with footnote]{Simple section with footnote\footnotemark}
+  % \footnotetext{Footnote.}
+
+  % Text on same height
 
 \end{document}
