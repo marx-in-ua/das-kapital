@@ -33,10 +33,10 @@
   \@afterindentfalse%
   \end{minipage}}
 
-\newcommand{\msection}[1]{%
+\newcommand{\msection}[2][]{%
   \clearforchapter%
   \thispagestyle{chapter}%
-  \headerwrapper{\@m@mchapter{#1}}%
+  \headerwrapper{\@m@mchapter[#1]{#2}}%
   \chaptermark{#1}%
   \@afterindentfalse{}\@afterheading{}%
 }
