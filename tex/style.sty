@@ -30,14 +30,18 @@
 \newcommand{\headerwrapper}[1]{%
   \noindent{}\begin{minipage}[t][\mainbookheight][t]{\textwidth}%
   #1%
-  \@afterindentfalse%
   \end{minipage}}
 
 \newcommand{\msection}[2][]{%
   \clearforchapter%
   \thispagestyle{chapter}%
   \headerwrapper{\@m@mchapter[#1]{#2}}%
-  \chaptermark{\f@rhdr}%
+  \def\tmp@chaptername{#1}%
+  \ifx\tmp@chaptername\@empty%
+    \chaptermark{#2}%
+  \else
+    \chaptermark{#1}%
+  \fi
   \@afterindentfalse{}\@afterheading{}%
 }
 
