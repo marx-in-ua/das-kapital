@@ -45,6 +45,14 @@
   \@afterindentfalse{}\@afterheading{}%
 }
 
+\newcommand{\nonumsection}[3]{%
+  \clearforchapter%
+  \thispagestyle{chapter}%
+  \headerwrapper{\@m@mschapter{#1}}%
+  \nonumsectioncft{#1}{#2}{#3}%
+  \@afterindentfalse{}\@afterheading{}%
+}
+
 %% format plain pagestyle
 \makeevenfoot{plain}{\null\defhspace{}\sffamily\thepage}{}{}
 \makeoddfoot{plain}{}{}{\sffamily\thepage\defhspace{}}
@@ -175,11 +183,6 @@
   \setcounter{section}{0}%
 }
 
-\newcommand{\nonumsection}[3]{%
-  \section*{#1}%
-  \nonumsectioncft{#1}{#2}{#3}%
-}
-
 %% ======
 %% TOC
 %% ======
@@ -193,13 +196,13 @@
 %% hack to center space
 \newcommand{\cntspace}{\hfil\hfil\hspace{0em plus 1fil}}
 
-\renewcommand{\printtoctitle}[1]{\printchaptertitle{\tocspace{}#1}}
+\renewcommand{\printtoctitle}[1]{\headerwrapper{\printchaptertitle{\tocspace{}#1}}}
 %% no page numbers on TOC
 \renewcommand{\aftertoctitle}{%
    \thispagestyle{empty}%
    \pagestyle{empty}%
-   \afterchaptertitle}
-
+   \vspace{-\medskipamount}%
+}
 
 % rozdil
 \renewcommand{\cftchaptername}{\itshape\small Розділ~}
