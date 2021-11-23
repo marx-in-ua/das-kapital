@@ -25,7 +25,7 @@
 %%
 
 \newlength{\mainbookheight}
-\setlength{\mainbookheight}{25\baselineskip}
+\setlength{\mainbookheight}{12\baselineskip}
 
 \newcommand{\headerwrapper}[1]{%
   \noindent{}\begin{minipage}[t][\mainbookheight][t]{\textwidth}%
@@ -37,7 +37,7 @@
   \clearforchapter%
   \thispagestyle{chapter}%
   \headerwrapper{\@m@mchapter[#1]{#2}}%
-  \chaptermark{#1}%
+  \chaptermark{\f@rhdr}%
   \@afterindentfalse{}\@afterheading{}%
 }
 
@@ -123,7 +123,7 @@
   \renewcommand*{\chaptitlefont}{\huge\bfseries\sffamily}
   \setlength{\beforechapskip}{0pt}
   \setlength{\midchapskip}{10pt}
-  \setlength{\afterchapskip}{50\p@ \@plus 10\p@ \@minus 10\p@}
+  \setlength{\afterchapskip}{2.3ex \@plus .2ex}
 }
 \chapterstyle{default}
 
@@ -138,9 +138,6 @@
 \setafterparaskip{1.5ex plus 1ex minus .2ex}
 
 \setsecnumformat{\makebox[\defindent][r]{\csname the#1\endcsname~}}
-
-%% Letterine
-%% \usepackage{lettrine}
 
 %% Book title page
 \newcommand{\bookpaget}[2]{
