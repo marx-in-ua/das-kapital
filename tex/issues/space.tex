@@ -28,7 +28,7 @@
   Other text
 
 
-  \msection{Section with number that spans multiple lines of header}
+  \msection[Simple section with footnote]{Simple section with footnote\footnotemark}
 
   Text on same height
   \clearpage
@@ -38,8 +38,10 @@
     \clearpage
   Other text
 
-  \msection[Simple section with footnote]{Simple section with footnote\footnotemark}
   
+  \sectionextended[Simple section with footnote]{Simple section with footnote\footnotemark}{%
+    \subsection{Чисті витрати циркуляції}
+  }
 
   Text on same height
   \footnotetext{Footnote.}

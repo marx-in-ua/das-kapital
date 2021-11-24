@@ -32,6 +32,19 @@
   #1%
   \end{minipage}}
 
+\newcommand{\sectionextended}[3][]{%
+  \clearforchapter%
+  \thispagestyle{chapter}%
+  \headerwrapper{\@m@mchapter[#1]{#2}\vfill{}#3}%
+  \def\tmp@chaptername{#1}%
+  \ifx\tmp@chaptername\@empty%
+    \chaptermark{#2}%
+  \else
+    \chaptermark{#1}%
+  \fi
+  \@afterindentfalse{}\@afterheading{}%
+}
+
 \newcommand{\msection}[2][]{%
   \clearforchapter%
   \thispagestyle{chapter}%
