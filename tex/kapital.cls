@@ -40,7 +40,6 @@
 \let\paragraph\subsubsection
 \let\subsubsection\subsection
 \let\subsection\section
-\let\section\chapter
 \let\chapter\part
 
 \addto\captionsukrainian{\renewcommand{\partname}{Відділ}}

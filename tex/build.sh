@@ -6,8 +6,14 @@ DIR=`dirname "$FULL"`/
 TEX=`basename "$FULL"`
 BASE=$DIR"${TEX%.*}"
 
-COMMIT_ID=$(git rev-parse --short HEAD)
-echo $COMMIT_ID > 'common/version.tex'
+# currevt tag or commit id
+if [[ $(git tag --points-at HEAD) ]]; then
+  VERSION_ID=$(git tag --points-at HEAD)
+else
+  VERSION_ID=$(git rev-parse --short HEAD)
+fi
+
+echo $VERSION_ID > 'common/version.tex'
 
 echo $DIR
 echo $TEX
@@ -20,7 +26,7 @@ docker exec -it latex_daemon latexmk -lualatex -outdir=$DIR $FULL
 
 # copy pdf to version file
 PDF=$BASE".pdf"
-VERSIONPDF=$BASE"."$COMMIT_ID".pdf"
+VERSIONPDF=$BASE"."$VERSION_ID".pdf"
 echo $VERSIONPDF
 rm -f $VERSIONPDF
 cp $PDF $VERSIONPDF
