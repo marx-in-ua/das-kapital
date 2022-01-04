@@ -357,25 +357,15 @@
 \endgroup}
 
 %% indexes 
-%% hack to prevent warning
-\newcommand{\indexchap}[1]{}
 
-\RequirePackage{amsmidx}
-\makeindex{franko}
-\makeindex{i}
-\makeindex{ii}
-\makeindex{iii1}
-\makeindex{iii2}
-\makeindex{complex}
+% Empty command
+% https://tex.stackexchange.com/questions/201817/how-to-make-a-command-completely-empty-invisible-non-existent
+\newcommand{\noop}{%
+  \@bsphack%
+  \@esphack%
+}
 
-%% fix spacing on index
-\let\oldmyindex\index
-\renewcommand*{\index}[2]{\unskip\oldmyindex{#1}{#2}}
-
-%% tables index
-\AtBeginEnvironment{tabularx}{\index{complex}{table}}
-\AtBeginEnvironment{tabular}{\index{complex}{table}}
-\AtBeginEnvironment{longtable}{\index{complex}{table}}
+\renewcommand{\index}[2]{\unskip\noop}
 
 %% Breaks
 \newcommand{\parbreak}{¬ \emph{(абзац продовжується на наступній сторінці)}}
