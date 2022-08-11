@@ -19,14 +19,40 @@
 \newcommand{\PublisherDe}{Verlag von Otto Meissner}
 \newcommand{\CityDe}{Hamburg}
 \newcommand{\YearDe}{1890}
-
+\usepackage{lua-visual-debug}
 
 \begin{document}
-  \tableofcontents*
+  \input{common/front.tex}
+
   \pagenumbering{arabic}
+  \mainmatter
 
-  \input{franko/foreword.tex}
-  \input{franko/_0061_0062.tex}
-  \input{franko/_0063.tex}
+  % your samples here
+\chapter{Перетворення зиску в пересічний зиск}
 
+\chaptertwoline{%
+Перетворення додаткової вартості в зиск}{і~норми додаткової вартості в норму зиску}{%
+Перетворення додаткової вартості в зиск}
+
+\section{Витрати виробництва (kostpreis) і зиск}
+
+\chapteronly{Перетворення товарного капіталу
+і грошового капіталу в товарно-торговельний капітал
+і в грошево-торговельний капітал
+(купецький капітал)}
+
+\addcontentsline{toc}{part}%
+  {\protect\partnumberline{\thepart}Перетворення товарного капіталу}%
+
+\addtocontents{toc}{\protect\vspace{-0.7em}}%
+\addcontentsline{toc}{part}%
+  {\protect\partnumberlineadd{грошового капіталу в товарно-торговельний}}%
+
+\addtocontents{toc}{\protect\vspace{-0.7em}}%
+\addcontentsline{toc}{part}%
+  {\protect\partnumberlineadd{капітал і в грошево-торговельний капітал}}%
+
+\section{Витрати виробництва (kostpreis) і зиск}
+
+текст
 \end{document}
