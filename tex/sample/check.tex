@@ -19,14 +19,21 @@
 \newcommand{\PublisherDe}{Verlag von Otto Meissner}
 \newcommand{\CityDe}{Hamburg}
 \newcommand{\YearDe}{1890}
-
+\usepackage{lua-visual-debug}
 
 \begin{document}
-  \tableofcontents*
-  \pagenumbering{arabic}
+  \input{common/front.tex}
 
-  \input{franko/foreword.tex}
-  \input{franko/_0061_0062.tex}
-  \input{franko/_0063.tex}
+  \pagenumbering{arabic}
+  \mainmatter
+
+  % your samples here
+  \input{iii.1/_0047c.tex}
+  \input{iii.1/_0151.tex}
+  \input{iii.1/_0212_0213c.tex}
+  \input{iii.1/_0263c.tex}
+  \input{iii.1/_0325_0326.tex}
+  \input{iii.2/_0103.tex}
+  \input{iii.2/_0232.tex}
 
 \end{document}
