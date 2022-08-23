@@ -24,22 +24,44 @@
 Сміт, кравці працюють
 звичайно 12--13 годин на день, а іноді праця триває 14--16 годин“ (стор. 25, 26, 28).
 
-\begin{table}[ht]
-  \footnotesize
-  \begin{tabular}{ c c c c c}
-  \toprule
-Число занятих людей & \makecell{Галузь промисловості\\ і місцевість} & \multicolumn{3}{c}{\makecell{Норма смертності на \num{100000} осіб\\ віком}}\\
-\cmidrule(rl){3-5}
-& & 25\textendash{}35~\abbr{р.} & 35\textendash{}45~\abbr{р.} & 45\textendash{}55~\abbr{р.}\\
-\midrule
+\begin{table}[H]
+\noindent\begin{tabularx}{\textwidth}{@{}r@{~}lXrrr}
+   \toprule 
+     \multicolumn{2}{l}{\multirowcell{2}[0ex][l]{Число занятих людей}} &
+     \multirowcell{2}[0ex][l]{Галузь промисловості\\ і місцевість} &
+     \multicolumn{3}{r@{}}{\makecell{
+         Норма смертності \\ на \num{100000} осіб віком
+     }} \\
+  \cmidrule(l){4-6}
+     & & & 25\textendash{}35 & 35\textendash{}45 & 45\textendash{}55 \\
 
-\num{958265}                          & Землеробство, Англія та Уельс & 743 & 805 & 1145\\
-\makecell{\num{22301} чоловіків і\\ \num{12377} жінок} & Кравці, Лондон                & 958 & 1262 & 2093\\
-\num{13803}                          & Складачі й друкарі, Лондон    & 894 & 1747 & 2367\\
+  \midrule
 
-  \end{tabular}
+    $\left.\begin{array}{r@{}}\text{\num{958.265}}\end{array}\right.$& &
+    Землеробство, Англія та Уельс\dotfill{} & 
+    743 & \phantom{1.}805 & \num{1.145} \\
+
+    $\left.
+    \begin{array}{r@{}}
+      \text{\num{22.301}}\\ 
+      \text{\num{12.379}}\end{array}\right.$& 
+    $\left.
+    \begin{array}{@{}l}
+      \text{чоловіків}\\ 
+      \text{жінок}
+    \end{array} 
+    \right\}$ &
+    Кравці, Лондон\dotfill{} &
+    958 & \num{1.262} & \num{2.093} \\
+         
+    $\left.\begin{array}{r@{}}\text{\num{13.803}}\end{array}\right.$& &
+    Складачі й друкарі, Лондон\dotfill{} &
+    894 & \num{1.747} & \num{2.367}
+
+\end{tabularx}
 \end{table}
-(стор. 30). Треба відзначити — і це дійсно відзначено складачем
+
+\noindent{}(стор. 30). Треба відзначити — і це дійсно відзначено складачем
 цього звіту, завідувачем медичного відділу, Джоном Сімоном, —
 що для віку в 25--35 років смертність кравців, складачів і друкарів Лондона показана применшеною, бо
 в обох цих галузях
