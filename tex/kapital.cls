@@ -115,7 +115,7 @@
 \newcommand{\pens}[1]{\,п.}
 
 %% misc
-\newcommand{\Red}{\emph{Ред.}}
+\newcommand{\Red}[1]{\emph{Ред.}}
 \newcommand{\stor}{cтор.~}
 
 %% abbr
