@@ -44,11 +44,11 @@ $D$ і $А$, $C$ і $А$, $В$ та $А$.
   \centering
   \caption*{Таблиця I}
 
-  \begin{tabular}{cccccccc}
+  \begin{tabular}{lccccccc}
     \toprule
-      \multirowcell{2}{\makecell{Рід \\землі}} &
+      \multirowcell{2}[0ex][l]{Рід\\землі} &
       \multicolumn{2}{c}{Продукт} &
-      \multirowcell{2}{\makecell{Авансова-\\ний капітал}} &
+      \multirowcell{2}[0ex][c]{Авансований\\капітал} &
       \multicolumn{2}{c}{Зиск} &
       \multicolumn{2}{c}{Рента}
       \\
@@ -56,26 +56,26 @@ $D$ і $А$, $C$ і $А$, $В$ та $А$.
     \cmidrule(l){5-6}
     \cmidrule(l){7-8}
     &
-    \makecell{Квар-\\тери} &
-    \makecell{Ши-\\лінги} &
+    \makecell{кварт.} &
+    \makecell{ш.} &
     &
-    \makecell{Квар-\\тери} &
-    \makecell{Ши-\\лінги} &
-    \makecell{Квар-\\тери} &
-    \makecell{Ши-\\лінги} &
+    \makecell{кварт.} &
+    \makecell{ш.} &
+    \makecell{кварт.} &
+    \makecell{ш.}
     \\
     \midrule
-     A  &  1  &  \phantom{0}60 & 50 & \phantom{0}\sfrac{1}{6}   &  \phantom{0}10  &   \textemdash & \textemdash \\
-     B  &  2  &  120           & 50 & 1\sfrac{1}{6}  &  \phantom{0}70  &   1           & \phantom{0}60 \\
-     C  &  3  &  180           & 50 & 2\sfrac{1}{6}  &  130 &   2           & 120 \\
-     D  &  4  &  240           & 50 & 3\sfrac{1}{6}  &  190 &   3           & 180 \\
+     A  &  1  &  \phantom{0}60 & 50 & \phantom{0}\tbfrac{1}{6}   &  \phantom{0}10  &   \textemdash & \textemdash \\
+     B  &  2  &  120           & 50 & 1\tbfrac{1}{6}  &  \phantom{0}70  &   1           & \phantom{0}60 \\
+     C  &  3  &  180           & 50 & 2\tbfrac{1}{6}  &  130 &   2           & 120 \\
+     D  &  4  &  240           & 50 & 3\tbfrac{1}{6}  &  190 &   3           & 180 \\
      \cmidrule(rl){2-3}
      \cmidrule(l){7-8}
-     Разом & 10 квар. & 600 ш. &    &       &      &   6 квар. &     360 ш. \\
+     Разом & \hang{r}{1}0 & 600 &    &       &      &   6 &     360 \\
   \end{tabular}
 \end{table}
 
-Ця послідовність,
+\noindent{}Ця послідовність,
 що становить за даних умов даний продукт, коли справу розглядати
 абстрактно (а ми вже показали ті причини, що в наслідок їх така послідовність
 може бути і в дійсності), може бути і в низхідному порядку (низхідному
