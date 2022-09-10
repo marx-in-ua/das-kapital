@@ -235,6 +235,9 @@
 \newcommand{\dittomark}{>>}
 \newcommand{\ditto}[1]{\samewidth{#1}{\dittomark{}}}
 
+%% shortcuts
+\newcommand{\pZ}{\phantom{0}}
+
 %% temp length
 \newlength{\myheight}
 
