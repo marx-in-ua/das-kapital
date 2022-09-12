@@ -1,11 +1,12 @@
 \documentclass{kapital}
 \input{final.tex}
 
-\newcommand{\VolumeNumber}{}
-\newcommand{\BookNumber}{}
+\newcommand{\VolumeNumber}{Том ІІІ}
+\newcommand{\BookNumber}{Книга третя}
 \newcommand{\BookTitle}{}
 \newcommand{\BookSource}{}
 \newcommand{\BookAuthors}{}
+\newcommand{\SourceYear}{}
 \newcommand{\Biblio}{Т. ІІІ. — Кн. ІІІ. —
 Ч. І: Сукупний процес капіталістичного виробництва /
 Пер. із 1 нім. вид.; За ред. Д. Рабіновича;
@@ -13,11 +14,17 @@
 Пер. із 3 нім. вид.; За ред. Д. Рабіновича, С. Трикоза, В. Щербаненка.
 }
 
-\begin{document}
-  % \input{common/front.tex}
+\newcommand{\VolumeNumberDe}{Dritter Band}
+\newcommand{\BookNumberDe}{Buch IІI}
+\newcommand{\BookTitleDe}{Der Gesammtsprocess der kapitalistischen Produktion}
+\newcommand{\AuflageDe}{}
+\newcommand{\HerausgegebenDe}{Herausgegeben von Friedrich Engels}
+\newcommand{\PublisherDe}{Verlag von Otto Meissner}
+\newcommand{\CityDe}{Hamburg}
+\newcommand{\YearDe}{1894 \bouillondot{} 1911}
 
-  \tableofcontents*
-  \cleardoublepage
+\begin{document}
+  \input{common/front.tex}
 
   \pagenumbering{arabic}
   \mainmatter
