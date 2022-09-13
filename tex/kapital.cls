@@ -237,6 +237,7 @@
 
 %% shortcuts
 \newcommand{\pZ}{\phantom{0}}
+\newcommand{\pF}{\phantom{\tbfrac{1}{1}}}
 
 %% temp length
 \newlength{\myheight}
