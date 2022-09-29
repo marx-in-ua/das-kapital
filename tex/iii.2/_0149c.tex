@@ -23,15 +23,16 @@ IIІ.~Додаткові капітали дають надмірний прод
   \caption*{Таблиця ІІІ}
   \footnotesize
 
+  \setlength{\tabcolsep}{4pt}
   \settowidth\rotheadsize{\theadfont Продажна}
-  \begin{tabular}{l c r c c c c c c c c}
+  \begin{tabular}{l c r c c r c c c c c}
     \toprule
       \thead[tl]{Рід\\землі} &
       &
       \thead[t]{Капітал} &
       \rothead{Зиск} &
       \rothead{Ціна\\продукції} &
-      \rothead{Продукт} & % \\ в кварт.}}} \\ в кварт.}}}
+      \thead[t]{Продукт} &
       \rothead{Продажна\\ціна} &
       \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
@@ -42,14 +43,15 @@ IIІ.~Додаткові капітали дають надмірний прод
        & акри  & \poundsign{} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{}  & \% \\
       \midrule
 
-      A & 1 & \phantom{2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{}} 2\sfrac{1}{2} & \phantom{0}\sfrac{1}{2} & \phantom{0}3 & \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}} 1\phantom{\sfrac{1}{2}} & 3 & \phantom{0}3\phantom{\sfrac{1}{2}} &\phantom{0} 0\phantom{\sfrac{1}{2}} & \phantom{0}0\phantom{\sfrac{1}{2}} & \phantom{00}0\phantom{\%} \\
-      B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & 2 \dplus{} 1\sfrac{1}{2} \deq{} 3\sfrac{1}{2}           & 3           & 10\sfrac{1}{2}                     & \phantom{0}1\sfrac{1}{2}           & \phantom{0}4\sfrac{1}{2}           & 90\% \\
-      C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & 3 \dplus{} 2\phantom{\sfrac{1}{2}} \deq{} 5\phantom{\sfrac{1}{2}} & 3 & 15\phantom{\sfrac{1}{2}}           & \phantom{0}3\phantom{\sfrac{1}{2}} & \phantom{0}9\phantom{\sfrac{1}{2}} & 180\%\\
-      D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & 4 \dplus{} 3\sfrac{1}{2} \deq{} 7\sfrac{1}{2}           & 3           & 22\sfrac{1}{2}                     & \phantom{0}5\sfrac{1}{2}           & 16\sfrac{1}{2}                     & 330\%\\
+      A & 1 & 2\hang{l}{\tbfrac{1}{2}} & \phantom{0}\hang{l}{\tbfrac{1}{2}} & \phantom{0}3 & \phantom{2 \dplus{} 1\tbfrac{1}{2} \deq{}} 1\phantom{\tbfrac{1}{2}} & 3 & \phantom{0}3\phantom{\tbfrac{1}{2}} &\phantom{0} 0\phantom{\tbfrac{1}{2}} & \phantom{0}0\phantom{\tbfrac{1}{2}} & \pZ{}\pZ{}0 \\
+      B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & \phantom{0}6 & 2 \dplus{} 1\tbfrac{1}{2} \deq{} 3\tbfrac{1}{2}           & 3           & 10\tbfrac{1}{2}                     & \phantom{0}1\tbfrac{1}{2}           & \phantom{0}4\tbfrac{1}{2}           & \pZ{}90 \\
+      C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & \phantom{0}6 & 3 \dplus{} 2\phantom{\tbfrac{1}{2}} \deq{} 5\phantom{\tbfrac{1}{2}} & 3 & 15\phantom{\tbfrac{1}{2}}           & \phantom{0}3\phantom{\tbfrac{1}{2}} & \phantom{0}9\phantom{\tbfrac{1}{2}} & 180\\
+      D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & \phantom{0}6 & 4 \dplus{} 3\tbfrac{1}{2} \deq{} 7\tbfrac{1}{2}           & 3           & 22\tbfrac{1}{2}                     & \phantom{0}5\tbfrac{1}{2}           & 16\tbfrac{1}{2}                     & 330\\
      \midrule
 
-     Разом &  & \phantom{2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{}} 17\sfrac{1}{2} & 3\sfrac{1}{2} & 21 & \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}17\phantom{\sfrac{1}{2}} & & 51\phantom{\sfrac{1}{2}}  & 10 & 30\phantom{\sfrac{1}{2}} &\\
+     Разом &  & 17\hang{l}{\tbfrac{1}{2}} & 3\hang{l}{\tbfrac{1}{2}} & 21 & 17\pF{} & & 51\phantom{\tbfrac{1}{2}}  & 10\pF{} & 30\pF{} &\\
   \end{tabular}
+  \setlength{\tabcolsep}{\tabcolsepdef}
 \end{table}
 
 \noindent{}При цьому третьому припущені знов таки байдуже, чи повторні додаткові
