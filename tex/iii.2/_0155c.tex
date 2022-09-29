@@ -1,8 +1,9 @@
 
 \index{iii2}{0155}  %% посилання на сторінку оригінального видання
-На землі $D$ збіжжева рента проти таблиці I зросла з 3\footnote*{
-В німецькому тексті стоїть: «з 2 квартерів». Явна помилка, як це можна бачити з таблиці І \emph{Прим. Ред.}
-} квартерів до 6
+На землі $D$ збіжжева рента проти таблиці I зросла з 3
+% REMOVED \footnote*{
+%В німецькому тексті стоїть: «з 2 квартерів». Явна помилка, як це можна бачити з таблиці І \emph{Прим. Ред.}}
+квартерів до 6
 тимчасом як грошова рента лишилася, як і давніш, 9\pound{ ф. стерл}. Проти таблиці II
 збіжжева рента з $D$ лишилася колишня, 6 квартерів, але грошова рента знизилась
 з 18\pound{ ф. стер.} до 9\pound{ ф. стерл}.
@@ -17,7 +18,7 @@
 Щоб по відпаданні ренти з $В$ в умовах таблиці IVb загальна сума ренти
 дорівнювала такій у таблиці I, ми мусимо одержати ще на 6\pound{ ф. стерл.}
 надпродукту, тобто 4 квартери по 1\sfrac{1}{2}\pound{ ф. стерл.}, що є новою ціною продукції.
-Тоді ми знову маємо загальну суму ренти в 18\pound{ ф. стерл.}, як у таблиці І.~Величина
+Тоді ми знову маємо загальну суму ренти в 18\pound{ ф. стерл.}, як у таблиці І. Величина
 потрібного на це додаткового капіталу буде різна залежно від того, чи
 вкладемо ми його в $C$ або $D$, чи розподілимо його між обома родами землі.
 
@@ -29,96 +30,67 @@
 такі наслідки.
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця ІVc}
-    \footnotesize
+  \centering
+  \caption*{Таблиця ІVc}
+  \footnotesize
 
-  \begin{tabular}{c c c c c c c c c c c}
+  \settowidth\rotheadsize{\theadfont Продажна}
+  \begin{tabular}{l c r c c c c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід \\землі}} &
-      \multirowcell{2}{\rotatebox[origin=c]{90}{Акри}} &
-      \rotatebox[origin=c]{90}{Капітал} &
-      \rotatebox[origin=c]{90}{Зиск} &
-      \rotatebox[origin=c]{90}{\makecell{Ціна про- \\ дукції}} &
-      \multirowcell{2}{\rotatebox[origin=c]{90}{\makecell{Продукт \\ в кварт.}}} &
-      \rotatebox[origin=c]{90}{\makecell{Продажна \\ ціна}} &
-      \rotatebox[origin=c]{90}{Здобуток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \rothead{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \rothead{Продукт} & % \\ в кварт.}}} \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\надзиску}} \\
+      \rothead{Норма\\надзиску} \\
 
-      \cmidrule(rl){3-3}
-      \cmidrule(rl){4-4}
-      \cmidrule(rl){5-5}
-      \cmidrule(rl){7-7}
-      \cmidrule(rl){8-8}
-      \cmidrule(rl){9-10}
+      \cmidrule(rl){2-11}
 
-       &  &  ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &  \\
+       & акри  & \makecell{\poundsign{}} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{}  & \% \\
       \midrule
 
-      B & 1 &  \phantom{0}5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & \phantom{0}4 & 1\sfrac{1}{2} & \phantom{0}6 & 0 & \phantom{0}0 & \phantom{00}0\% \\
-      C & 1 & 15\phantom{\sfrac{1}{2}}            & 3\phantom{\sfrac{1}{2}} & 18           & 18           & 1\sfrac{1}{2} & 27           & 6 & \phantom{0}9 & \phantom{0}60\%\\
-      D & 1 &  \phantom{0}7\sfrac{1}{2}           & 1\sfrac{1}{2}           & \phantom{0}9 & 12           & 1\sfrac{1}{2} & 18           & 6 & \phantom{0}9 & 120\%\\
-     \cmidrule(rl){1-1}
-     \cmidrule(rl){2-2}
-     \cmidrule(rl){3-3}
-     \cmidrule(rl){4-4}
-     \cmidrule(rl){5-5}
-     \cmidrule(rl){6-6}
-     \cmidrule(rl){8-8}
-     \cmidrule(rl){9-9}
-     \cmidrule(rl){10-10}
+      B & 1 &  \phantom{0}5\phantom{\tbfrac{1}{2}} & 1\phantom{\tbfrac{1}{2}} & \phantom{0}6 & \phantom{0}4 & 1\tbfrac{1}{2} & \phantom{0}6 & 0 & \phantom{0}0 & \phantom{00}0\% \\
+      C & 1 & 15\phantom{\tbfrac{1}{2}}            & 3\phantom{\tbfrac{1}{2}} & 18           & 18           & 1\tbfrac{1}{2} & 27           & 6 & \phantom{0}9 & \phantom{0}60\%\\
+      D & 1 &  \phantom{0}7\tbfrac{1}{2}           & 1\tbfrac{1}{2}           & \phantom{0}9 & 12           & 1\tbfrac{1}{2} & 18           & 6 & \phantom{0}9 & 120\%\\
+     \midrule
 
-     Разом & 3 & 27\sfrac{1}{2} & 5\sfrac{1}{2} & 33 & 34 & & 51 & 12 & 18 &\\
+     Разом & 3 & 27\tbfrac{1}{2} & 5\tbfrac{1}{2} & 33 & 34 & & 51 & 12 & 18 &\\
   \end{tabular}
-
-  \end{center}
 \end{table}
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця ІVd}
-    \footnotesize
+  \centering
+  \caption*{Таблиця ІVd}
+  \footnotesize
 
-  \begin{tabular}{c c c c c c c c c c c}
+  \settowidth\rotheadsize{\theadfont Продажна}
+  \begin{tabular}{l c r c c c c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід \\землі}} &
-      \multirowcell{2}{\rotatebox[origin=c]{90}{Акри}} &
-      \rotatebox[origin=c]{90}{Капітал} &
-      \rotatebox[origin=c]{90}{Зиск} &
-      \rotatebox[origin=c]{90}{\makecell{Ціна про- \\ дукції}} &
-      \multirowcell{2}{\rotatebox[origin=c]{90}{\makecell{Продукт \\ в кварт.}}} &
-      \rotatebox[origin=c]{90}{\makecell{Продажна \\ ціна}} &
-      \rotatebox[origin=c]{90}{Здобуток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \rothead{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \rothead{Продукт} & % \\ в кварт.}}} \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\надзиску}} \\
+      \rothead{Норма\\надзиску} \\
 
-      \cmidrule(rl){3-3}
-      \cmidrule(rl){4-4}
-      \cmidrule(rl){5-5}
-      \cmidrule(rl){7-7}
-      \cmidrule(rl){8-8}
-      \cmidrule(rl){9-10}
+      \cmidrule(rl){2-11}
 
-       &  &  ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &  \\
+       & акри  & \makecell{\poundsign{}} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{}  & \% \\
       \midrule
 
-      B & 1 & \phantom{0}5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & \phantom{0}4 & 1\sfrac{1}{2} & \phantom{0}6 & \phantom{0}0 & \phantom{0}0 & \phantom{00}0\% \\
-      C & 1 & \phantom{0}5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & \phantom{0}6 & 1\sfrac{1}{2} & \phantom{0}9 & \phantom{0}2 & \phantom{0}3 & \phantom{0}60\%\\
-      D & 1 & 12\sfrac{1}{2}                     & 2\sfrac{1}{2}           & 15           & 20           & 1\sfrac{1}{2} & 30           & 10           & 15           & 120\%\\
-     \cmidrule(rl){1-1}
-     \cmidrule(rl){2-2}
-     \cmidrule(rl){3-3}
-     \cmidrule(rl){4-4}
-     \cmidrule(rl){5-5}
-     \cmidrule(rl){6-6}
-     \cmidrule(rl){8-8}
-     \cmidrule(rl){9-9}
-     \cmidrule(rl){10-10}
+      B & 1 & \phantom{0}5\phantom{\tbfrac{1}{2}} & 1\phantom{\tbfrac{1}{2}} & \phantom{0}6 & \phantom{0}4 & 1\tbfrac{1}{2} & \phantom{0}6 & \phantom{0}0 & \phantom{0}0 & \phantom{00}0\% \\
+      C & 1 & \phantom{0}5\phantom{\tbfrac{1}{2}} & 1\phantom{\tbfrac{1}{2}} & \phantom{0}6 & \phantom{0}6 & 1\tbfrac{1}{2} & \phantom{0}9 & \phantom{0}2 & \phantom{0}3 & \phantom{0}60\%\\
+      D & 1 & 12\tbfrac{1}{2}                     & 2\tbfrac{1}{2}           & 15           & 20           & 1\tbfrac{1}{2} & 30           & 10           & 15           & 120\%\\
+     \midrule
 
-     Разом & 3 & 22\sfrac{1}{2} & 4\sfrac{1}{2} & 27 & 30 & & 45 & 12 & 18 &\\
+     Разом & 3 & 22\tbfrac{1}{2} & 4\tbfrac{1}{2} & 27 & 30 & & 45 & 12 & 18 &\\
   \end{tabular}
-
-  \end{center}
 \end{table}
-
