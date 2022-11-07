@@ -68,6 +68,14 @@
   \@afterindentfalse{}\@afterheading{}%
 }
 
+\newcommand{\nonumsectionF}[4]{%
+  \clearforchapter%
+  \thispagestyle{chapter}%
+  \headerwrapper{\@m@mschapter{#1}}%
+  \nonumsectioncft{#2}{#3}{#4}%
+  \@afterindentfalse{}\@afterheading{}%
+}
+
 %% format plain pagestyle
 \makeevenfoot{plain}{\null\defhspace{}\sffamily\thepage}{}{}
 \makeoddfoot{plain}{}{}{\sffamily\thepage\defhspace{}}
