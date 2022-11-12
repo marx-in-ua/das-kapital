@@ -1,111 +1,92 @@
 
-\index{iii2}{0159}  %% посилання на сторінку оригінального видання
 Для зручности порівняння поновимо насамперед таку таблицю:
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця І}
-    \footnotesize
+  \centering
+  \caption*{Таблиця І}
+  \footnotesize
 
-  \begin{tabular}{c c c c c c c c c}
+  \settowidth\rotheadsize{\theadfont Продажна}
+  \begin{tabular}{l c r c c c c c c}
     \toprule
-      \multirowcell{2}{Земля} &
-      \multirowcell{2}{Акри} &
-      Капітал &
-      Зиск &
-      \multirowcell{2}{\makecell{Ціна про- \\ дукції в \\ квартерах}} &
-      \multirowcell{2}{\makecell{Продукт в\\ квартерах}} &
+      \thead[tl]{Земля} &
+      &
+      \rothead{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \rothead{Продукт} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\надзиску}} \\
+      \rothead{Норма\\надзиску} \\
 
-      \cmidrule(rl){3-3}
-      \cmidrule(rl){4-4}
-      \cmidrule(rl){7-7}
-      \cmidrule(rl){8-8}
+      \cmidrule(rl){2-9}
 
-       &  &  ф. ст. & ф. ст. & & & Кварт. & ф. ст. &   \\
-       \\
+       & акри  & \makecell{\poundsign{}} & \poundsign{} & кв. & кв. & кв. & \poundsign{}  & \% \\
       \midrule
 
-       A & 1 & \phantom{0}2\sfrac{1}{2} & \sfrac{1}{2} & 3\phantom{\sfrac{1}{2}} & \phantom{0}1 & 0 & \phantom{0}0 & \phantom{00}0\% \\
-       B & 1 & \phantom{0}2\sfrac{1}{2} & \sfrac{1}{2} & 1\sfrac{1}{2}           & \phantom{0}2 & 1 & \phantom{0}3 & 120\% \\
-       C & 1 & \phantom{0}2\sfrac{1}{2} & \sfrac{1}{2} & 1\phantom{\sfrac{1}{2}} & \phantom{0}3 & 2 & \phantom{0}6 & 240\%\\
-       D & 1 & \phantom{0}2\sfrac{1}{2} & \sfrac{1}{2} & \phantom{0}\sfrac{3}{4} & \phantom{0}4 & 3 & \phantom{0}9 & 360\%\\
-     \cmidrule(rl){1-1}
-     \cmidrule(rl){2-2}
-     \cmidrule(rl){3-3}
-     \cmidrule(rl){6-6}
-     \cmidrule(rl){7-7}
-     \cmidrule(rl){8-8}
-     \cmidrule(rl){9-9}
-
-      Разом & 4 & 10 & & & 10 & 6 & 18 & \makecell{180\% \\ пересічно}\\
+       A & 1 & 2\tbfrac{1}{2} & \tbfrac{1}{2} & 3\phantom{\tbfrac{1}{2}} & \phantom{0}1 & 0 & \phantom{0}0 & \phantom{00}0 \\
+       B & 1 & 2\tbfrac{1}{2} & \tbfrac{1}{2} & 1\tbfrac{1}{2}           & \phantom{0}2 & 1 & \phantom{0}3 & 120 \\
+       C & 1 & 2\tbfrac{1}{2} & \tbfrac{1}{2} & 1\phantom{\tbfrac{1}{2}} & \phantom{0}3 & 2 & \phantom{0}6 & 240\\
+       D & 1 & 2\tbfrac{1}{2} & \tbfrac{1}{2} & \phantom{0}\tbfrac{3}{4} & \phantom{0}4 & 3 & \phantom{0}9 & 360\\
+    \midrule
+      Разом & 4 & \hang{r}{1}0\pF & & & 10 & 6 & 18 & \makecell[t]{180 \\ пересічно}\\
   \end{tabular}
 
-  \end{center}
 \end{table}
 
-Коли ми тепер припустимо, що цифра 16 квартерів, що їх даватимуть землі
+\noindent{}Коли ми тепер припустимо, що цифра 16 квартерів, що їх даватимуть землі
 $В$, $C$, $D$ за низхідної норми продуктивности, достатня для того, щоб вилучити
 $А$ з числа оброблюваних земель, то таблиця III перетворюється на таку:
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця V}
-    \footnotesize
+  \centering
+  \caption*{Таблиця V}
+  \footnotesize
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
-    \toprule
-      \multirowcell{2}{Земля} &
-      \multirowcell{2}{Акри} &
-      \makecell{Вкладення \\ капіталу} &
-      Зиск &
-      \multirowcell{2}{\makecell{Продукт в\\ квартерах}} &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
-      \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\надзиску}} \\
+  \settowidth\rotheadsize{\theadfont Продажна}
+  \begin{tabular}{l c r c r c c c c c}
+  \toprule
 
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
+\thead[tl]{Земля} &
+&
+\thead[t]{Вкладення \\ капіталу} &
+\rothead{Зиск} &
+\thead[t]{Продукт} &
+\rothead{Продажна\\ціна} &
+\rothead{Здобуток} &
+\multicolumn{2}{c}{Рента} &
+\rothead{Норма\\надзиску} \\
 
-      \cmidrule(r){6-6}
-      \cmidrule(r){7-7}
-      \cmidrule(r){8-8}
-      \cmidrule(r){9-9}
+  \cmidrule(rl){2-10}
+  & акри  & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{}  & \% \\
+  \midrule
 
-       &  & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &   \\
+
+       B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} & 1 & 2 \dplus{} 1\tbfrac{1}{2} \deq{} 3\tbfrac{1}{2} 
+            & 1\tbfrac{5}{7} & \phantom{0}6\phantom{\tbfrac{1}{2}} & 0\phantom{\tbfrac{1}{2}} & 0\phantom{\tbfrac{1}{2}} & \phantom{00}0\\
+       C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} & 1 & 3 \dplus{} 2\phantom{\tbfrac{1}{2}} \deq{} 5\phantom{\tbfrac{1}{2}} 
+            & 1\tbfrac{5}{7} & \phantom{0}8\tbfrac{4}{7}           & 1\tbfrac{1}{2}           & 2\tbfrac{4}{7}           & \phantom{0}51\hang{l}{\tbfrac{2}{5}}\\
+       D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} & 1 & 4 \dplus{} 3\tbfrac{1}{2} \deq{} 7\tbfrac{1}{2}
+            & 1\tbfrac{5}{7} & 12\tbfrac{6}{7}                     & 4\phantom{\tbfrac{1}{2}} & 6\tbfrac{6}{7}           & 137\hang{l}{\tbfrac{1}{5}}\\  
+
       \midrule
 
-       B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} & 1 & 2 \dplus{} 1\sfrac{1}{2} \deq{} 3\sfrac{1}{2}                     & 1\sfrac{5}{7} & \phantom{0}6\phantom{\sfrac{1}{2}} & 0\phantom{\sfrac{1}{2}} & 0\phantom{\sfrac{1}{2}} & \phantom{00}0\phantom{\sfrac{1}{2}}\% \\
-       C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} & 1 & 3 \dplus{} 2\phantom{\sfrac{1}{2}} \deq{} 5\phantom{\sfrac{1}{2}} & 1\sfrac{5}{7} & \phantom{0}8\sfrac{4}{7}           & 1\sfrac{1}{2}           & 2\sfrac{4}{7}           & \phantom{0}51\sfrac{2}{5}\%\\
-       D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} & 1 & 4 \dplus{} 3\sfrac{1}{2} \deq{} 7\sfrac{1}{2}                     & 1\sfrac{5}{7} & 12\sfrac{6}{7}                     & 4\phantom{\sfrac{1}{2}} & 6\sfrac{6}{7}           & 137\sfrac{1}{5}\%\\
-     \cmidrule(r){1-1}
-     \cmidrule(r){2-2}
-     \cmidrule(r){3-3}
-     \cmidrule(r){5-5}
-     \cmidrule(r){7-7}
-     \cmidrule(r){8-8}
-     \cmidrule(r){9-9}
-     \cmidrule(r){10-10}
-
-      Разом & 3 & 15 & &  \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}16\phantom{\sfrac{1}{2}} & & 27\sfrac{3}{7} & 5\sfrac{1}{2} & 9\sfrac{3}{7} & \makecell{94\sfrac{3}{10}\% \\ пересічно\footnotemarkZ{}}\\
+      Разом & 3 & 15 & &  \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}16\phantom{\sfrac{1}{2}} & & 27\sfrac{3}{7} & 5\sfrac{1}{2} & 9\sfrac{3}{7} & \makecell[t]{94\hang{l}{\sfrac{3}{10}} \\ пересічно\footnotemarkZ{}}\\
   \end{tabular}
-
-  \end{center}
 \end{table}
 \footnotetextZ{Тут пересічну норму надзиску обчислено не до всього вкладеного капіталу, а тільки до капіталу, вкладеного в рентодайні дільниці $C$ і $D$. \emph{Прим. Ред.}}
 
-Тут за низхідної норми продуктивности додаткових капіталів і за різного
+\noindent{}Тут за низхідної норми продуктивности додаткових капіталів і за різного
 ступеня цього зменшення на різних землях, реґуляційна ціна продукції знизилася
 з 3\pound{ ф. стерл.} до 1\sfrac{5}{7}\pound{ ф. стерл}. Вкладення капіталу збільшилося наполовину з 10\pound{ ф.
 стерл.} до 15\pound{ ф. стерл}. Грошова рента зменшилася майже удвоє, з 18 до 9\sfrac{3}{7}\pound{ ф.
-стерл.}, але збіжжева рента лише на \sfrac{1}{2} \footnote*{
-В німецькому тексті тут стоїть «\sfrac{1}{22}». Очевидна помилка. \emph{Прим. Ред.}
-}, з 6 квартерів до 5\sfrac{1}{2}. Весь продукт
-збільшився з 10 до 16, або на 60\%\footnote*{
-В німецькому тексті тут помилково стоїть: «160\%». \emph{Прим. Ред.}
-}. Збіжжева рента становить небагато більше
+стерл.}, але збіжжева рента лише на \sfrac{1}{2},
+% REMOVED \footnote*{
+% В німецькому тексті тут стоїть «\sfrac{1}{22}». Очевидна помилка. \emph{Прим. Ред.}}
+з 6 квартерів до 5\sfrac{1}{2}. Весь продукт
+збільшився з 10 до 16, або на 60\%.
+% REMOVED \footnote*{
+% В німецькому тексті тут помилково стоїть: «160\%». \emph{Прим. Ред.}}
+Збіжжева рента становить небагато більше
 від третини всього продукту. Авансований капітал відноситься до грошової ренти
 як $15 : 9\sfrac{3}{7}$, тимчасом як давніш це відношення було $10:18$.
 
