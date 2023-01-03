@@ -9,53 +9,39 @@
 вигляду. Наприклад, коли б третє вкладення капіталу було зроблено на $C$:
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця ІVa}
-    \footnotesize
+  \centering
+  \caption*{Таблиця ІVa}
+  \footnotesize
 
-  \begin{tabular}{c c c c c c c c c c c}
+  \settowidth\rotheadsize{\theadfont Продажна}
+  \begin{tabular}{l c r c c c c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід \\землі}} &
-      \multirowcell{2}{\rotatebox[origin=c]{90}{Акри}} &
-      \rotatebox[origin=c]{90}{Капітал} &
-      \rotatebox[origin=c]{90}{Зиск} &
-      \rotatebox[origin=c]{90}{\makecell{Ціна про- \\ дукції}} &
-      \multirowcell{2}{\rotatebox[origin=c]{90}{\makecell{Продукт \\ в кварт.}}} &
-      \rotatebox[origin=c]{90}{\makecell{Продажна \\ ціна}} &
-      \rotatebox[origin=c]{90}{Здобуток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \rothead{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \rothead{Продукт} & % \\ в кварт.}}} \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\надзиску}} \\
+      \rothead{Норма\\надзиску} \\
 
-      \cmidrule(rl){3-3}
-      \cmidrule(rl){4-4}
-      \cmidrule(rl){5-5}
-      \cmidrule(rl){7-7}
-      \cmidrule(rl){8-8}
-      \cmidrule(rl){9-10}
+      \cmidrule(rl){2-11}
 
-       &  &  ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &  \\
+       & акри  & \makecell{\poundsign{}} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{}  & \% \\
       \midrule
 
-      B & 1 &  \phantom{0}5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & \phantom{0}4 & 1\sfrac{1}{2} & \phantom{0}6\phantom{\sfrac{1}{2}} & 0 & \phantom{0}0\phantom{\sfrac{1}{2}}   & \phantom{00}0\% \\
-      C & 1 &  \phantom{0}7\sfrac{1}{2}           & 1\sfrac{1}{2}           & \phantom{0}9 & \phantom{0}9 & 1\sfrac{1}{2} & 13\sfrac{1}{2}                     & 3 & \phantom{0}4\sfrac{1}{2}            & \phantom{0}60\%\\
-      D & 1 &  \phantom{0}5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & \phantom{0}8 & 1\sfrac{1}{2} & 12\phantom{\sfrac{1}{2}}           & 4 & \phantom{0}6\phantom{\sfrac{1}{2}}  & 120\%\\
-     \cmidrule(rl){1-1}
-     \cmidrule(rl){2-2}
-     \cmidrule(rl){3-3}
-     \cmidrule(rl){4-4}
-     \cmidrule(rl){5-5}
-     \cmidrule(rl){6-6}
-     \cmidrule(rl){8-8}
-     \cmidrule(rl){9-9}
-     \cmidrule(rl){10-10}
+      B & 1 &  \phantom{0}5\phantom{\tbfrac{1}{2}} & 1\phantom{\tbfrac{1}{2}} & \phantom{0}6 & \phantom{0}4 & 1\tbfrac{1}{2} & \phantom{0}6\phantom{\tbfrac{1}{2}} & 0 & \phantom{0}0\phantom{\tbfrac{1}{2}}   & \phantom{00}0 \\
+      C & 1 &  \phantom{0}7\tbfrac{1}{2}           & 1\tbfrac{1}{2}           & \phantom{0}9 & \phantom{0}9 & 1\tbfrac{1}{2} & 13\tbfrac{1}{2}                     & 3 & \phantom{0}4\tbfrac{1}{2}            & \phantom{0}60\\
+      D & 1 &  \phantom{0}5\phantom{\tbfrac{1}{2}} & 1\phantom{\tbfrac{1}{2}} & \phantom{0}6 & \phantom{0}8 & 1\tbfrac{1}{2} & 12\phantom{\tbfrac{1}{2}}           & 4 & \phantom{0}6\phantom{\tbfrac{1}{2}}  & 120\\
+     \midrule
 
-     Разом & 3 & 17\sfrac{1}{2} & 3\sfrac{1}{2} & 21 & 21 & & 30\sfrac{1}{2} & 7 & 10\sfrac{1}{2} &\\
+     Разом & 3 & 17\tbfrac{1}{2} & 3\tbfrac{1}{2} & 21 & 21 & & 30\tbfrac{1}{2} & 7 & 10\tbfrac{1}{2} &\\
   \end{tabular}
-
-  \end{center}
 \end{table}
 
-Продукт з $C$ збільшився тут проти таблиці ІV з 6 кватерів до 9, надпродукт
+\noindent{}Продукт з $C$ збільшився тут проти таблиці ІV з 6 кватерів до 9, надпродукт
 — з 2 квартерів до 3, грошова рента зросла з 3\pound{ ф. стерл.} до 4\sfrac{1}{2}\pound{ ф.
 стерл}. Проти таблиці II, де грошова рента була 12\pound{ ф. стерл.} і таблиці І,
 де вона була 6\pound{ ф. стерл.}, вона навпаки зменшилась. Загальна сума ренти визначена
@@ -72,53 +58,39 @@
 замість $C$, то ми матимемо:
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця ІVb}
-    \footnotesize
+  \centering
+  \caption*{Таблиця ІVb}
+  \footnotesize
 
-  \begin{tabular}{c c c c c c c c c c c}
+  \settowidth\rotheadsize{\theadfont Продажна}
+  \begin{tabular}{l c r c c c c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід \\землі}} &
-      \multirowcell{2}{\rotatebox[origin=c]{90}{Акри}} &
-      \rotatebox[origin=c]{90}{Капітал} &
-      \rotatebox[origin=c]{90}{Зиск} &
-      \rotatebox[origin=c]{90}{\makecell{Ціна про- \\ дукції}} &
-      \multirowcell{2}{\rotatebox[origin=c]{90}{\makecell{Продукт \\ в кварт.}}} &
-      \rotatebox[origin=c]{90}{\makecell{Продажна \\ ціна}} &
-      \rotatebox[origin=c]{90}{Здобуток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \rothead{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \rothead{Продукт} & % \\ в кварт.}}} \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\надзиску}} \\
+      \rothead{Норма\\надзиску} \\
 
-      \cmidrule(rl){3-3}
-      \cmidrule(rl){4-4}
-      \cmidrule(rl){5-5}
-      \cmidrule(rl){7-7}
-      \cmidrule(rl){8-8}
-      \cmidrule(rl){9-10}
+      \cmidrule(rl){2-11}
 
-       &  &  ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &  \\
+       & акри  & \makecell{\poundsign{}} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{}  & \% \\
       \midrule
 
-      B & 1 &  \phantom{0}5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & \phantom{0}4 & 1\sfrac{1}{2}  & \phantom{0}6 & 0 & \phantom{0}0 & \phantom{00}0\% \\
-      C & 1 &  \phantom{0}5\phantom{\sfrac{1}{2}} & 1\phantom{\sfrac{1}{2}} & \phantom{0}6 & \phantom{0}6 & 1\sfrac{1}{2}  & \phantom{0}9 & 2 & \phantom{0}3 & \phantom{0}60\%\\
-      D & 1 &  \phantom{0}7\sfrac{1}{2}           & 1\sfrac{1}{2}           & \phantom{0}9 & \phantom{0}12 & 1\sfrac{1}{2} & 18           & 6 & \phantom{0}9 & 120\%\\
-     \cmidrule(rl){1-1}
-     \cmidrule(rl){2-2}
-     \cmidrule(rl){3-3}
-     \cmidrule(rl){4-4}
-     \cmidrule(rl){5-5}
-     \cmidrule(rl){6-6}
-     \cmidrule(rl){8-8}
-     \cmidrule(rl){9-9}
-     \cmidrule(rl){10-10}
+      B & 1 &  \phantom{0}5\phantom{\tbfrac{1}{2}} & 1\phantom{\tbfrac{1}{2}} & \phantom{0}6 & \phantom{0}4 & 1\tbfrac{1}{2}  & \phantom{0}6 & 0 & \phantom{0}0 & \phantom{00}0 \\
+      C & 1 &  \phantom{0}5\phantom{\tbfrac{1}{2}} & 1\phantom{\tbfrac{1}{2}} & \phantom{0}6 & \phantom{0}6 & 1\tbfrac{1}{2}  & \phantom{0}9 & 2 & \phantom{0}3 & \phantom{0}60\\
+      D & 1 &  \phantom{0}7\tbfrac{1}{2}           & 1\tbfrac{1}{2}           & \phantom{0}9 & \phantom{0}12 & 1\tbfrac{1}{2} & 18           & 6 & \phantom{0}9 & 120\\
+     \midrule
 
-     Разом & 3 & 17\sfrac{1}{2} & 3\sfrac{1}{2} & 21 & 22 & & 33 & 8 & 12 &\\
+     Разом & 3 & 17\tbfrac{1}{2} & 3\tbfrac{1}{2} & 21 & 22 & & 33 & 8 & 12 &\\
   \end{tabular}
-
-  \end{center}
 \end{table}
 
-Тут загальна кількість продукту \deq{} 22 кварт., більша ніж удвоє проти
+\noindent{}Тут загальна кількість продукту \deq{} 22 кварт., більша ніж удвоє проти
 загальної кількости продукту таблиці І, хоч авансований капітал є лише 17\sfrac{1}{2}\pound{ ф. стерл.} проти 10\pound{ ф. стерл.}, отже, не подвоївся. Далі, загальна кількість продукту
 на 2 квартерн більша, ніж загальна кількість продукту у таблиці II, хоч
-в останній авансований капітал більший, а саме 20\pound{ ф. стерл.}
+в останній авансований капітал більший, а саме 20\pound{ ф. стерл.}.
