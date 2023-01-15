@@ -6,52 +6,40 @@
 таблиці VIII.
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця VIII}
-    \footnotesize
+  \centering
+  \caption*{Таблиця VIII}
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
+  \footnotesize
+  \setlength{\tabcolsep}{4.5pt}
+  \settowidth\rotheadsize{\theadfont Продажна}
+
+  \begin{tabular}{l c r c c r c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід\\ землі}} &
-      \multirowcell{2}{Акри} &
-      Капітал &
-      Зиск &
-      \makecell{Ціна\\ продук.} &
-      \multirowcell{2}{\makecell{Продукт в\\ квартерах}} &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \thead[t]{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \thead[t]{Продукт} & % \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\надзиску}} \\
+      \rothead{Норма\\надзиску} \\
 
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){5-5}
-      \cmidrule(r){7-7}
-      \cmidrule(r){8-8}
-      \cmidrule(r){9-9}
-      \cmidrule(r){10-10}
+    \cmidrule(rl){2-11}
+      & акри  & \poundsign{} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \% \\
 
-       &  & ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &   \\
-      \midrule
-      A & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & \phantom{0}\sfrac{1}{2} \dplus{} 1 \deq{} 1\sfrac{1}{2}                                 & 4 & \phantom{0}6 & 0\phantom{\sfrac{1}{2}} & \phantom{0}0 & \phantom{00}0\% \\
-      B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 1\phantom{\sfrac{0}{0}} \dplus{} 2 \deq{} 3\phantom{\sfrac{0}{0}}                       & 4 & 12           & 1\sfrac{1}{2}           & \phantom{0}6 & 120\% \\
-      C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 1\sfrac{1}{2} \dplus{} 3 \deq{} 4\sfrac{1}{4}                                           & 4 & 18           & 3\phantom{\sfrac{1}{2}} & 12           & 240\%\\
-      D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 2\phantom{\sfrac{0}{0}} \dplus{} 4 \deq{} 6\phantom{\sfrac{0}{0}} & 4 & 24           & 4\sfrac{1}{2}           & 18           & 360\%\\
-
-     \cmidrule(r){3-3}
-     \cmidrule(l){6-6}
-     \cmidrule(r){8-8}
-     \cmidrule(r){9-9}
-     \cmidrule(r){10-10}
-     \cmidrule(r){11-11}
-
-      Разом & & \phantom{2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{}}20 & & & \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}15 & & 60 & 9 & 36 & 240\%\\
+    \midrule
+      A & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & \phantom{0}\tbfrac{1}{2} \dplus{} 1 \deq{} 1\tbfrac{1}{2}                                 & 4 & \phantom{0}6 & 0\phantom{\tbfrac{1}{2}} & \phantom{0}0 & \phantom{00}0 \\
+      B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 1\phantom{\tbfrac{1}{2}} \dplus{} 2 \deq{} 3\phantom{\tbfrac{1}{2}}                       & 4 & 12           & 1\tbfrac{1}{2}           & \phantom{0}6 & 120 \\
+      C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 1\tbfrac{1}{2} \dplus{} 3 \deq{} 4\tbfrac{1}{4}                                           & 4 & 18           & 3\phantom{\tbfrac{1}{2}} & 12           & 240\\
+      D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 2\phantom{\tbfrac{1}{2}} \dplus{} 4 \deq{} 6\phantom{\tbfrac{1}{2}} & 4 & 24           & 4\tbfrac{1}{2}           & 18           & 360\\
+     \midrule
+       Разом & & 20 & & & 15\pF{} & & 60 & 9\pF{} & 36 & 240\\
   \end{tabular}
-
-  \end{center}
 \end{table}
 
-І тут ціна продукції, яка підвищується в тому самому відношенні, зумовлює
+\noindent{}І тут ціна продукції, яка підвищується в тому самому відношенні, зумовлює
 те, що зменшення продуктивности цілком урівноважується так щодо здобутку,
 як і щодо грошової ренти.
 
@@ -64,50 +52,39 @@
 — до \sfrac{1}{4} продуктивности першого вкладення.
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця IX}
-    \footnotesize
+  \centering
+  \caption*{Таблиця IX}
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
+  \footnotesize
+  \setlength{\tabcolsep}{4.5pt}
+  \settowidth\rotheadsize{\theadfont Продажна}
+
+  \begin{tabular}{l c r c c r c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід\\ землі}} &
-      \multirowcell{2}{Акри} &
-      Капітал &
-      Зиск &
-      \makecell{Ціна\\ продук.} &
-      \multirowcell{2}{\makecell{Продукт в\\ квартерах}} &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \thead[t]{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \thead[t]{Продукт} & % \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\ренти}} \\
+      \rothead{Норма\\надзиску} \\
 
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){5-5}
-      \cmidrule(r){7-7}
-      \cmidrule(r){8-8}
-      \cmidrule(r){9-9}
-      \cmidrule(r){10-10}
+    \cmidrule(rl){2-11}
+      & акри  & \poundsign{} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \% \\
 
-       &  & ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &   \\
-      \midrule
-      A & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 1 \dplus{} \phantom{0}\sfrac{1}{2} \deq{} 1\sfrac{1}{2}                                 & 4 & \phantom{0}6 & 0\phantom{\sfrac{1}{2}} & \phantom{0}0 & \phantom{00}0\% \\
-      B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 2 \dplus{} 1\phantom{\sfrac{0}{0}} \deq{} 3\phantom{\sfrac{0}{0}}                       & 4 & 12           & 1\sfrac{1}{2}           & \phantom{0}6 & 120\% \\
-      C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 3 \dplus{} 1\sfrac{1}{2} \deq{} 4\sfrac{1}{2}                                           & 4 & 18           & 3\phantom{\sfrac{1}{2}} & 12           & 240\%\\
-      D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 4 \dplus{} 2\phantom{\sfrac{0}{0}} \deq{} 6\phantom{\sfrac{0}{0}} & 4 & 24           & 4\sfrac{1}{2}           & 18           & 360\%\\
+    \midrule
+      A & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 1 \dplus{} \phantom{0}\tbfrac{1}{2} \deq{} 1\tbfrac{1}{2}                                 & 4 & \phantom{0}6 & 0\phantom{\tbfrac{1}{2}} & \phantom{0}0 & \phantom{00}0 \\
+      B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 2 \dplus{} 1\phantom{\tbfrac{1}{2}} \deq{} 3\phantom{\tbfrac{1}{2}}                       & 4 & 12           & 1\tbfrac{1}{2}           & \phantom{0}6 & 120 \\
+      C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 3 \dplus{} 1\tbfrac{1}{2} \deq{} 4\tbfrac{1}{2}                                           & 4 & 18           & 3\phantom{\tbfrac{1}{2}} & 12           & 240\\
+      D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 4 \dplus{} 2\phantom{\tbfrac{1}{2}} \deq{} 6\phantom{\tbfrac{1}{2}} & 4 & 24           & 4\tbfrac{1}{2}           & 18           & 360\\
 
-     \cmidrule(r){3-3}
-     \cmidrule(l){6-6}
-     \cmidrule(r){8-8}
-     \cmidrule(r){9-9}
-     \cmidrule(r){10-10}
-     \cmidrule(r){11-11}
-
-      Разом & & \phantom{2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{}}20 & & & \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}15 & & 60 & 9 & 36 & 240\%\\
+     \midrule
+        Разом & & 20 & & & 15\pF{} & & 60 & 9\pF{} & 36 & 240\\
   \end{tabular}
-
-  \end{center}
 \end{table}
 
-Таблиця IX та сама, що й таблиця VIII, тільки в таблиці VIII зменшення
+\noindent{}Таблиця IX та сама, що й таблиця VIII, тільки в таблиці VIII зменшення
 продуктивности припадає на перше, в таблиці IX — на друге капіталовкладення.
