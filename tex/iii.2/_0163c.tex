@@ -1,53 +1,39 @@
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця VIa}
-    \footnotesize
+  \centering
+  \caption*{Таблиця VIa}
+  \footnotesize
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
+  \settowidth\rotheadsize{\theadfont Продажна}
+  \begin{tabular}{l c r c r c c c c}
     \toprule
-      \multirowcell{2}{Земля} &
-      \multirowcell{2}{Акри} &
-      Капітал &
-      Зиск &
-      \multirowcell{2}{\makecell{Продукт з акра\\ в квартерах}} &
-      \makecell{Продажна \\ ціна} &
-      %% TODO: Якась проблема з роздільними лініями починаючи зі здобуток
-      \makecell{Здобу-\\ток} &
+      \thead[t]{Земля} &
+        &
+      \thead[t]{Капітал} &
+      \rothead{Зиск} &
+      \thead[tc]{Продукт\\з акра} &  % в квартерах
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} \\
 
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){6-6}
+     \cmidrule(rl){2-9}
+       & акри  & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{} \\
 
-      \cmidrule(r){7-7}
-      \cmidrule(r){8-8}
-      \cmidrule(r){9-9}
-
-       &  & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст.   \\
       \midrule
-       A & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 1 \dplus{} \phantom{0}3\phantom{\sfrac{1}{2}} \deq{} \phantom{0}4\phantom{\sfrac{1}{2}}   & 1\sfrac{1}{2} & \phantom{0}6\phantom{\sfrac{3}{4}} & \phantom{0}0\phantom{\sfrac{1}{2}}\footnotemarkZ{}  & \phantom{0}0\phantom{\sfrac{1}{2}} \\
-       B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 2 \dplus{} \phantom{0}2\sfrac{1}{2} \deq{} \phantom{0}4\sfrac{1}{2}                       & 1\sfrac{1}{2} & \phantom{0}6\sfrac{3}{4}           & \phantom{00}\sfrac{1}{2}                            & \phantom{00}\sfrac{3}{4}           \\
-       C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 3 \dplus{} \phantom{0}5\phantom{\sfrac{1}{2}} \deq{} \phantom{0}8\phantom{\sfrac{1}{2}}   & 1\sfrac{1}{2} & 12\phantom{\sfrac{3}{4}}           & \phantom{0}4\phantom{\sfrac{1}{2}}                  & \phantom{0}6\phantom{\sfrac{1}{2}} \\
-       D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 4 \dplus{} 12\phantom{\sfrac{1}{2}} \deq{} 16\phantom{\sfrac{1}{2}}                       & 1\sfrac{1}{2} & 24\phantom{\sfrac{3}{4}}           & 12\phantom{\sfrac{1}{2}}                            & 18\phantom{\sfrac{1}{2}}           \\
-     \cmidrule(r){1-1}
-     \cmidrule(r){2-2}
-     \cmidrule(r){3-3}
-     \cmidrule(r){4-4}
-     \cmidrule(r){5-5}
-     \cmidrule(r){6-6}
-
-     \cmidrule(r){8-8}
-     \cmidrule(r){9-9}
-
-      Разом & 4 & \phantom{2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{}}20 & & \phantom{2 \dplus{} 12\sfrac{1}{2} \deq{}}32\sfrac{1}{2} & & & 16\sfrac{1}{2} & 24\sfrac{3}{4}\\
-  \end{tabular}
-
-  \end{center}
+       A & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 1 \dplus{} \phantom{0}3\phantom{\tbfrac{1}{2}} \deq{} \phantom{0}4\phantom{\tbfrac{1}{2}}   & 1\tbfrac{1}{2} & \phantom{0}6\phantom{\tbfrac{3}{4}} & \phantom{0}0\phantom{\tbfrac{1}{2}}  & \phantom{0}0\phantom{\tbfrac{1}{2}} \\
+       B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 2 \dplus{} \phantom{0}2\tbfrac{1}{2} \deq{} \phantom{0}4\tbfrac{1}{2}                       & 1\tbfrac{1}{2} & \phantom{0}6\tbfrac{3}{4}           & \phantom{00}\tbfrac{1}{2}                            & \phantom{00}\tbfrac{3}{4}           \\
+       C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 3 \dplus{} \phantom{0}5\phantom{\tbfrac{1}{2}} \deq{} \phantom{0}8\phantom{\tbfrac{1}{2}}   & 1\tbfrac{1}{2} & 12\phantom{\tbfrac{3}{4}}           & \phantom{0}4\phantom{\tbfrac{1}{2}}                  & \phantom{0}6\phantom{\tbfrac{1}{2}} \\
+       D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 4 \dplus{} 12\phantom{\tbfrac{1}{2}} \deq{} 16\phantom{\tbfrac{1}{2}}                       & 1\tbfrac{1}{2} & 24\phantom{\tbfrac{3}{4}}           & 12\phantom{\tbfrac{1}{2}}                            & 18\phantom{\tbfrac{1}{2}}           \\
+    
+      \midrule
+      Разом & 4 & \phantom{2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{}}20 & & \phantom{2 \dplus{} 12\tbfrac{1}{2} \deq{}}32\tbfrac{1}{2} & & & 16\tbfrac{1}{2} & 24\tbfrac{3}{4}\\
+ \end{tabular}
 \end{table}
-\footnotetextZ{В німецькому тексті тут очевидно помилково стоїть «6» \Red{Прим. Ред.}} % текст примітки прямо під заголовком
+% REMOVED
+% \footnotemarkZ{}
+% \footnotetextZ{В німецькому тексті тут очевидно помилково стоїть «6» \Red{Прим. Ред.}} % текст примітки прямо під заголовком
 
-Нарешті, грошова рента підвищилася б, коли б у кращі земельні дільниці,
+\noindent{}Нарешті, грошова рента підвищилася б, коли б у кращі земельні дільниці,
 при тому самому відносному підвищенні родючости, вкладено було більше
 додаткового капіталу, ніж у землю $А$, або коли б додаткові вкладання капіталу в кращі
 земельні дільниці впливали, підвищуючи норму продуктивности. В обох випадках

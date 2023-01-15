@@ -31,54 +31,45 @@
 ренту II, то ми наведемо приклад цього випадку.
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця VII}
-    \footnotesize
+  \centering
+  \caption*{Таблиця VII}
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
+  \footnotesize
+  \setlength{\tabcolsep}{4.5pt}
+  \settowidth\rotheadsize{\theadfont Продажна}
+
+  \begin{tabular}{l c r c c r c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід\\ землі}} &
-      \multirowcell{2}{Акри} &
-      Капітал &
-      Зиск &
-      \makecell{Ціна\\ продук.} &
-      \multirowcell{2}{\makecell{Продукт в\\ квартерах}} &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \rothead{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \rothead{Продукт} & % \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\ренти}} \\
+      \rothead{Норма\\ренти} \\
 
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){5-5}
-      \cmidrule(r){7-7}
-      \cmidrule(r){8-8}
-      \cmidrule(r){9-9}
-      \cmidrule(r){10-10}
+    \cmidrule(rl){2-11}
+      & акри  & \poundsign{} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \% \\
 
-       &  & ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &   \\
-      \midrule
-      A & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & \phantom{0}\sfrac{1}{2} \dplus{} 1\sfrac{1}{4} \deq{} 1\sfrac{3}{4}                      & 3\sfrac{3}{7} & \phantom{0}6 & 0\phantom{\sfrac{1}{2}} & \phantom{0}0 & \phantom{00}0\% \\
-      B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 1\phantom{\sfrac{0}{0}} \dplus{} 2\sfrac{1}{2} \deq{} 3\sfrac{1}{2}                     & 3\sfrac{3}{7} & 12           & 1\sfrac{3}{4}           & \phantom{0}6 & 120\% \\
-      C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 1\sfrac{1}{2} \dplus{} 3\sfrac{3}{4} \deq{} 5\sfrac{1}{4}                               & 3\sfrac{3}{7} & 18           & 3\sfrac{1}{2}           & 12           & 240\%\\
-      D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 2\phantom{\sfrac{0}{0}} \dplus{} 5\phantom{\sfrac{0}{0}} \deq{} 7\phantom{\sfrac{0}{0}} & 3\sfrac{3}{7} & 24           & 5\sfrac{1}{4}           & 18           & 360\%\\
+    \midrule
+      A & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & \phantom{0}\tbfrac{1}{2} \dplus{} 1\tbfrac{1}{4} \deq{} 1\tbfrac{3}{4}                      & 3\tbfrac{3}{7} & \phantom{0}6 & 0\phantom{\tbfrac{1}{2}} & \phantom{0}0 & \phantom{00}0\\
+      B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 1\phantom{\tbfrac{0}{0}} \dplus{} 2\tbfrac{1}{2} \deq{} 3\tbfrac{1}{2}                     & 3\tbfrac{3}{7} & 12           & 1\tbfrac{3}{4}           & \phantom{0}6 & 120 \\
+      C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 1\tbfrac{1}{2} \dplus{} 3\tbfrac{3}{4} \deq{} 5\tbfrac{1}{4}                               & 3\tbfrac{3}{7} & 18           & 3\tbfrac{1}{2}           & 12           & 240\\
+      D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 2\pF{} \dplus{} 5\pF{} \deq{} 7\pF{} & 3\tbfrac{3}{7} & 24           & 5\tbfrac{1}{4}           & 18           & 360\\
 
-     \cmidrule(r){3-3}
-     \cmidrule(l){6-6}
-     \cmidrule(r){8-8}
-     \cmidrule(r){9-9}
-     \cmidrule(r){10-10}
-     \cmidrule(r){11-11}
+     \midrule
 
-      Разом & & \phantom{2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{}}20 & & & \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}17\sfrac{1}{2} & & 60 & 10\sfrac{1}{2} & 36 & 240\%\footnotemarkZ{}\\
+      Разом & & 20 & & & 17\tbfrac{1}{2} & & 60 & 10\tbfrac{1}{2} & 36 & 240\footnotemarkZ{}\\
+ 
   \end{tabular}
-
-  \end{center}
 \end{table}
 \footnotetextZ{Тут, як і далі в таблицях VIII, IX, і X пересічну норму ренти обчислено не до всього
 вкладеного капіталу, а тільки до капіталу, вкладеного в рентодайні дільниці. \Red{Пр.~Ред.}} % текст примітки прямо під заголовком
 
-Грошова рента, як і грошовий здобуток, лишаються ті самі, що і в таблиці II.~Підвищена реґуляційна ціна продукції точнісінько покриває те, що втрачено
+\noindent{}Грошова рента, як і грошовий здобуток, лишаються ті самі, що і в таблиці II.~Підвищена реґуляційна ціна продукції точнісінько покриває те, що втрачено
 на кількості продукту; а що ця ціна продукції і кількість продукту змінюються
 в зворотному відношенні, то само собою зрозуміло, що здобуток їх лишається
 той самий.
