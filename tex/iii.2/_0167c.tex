@@ -1,51 +1,40 @@
-
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця Xa}
-    \footnotesize
+  \centering
+  \caption*{Таблиця Xa}
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
+  \footnotesize
+  \setlength{\tabcolsep}{4.5pt}
+  \settowidth\rotheadsize{\theadfont Продажна}
+
+  \begin{tabular}{l c r c c r c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід\\ землі}} &
-      \multirowcell{2}{Акри} &
-      Капітал &
-      Зиск &
-      \makecell{Ціна\\ продук.} &
-      \multirowcell{2}{\makecell{Продукт в\\ квартерах}} &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \thead[t]{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \thead[t]{Продукт} & % \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{Підвищення} \\
+      \thead[t]{Підвищення} \\
 
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){5-5}
-      \cmidrule(r){7-7}
-      \cmidrule(r){8-8}
-      \cmidrule(r){9-9}
-      \cmidrule(r){10-10}
+    \cmidrule(rl){2-11}
+      & акри  & \poundsign{} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \\
 
-       &  & ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &   \\
-      \midrule
-      a & 1 & \phantom{2\sfrac{1}{2} \dplus{} }5\phantom{\sfrac{1}{2}} & 1 & 6 & \phantom{1\sfrac{1}{2} \dplus{} 3 \deq{} }1\sfrac{1}{8}           & 5\sfrac{1}{3} & \phantom{0}6\phantom{\sfrac{1}{5}} & 0\phantom{\sfrac{1}{2}}  & \phantom{0}0\phantom{\sfrac{1}{1}} & 0\phantom{\sfrac{1}{5} \dplus{} 3 × 7\sfrac{1}{5}} \\
-      A & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 1 \dplus{} \phantom{0}\sfrac{1}{4} \deq{} 1\sfrac{1}{4}           & 5\sfrac{1}{3} & \phantom{0}6\sfrac{2}{3}           & \phantom{0}\sfrac{1}{8}  & \phantom{00}\sfrac{2}{3}           & \sfrac{2}{3}\phantom{ \dplus{} 3 × 7\sfrac{1}{5}} \\
-      B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 2 \dplus{} \phantom{0}\sfrac{1}{2} \deq{} 2\sfrac{1}{2}           & 5\sfrac{1}{3} & 13\sfrac{1}{3}                     & 1\sfrac{3}{8}            & \phantom{0}7\sfrac{1}{3}           & \sfrac{2}{3} \dplus{} 6\sfrac{2}{3}\phantom{ 1 ×} \\
-      C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 3 \dplus{} \phantom{0}\sfrac{3}{4} \deq{} 3\sfrac{3}{4}           & 5\sfrac{1}{3} & 20\phantom{\sfrac{3}{5}}           & 2\sfrac{5}{8}            & 14\phantom{\sfrac{3}{5}}           & \sfrac{2}{3} \dplus{} 2 × 6\sfrac{2}{3}\\
-      D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 4 \dplus{} 1\phantom{\sfrac{0}{0}} \deq{} 5\phantom{\sfrac{0}{0}} & 5\sfrac{1}{3} & 26\sfrac{2}{3}                     & 3\sfrac{7}{8}            & 20\sfrac{2}{3}                     & \sfrac{2}{3} \dplus{} 3 × 6\sfrac{2}{3}\\
+    \midrule
+      a & 1 & \phantom{2\tbfrac{1}{2} \dplus{} }5\phantom{\tbfrac{1}{2}} & 1 & 6 & \phantom{1\tbfrac{1}{2} \dplus{} 3 \deq{} }1\tbfrac{1}{8}           & 5\tbfrac{1}{3} & \phantom{0}6\phantom{\tbfrac{1}{5}} & 0\phantom{\tbfrac{1}{2}}  & \phantom{0}0\phantom{\tbfrac{1}{1}} & 0\phantom{\tbfrac{1}{5} \dplus{} 3 × 7\tbfrac{1}{5}} \\
+      A & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 1 \dplus{} \phantom{0}\tbfrac{1}{4} \deq{} 1\tbfrac{1}{4}           & 5\tbfrac{1}{3} & \phantom{0}6\tbfrac{2}{3}           & \phantom{0}\tbfrac{1}{8}  & \phantom{00}\tbfrac{2}{3}           & \tbfrac{2}{3}\phantom{ \dplus{} 3 × 7\tbfrac{1}{5}} \\
+      B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 2 \dplus{} \phantom{0}\tbfrac{1}{2} \deq{} 2\tbfrac{1}{2}           & 5\tbfrac{1}{3} & 13\tbfrac{1}{3}                     & 1\tbfrac{3}{8}            & \phantom{0}7\tbfrac{1}{3}           & \tbfrac{2}{3} \dplus{} 6\tbfrac{2}{3}\phantom{ 1 ×} \\
+      C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 3 \dplus{} \phantom{0}\tbfrac{3}{4} \deq{} 3\tbfrac{3}{4}           & 5\tbfrac{1}{3} & 20\phantom{\tbfrac{3}{5}}           & 2\tbfrac{5}{8}            & 14\phantom{\tbfrac{3}{5}}           & \tbfrac{2}{3} \dplus{} 2 × 6\tbfrac{2}{3}\\
+      D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 4 \dplus{} 1\phantom{\tbfrac{2}{3}} \deq{} 5\phantom{\tbfrac{2}{3}} & 5\tbfrac{1}{3} & 26\tbfrac{2}{3}                     & 3\tbfrac{7}{8}            & 20\tbfrac{2}{3}                     & \tbfrac{2}{3} \dplus{} 3 × 6\tbfrac{2}{3}\\
 
-     \cmidrule(r){5-5}
-     \cmidrule(r){6-6}
-     \cmidrule(r){8-8}
-     \cmidrule(r){9-9}
-     \cmidrule(r){10-10}
-
-      Разом & & & & 30 & \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}13\sfrac{5}{8} & & 72\sfrac{2}{3} & 8\phantom{\sfrac{1}{2}} & 42\sfrac{2}{3} & \\
+    \midrule
+      Разом & & & & \hang{r}{3}0 & \phantom{2 \dplus{} 1\tbfrac{1}{2} \deq{}}13\tbfrac{5}{8} & & 72\tbfrac{2}{3} & 8\phantom{\tbfrac{1}{2}} & 42\tbfrac{2}{3} & \\
   \end{tabular}
-
-  \end{center}
 \end{table}
 
-Приєднанням землі \emph{а} породжується нову диференційну ренту І; на цій
+\noindent{}Приєднанням землі \emph{а} породжується нову диференційну ренту І; на цій
 новій основі розвивається потім диференційна рента II теж у зміненому вигляді.
 Земля \emph{а} має в кожній з трьох вищенаведених таблиць ріжну родючість; ряд
 відповідно висхідних ступенів родючости починається лише з $А$. Відповідно до
@@ -57,11 +46,15 @@
 з $А$ до $D$, стосуються один до одного, як $1: 2 : 3 : 4$, і відповідно до
 цього ренти стосуються одна до однієї:
 
-\begin{tabular}{l}
-в VIIa, як $1 : 1 \dplus{} 7 : 1 \dplus{} 2 × 7 : 1 \dplus{} 3 × 7$,\\
-в VIIIa, як $1\sfrac{1}{5}:1\sfrac{1}{5} \dplus{} 7\sfrac{1}{5} : 1\sfrac{1}{5} \dplus{} 2 × 7\sfrac{1}{5} : 1\sfrac{1}{5} \dplus{} 3 × 7\sfrac{1}{5}$,\\
-в Xa, як $\sfrac{2}{3} : \sfrac{2}{3} \dplus{} 6\sfrac{2}{3} : \sfrac{2}{3} \dplus{} 2 × 6\sfrac{2}{3} : \sfrac{2}{3} \dplus{} 3 × 6\sfrac{2}{3}$.\\
-\end{tabular}
+
+\begin{center}
+в VIIa, як $1 : 1 \dplus{} 7 : 1 \dplus{} 2 × 7 : 1 \dplus{} 3 × 7$,
+
+в VIIIa, як $1\sfrac{1}{5}:1\sfrac{1}{5} \dplus{} 7\sfrac{1}{5} : 1\sfrac{1}{5} \dplus{} 2 × 7\sfrac{1}{5} : 1\sfrac{1}{5} \dplus{} 3 × 7\sfrac{1}{5}$,
+
+в Xa, як $\sfrac{2}{3} : \sfrac{2}{3} \dplus{} 6\sfrac{2}{3} : \sfrac{2}{3} \dplus{} 2 × 6\sfrac{2}{3} : \sfrac{2}{3} \dplus{} 3 × 6\sfrac{2}{3}$.
+
+\end{center}
 
 \noindent{}Коротко: коли рента з $А \deq{} n$, а рента з землі безпосередньо вищої родючости
 $= n \dplus{} m$, то ряд буде такий: $n: n \dplus{} m: n \dplus{} 2m : n \dplus{} З m$ і~\abbr{т. д.} —~Ф.~Е.]

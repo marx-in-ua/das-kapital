@@ -48,95 +48,73 @@
 вищенаведені таблиці VII, VIII і X набули б такого вигляду:
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця VIIa}
-    \footnotesize
+  \centering
+  \caption*{Таблиця VIIa}
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
+  \footnotesize
+  \setlength{\tabcolsep}{4.5pt}
+  \settowidth\rotheadsize{\theadfont Продажна}
+
+  \begin{tabular}{l c r c c r c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід\\ землі}} &
-      \multirowcell{2}{Акри} &
-      Капітал &
-      Зиск &
-      \makecell{Ціна\\ продук.} &
-      \multirowcell{2}{\makecell{Продукт в\\ квартерах}} &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \thead[t]{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \thead[t]{Продукт} & % \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{Підвищення} \\
+      \thead[t]{Підвищення} \\
 
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){5-5}
-      \cmidrule(r){7-7}
-      \cmidrule(r){8-8}
-      \cmidrule(r){9-9}
-      \cmidrule(r){10-10}
+    \cmidrule(rl){2-11}
+      & акри  & \poundsign{} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \\
 
-       &  & ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &   \\
-      \midrule
-      a & 1 & \phantom{2\sfrac{1}{2} \dplus{} }5\phantom{\sfrac{1}{2}} & 1 & 6 & \phantom{1\sfrac{1}{2} \dplus{} 3\sfrac{3}{4} \deq{} }1\sfrac{1}{2}                     & 4 & \phantom{0}6 & 0\phantom{\sfrac{1}{2}} & \phantom{0}0 & 0\phantom{+ 3 × 7} \\
-      A & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & \phantom{0}\sfrac{1}{2} \dplus{} 1\sfrac{1}{4} \deq{} 1\sfrac{3}{4}                     & 4 & \phantom{0}7 & \phantom{}\sfrac{1}{4}  & \phantom{0}1 & 1\phantom{+ 3 × 7} \\
-      B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 1\phantom{\sfrac{0}{0}} \dplus{} 2\sfrac{1}{2} \deq{} 3\sfrac{1}{2}                     & 4 & 14           & 2\phantom{\sfrac{1}{2}} & \phantom{0}8 & 1 \dplus{} 7\phantom{ × 7} \\
-      C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 1\sfrac{1}{2} \dplus{} 3\sfrac{3}{4} \deq{} 5\sfrac{1}{4}                               & 4 & 21           & 3\sfrac{3}{4}           & 15           & 1 \dplus{} 2 × 7\\
-      D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 2\phantom{\sfrac{0}{0}} \dplus{} 5\phantom{\sfrac{0}{0}} \deq{} 7\phantom{\sfrac{0}{0}} & 4 & 28           & 5\sfrac{1}{2}           & 22           & 1 \dplus{} 3 × 7\\
+    \midrule
+      a & 1 & \phantom{2\tbfrac{1}{2} \dplus{} }5\phantom{\tbfrac{1}{2}} & 1 & 6 & \phantom{1\tbfrac{1}{2} \dplus{} 3\tbfrac{3}{4} \deq{} }1\tbfrac{1}{2}                     & 4 & \phantom{0}6 & 0\phantom{\tbfrac{1}{2}} & \phantom{0}0 & 0\phantom{+ 3 × 7} \\
+      A & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & \phantom{0}\tbfrac{1}{2} \dplus{} 1\tbfrac{1}{4} \deq{} 1\tbfrac{3}{4}                     & 4 & \phantom{0}7 & \phantom{}\tbfrac{1}{4}  & \phantom{0}1 & 1\phantom{+ 3 × 7} \\
+      B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 1\phantom{\tbfrac{1}{2}} \dplus{} 2\tbfrac{1}{2} \deq{} 3\tbfrac{1}{2}                     & 4 & 14           & 2\phantom{\tbfrac{1}{2}} & \phantom{0}8 & 1 \dplus{} 7\phantom{ × 7} \\
+      C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 1\tbfrac{1}{2} \dplus{} 3\tbfrac{3}{4} \deq{} 5\tbfrac{1}{4}                               & 4 & 21           & 3\tbfrac{3}{4}           & 15           & 1 \dplus{} 2 × 7\\
+      D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 2\phantom{\tbfrac{1}{2}} \dplus{} 5\phantom{\tbfrac{1}{2}} \deq{} 7\phantom{\tbfrac{1}{2}} & 4 & 28           & 5\tbfrac{1}{2}           & 22           & 1 \dplus{} 3 × 7\\
 
-     \cmidrule(r){5-5}
-     \cmidrule(l){6-6}
-     \cmidrule(r){8-8}
-     \cmidrule(r){9-9}
-     \cmidrule(r){10-10}
-
-      Разом & & & & 30 & \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}19\phantom{\sfrac{1}{2}} & & 76 & 11\sfrac{1}{2} & 46 & \\
+    \midrule
+      Разом & & & & \hang{r}{3}0 & \phantom{2 \dplus{} 1\tbfrac{1}{2} \deq{}}19\phantom{\tbfrac{1}{2}} & & 76 & 11\tbfrac{1}{2} & 46 & \\
   \end{tabular}
-
-  \end{center}
 \end{table}
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця VIIIa}
-    \footnotesize
+  \centering
+  \caption*{Таблиця VIIIa}
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
+  \footnotesize
+  \setlength{\tabcolsep}{4.5pt}
+  \settowidth\rotheadsize{\theadfont Продажна}
+
+  \begin{tabular}{l c r c c r c c c c c}
     \toprule
-      \multirowcell{2}{\makecell{Рід\\ землі}} &
-      \multirowcell{2}{Акри} &
-      Капітал &
-      Зиск &
-      \makecell{Ціна\\ продук.} &
-      \multirowcell{2}{\makecell{Продукт в\\ квартерах}} &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
+      \thead[tl]{Рід\\землі} &
+      &
+      \thead[t]{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \thead[t]{Продукт} & % \\ в кварт.}}}
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{Підвищення} \\
+      \thead[t]{Підвищення} \\
 
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){5-5}
-      \cmidrule(r){7-7}
-      \cmidrule(r){8-8}
-      \cmidrule(r){9-9}
-      \cmidrule(r){10-10}
+    \cmidrule(rl){2-11}
+      & акри  & \poundsign{} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \\
 
-       &  & ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &   \\
-      \midrule
-      a & 1 & \phantom{2\sfrac{1}{2} \dplus{} }5\phantom{\sfrac{1}{2}} & 1 & 6 & \phantom{1\sfrac{1}{2} \dplus{} 3 \deq{} }1\sfrac{1}{4}           & 4\sfrac{4}{5} & \phantom{0}6\phantom{\sfrac{1}{5}} & 0\phantom{\sfrac{1}{2}} & \phantom{0}0             & 0\phantom{\sfrac{1}{5} \dplus{} 3 × 7\sfrac{1}{5}} \\
-      A & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & \phantom{0}\sfrac{1}{2} \dplus{} 1 \deq{} 1\sfrac{1}{2}           & 4\sfrac{4}{5} & \phantom{0}7\sfrac{1}{5}           & \phantom{}\sfrac{1}{4}  & \phantom{0}1\sfrac{1}{5} & 1\sfrac{1}{5}\phantom{ \dplus{} 3 × 7\sfrac{1}{5}} \\
-      B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 1\phantom{\sfrac{0}{0}} \dplus{} 2 \deq{} 3\phantom{\sfrac{1}{2}} & 4\sfrac{4}{5} & 14\sfrac{2}{5}                     & 1\phantom{\sfrac{3}{4}} & \phantom{0}8\sfrac{2}{5} & 1\sfrac{1}{5} \dplus{} 7\sfrac{1}{5}\phantom{ × 7} \\
-      C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 1\sfrac{1}{2} \dplus{} 3 \deq{} 4\sfrac{1}{2}                     & 4\sfrac{4}{5} & 21\sfrac{3}{5}                     & 2\sfrac{1}{4}           & 15\sfrac{3}{5}           & 1\sfrac{1}{5} \dplus{} 2 × 7\sfrac{1}{5}\\
-      D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2}                     & 1 & 6 & 2\phantom{\sfrac{0}{0}} \dplus{} 4 \deq{} 6\phantom{\sfrac{0}{0}} & 4\sfrac{4}{5} & 28\sfrac{4}{5}                     & 4\sfrac{3}{4}           & 22\sfrac{4}{5}           & 1\sfrac{1}{5} \dplus{} 3 × 7\sfrac{1}{5}\\
+    \midrule
+      a & 1 & \phantom{2\tbfrac{1}{2} \dplus{} }5\phantom{\tbfrac{1}{2}} & 1 & 6 & \phantom{1\tbfrac{1}{2} \dplus{} 3 \deq{} }1\tbfrac{1}{4}           & 4\tbfrac{4}{5} & \phantom{0}6\phantom{\tbfrac{1}{5}} & 0\phantom{\tbfrac{1}{2}} & \phantom{0}0             & 0\phantom{\tbfrac{1}{5} \dplus{} 3 × 7\tbfrac{1}{5}} \\
+      A & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & \phantom{0}\tbfrac{1}{2} \dplus{} 1 \deq{} 1\tbfrac{1}{2}           & 4\tbfrac{4}{5} & \phantom{0}7\tbfrac{1}{5}           & \phantom{}\tbfrac{1}{4}  & \phantom{0}1\tbfrac{1}{5} & 1\tbfrac{1}{5}\phantom{ \dplus{} 3 × 7\tbfrac{1}{5}} \\
+      B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 1\phantom{\tbfrac{1}{2}} \dplus{} 2 \deq{} 3\phantom{\tbfrac{1}{2}} & 4\tbfrac{4}{5} & 14\tbfrac{2}{5}                     & 1\phantom{\tbfrac{3}{4}} & \phantom{0}8\tbfrac{2}{5} & 1\tbfrac{1}{5} \dplus{} 7\tbfrac{1}{5}\phantom{ × 7} \\
+      C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 1\tbfrac{1}{2} \dplus{} 3 \deq{} 4\tbfrac{1}{2}                     & 4\tbfrac{4}{5} & 21\tbfrac{3}{5}                     & 2\tbfrac{1}{4}           & 15\tbfrac{3}{5}           & 1\tbfrac{1}{5} \dplus{} 2 × 7\tbfrac{1}{5}\\
+      D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2}                     & 1 & 6 & 2\phantom{\tbfrac{1}{2}} \dplus{} 4 \deq{} 6\phantom{\tbfrac{1}{2}} & 4\tbfrac{4}{5} & 28\tbfrac{4}{5}                     & 4\tbfrac{3}{4}           & 22\tbfrac{4}{5}           & 1\tbfrac{1}{5} \dplus{} 3 × 7\tbfrac{1}{5}\\
 
-     \cmidrule(r){2-2}
-     \cmidrule(r){5-5}
-     \cmidrule(r){6-6}
-     \cmidrule(r){8-8}
-     \cmidrule(r){9-9}
-     \cmidrule(r){10-10}
-
-      Разом & 5 & & & 30 & \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}16\sfrac{1}{4} & & 78\phantom{\sfrac{1}{5}} & 9\phantom{\sfrac{1}{2}} & 48 & \\
+    \midrule
+      Разом & 5 & & & \hang{r}{3}0 & \phantom{2 \dplus{} 1\tbfrac{1}{2} \deq{}}16\tbfrac{1}{4} & & 78\phantom{\tbfrac{1}{5}} & 9\phantom{\tbfrac{1}{2}} & 48 & \\
   \end{tabular}
-
-  \end{center}
 \end{table}
-
