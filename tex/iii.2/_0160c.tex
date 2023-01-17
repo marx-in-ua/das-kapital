@@ -29,58 +29,45 @@
 $А$, продукує 1\sfrac{1}{5} кварт. замість 1 квартера.
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця VI}
-    \footnotesize
-
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
-    \toprule
-      \multirowcell{2}{\makecell{Рід\\ землі}} &
-      \multirowcell{2}{Акри} &
-      Капітал &
-      Зиск &
-      \makecell{Ціна\\ продук.} &
-      \multirowcell{2}{\makecell{Продукт в\\ квартерах}} &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
+  \centering
+  \caption*{Таблиця VI}
+  \footnotesize
+  \setlength{\tabcolsep}{4.5pt}
+  \settowidth\rotheadsize{\theadfont Продажна}
+  
+  \begin{tabular}{l c r c c c c c c c c}
+   \toprule
+      \thead[tl]{Рід\\землі} &
+      &
+      \thead[t]{Капітал} &
+      \rothead{Зиск} &
+      \rothead{Ціна\\продукції} &
+      \thead[t]{Продукт} &
+      \rothead{Продажна\\ціна} &
+      \rothead{Здобуток} &
       \multicolumn{2}{c}{Рента} &
-      \multirowcell{2}{\makecell{Норма \\надзиску}} \\
+      \rothead{Норма\\надзиску} \\
 
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){5-5}
+      \cmidrule(rl){2-11}
 
-      \cmidrule(r){7-7}
-      \cmidrule(r){8-8}
-      \cmidrule(r){9-9}
-      \cmidrule(r){10-10}
-
-       &  & ф. ст. & ф. ст. & ф. ст. & & ф. ст. & ф. ст. & Кварт. & ф. ст. &   \\
+      & акри  & \poundsign{} & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \poundsign{} & кв. & \poundsign{} & \% \\
       \midrule
-       A & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 1 \dplus{} 1\sfrac{1}{5} \deq{} 2\sfrac{1}{5} & 2\sfrac{8}{11} & \phantom{0}6 & 0\phantom{\sfrac{1}{2}} & \phantom{0}0 & \phantom{00}0\% \\
-       B & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 2 \dplus{} 2\sfrac{2}{5} \deq{} 4\sfrac{2}{5} & 2\sfrac{8}{11} & 12           & 2\sfrac{1}{5}           & \phantom{0}6 & 120\% \\
-       C & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 3 \dplus{} 3\sfrac{3}{5} \deq{} 6\sfrac{3}{5} & 2\sfrac{8}{11} & 18           & 4\sfrac{2}{5}           & 12           & 240\%\\
-       D & 1 & 2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{} 5 & 1 & 6 & 4 \dplus{} 4\sfrac{4}{5} \deq{} 8\sfrac{4}{5} & 2\sfrac{8}{11} & 24           & 6\sfrac{3}{5}           & 18           & 360\%\\
-     \cmidrule(r){1-1}
-     \cmidrule(r){2-2}
-     \cmidrule(r){3-3}
-     \cmidrule(r){4-4}
-     \cmidrule(r){5-5}
-     \cmidrule(r){6-6}
 
-     \cmidrule(r){8-8}
-     \cmidrule(r){9-9}
-     \cmidrule(r){10-10}
-     \cmidrule(r){11-11}
+       A & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 1 \dplus{} 1\tbfrac{1}{5} \deq{} 2\tbfrac{1}{5} & 2\tbfrac{8}{11} & \phantom{0}6 & 0\phantom{\tbfrac{1}{2}} & \phantom{0}0 & \phantom{00}0\\
+       B & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 2 \dplus{} 2\tbfrac{2}{5} \deq{} 4\tbfrac{2}{5} & 2\tbfrac{8}{11} & 12           & 2\tbfrac{1}{5}           & \phantom{0}6 & 120\\
+       C & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 3 \dplus{} 3\tbfrac{3}{5} \deq{} 6\tbfrac{3}{5} & 2\tbfrac{8}{11} & 18           & 4\tbfrac{2}{5}           & 12           & 240\\
+       D & 1 & 2\tbfrac{1}{2} \dplus{} 2\tbfrac{1}{2} \deq{} 5 & 1 & 6 & 4 \dplus{} 4\tbfrac{4}{5} \deq{} 8\tbfrac{4}{5} & 2\tbfrac{8}{11} & 24           & 6\tbfrac{3}{5}           & 18           & 360\\
 
-      Разом & 4 & \phantom{2\sfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{}}20 & 4 & 24 & \phantom{2 \dplus{} 1\sfrac{1}{2} \deq{}}22\phantom{\sfrac{1}{2}} & & 60 & 13\sfrac{1}{5} & 36 & 240\%\footnotemarkZ{}\\
+      \midrule
+
+      Разом & 4 & \phantom{2\tbfrac{1}{2} \dplus{} 2\sfrac{1}{2} \deq{}}20 & 4 & \hang{r}{2}4 & \phantom{2 \dplus{} 1\tbfrac{1}{2} \deq{}}22\phantom{\tbfrac{1}{2}} & & 60 & 13\tbfrac{1}{5} & 36 & 240\hang{l}{\footnotemarkZ{}}\\
   \end{tabular}
-
-  \end{center}
+  \setlength{\tabcolsep}{\tabcolsepdef}
 \end{table}
 \footnotetextZ{Тут пересічну норму надзиску обчислено не до всього вкладеного капіталу, а тільки до капіталу, вкладеного в рентодайні дільниці $В$, $C$ і $D$. \Red{Прим. Ред.}} % текст примітки прямо під заголовком
 
-Цю таблицю слід порівняти, крім основної таблиці І, і з таблицею II, в якій
+\noindent{}Цю
+таблицю слід порівняти, крім основної таблиці І, і з таблицею II, в якій
 подвоєне вкладення капіталу сполучається з сталою продутивністю, пропорційною
 капіталовкладенню.
 
