@@ -30,11 +30,25 @@
   \mainmatter
   \input{iii.1/part.0.tex}
 
+  \bookpages{\BookNumber{}}{\BookTitle{}}
+    \cftaddnumtitleline{toc}{book}{\BookNumber{}}{Сукупний процес}{}
+    \addtocontents{toc}{\protect\vspace{-2.4em}}
+    \addcontentsline{toc}{book}{\protect\numberline{}{капіталістичного виробництва}}
+
+  \bookpages{}{\LARGE{Частина перша}}
+    \cftaddnumtitleline{toc}{book}{\protect{\upshape{}Частина перша}}{}{}
+    \addtocontents{toc}{\protect\vspace{-1.4em}}
+
   \input{iii.1/part.1.tex}
   \input{iii.1/part.2.tex}
   \input{iii.1/part.3.tex}
   \input{iii.1/part.4.tex}
   \input{iii.1/part.5.tex}
+
+
+  \bookpages{}{\LARGE{Частина друга}}
+    \cftaddnumtitleline{toc}{book}{\protect{\upshape{}Частина друга}}{}{}
+    \addtocontents{toc}{\protect\vspace{-1.4em}}
 
   \input{iii.2/part.5.tex}
   \input{iii.2/part.6.tex}
