@@ -75,7 +75,12 @@
 \renewcommand{\sfrac}[2]{\ensuremath{\oldsfrac{#1}{#2}}}
 
 %% fraction in tables
-\newcommand{\tbfrac}[2]{\sfrac{\textsf{#1}}{\textsf{#2}}}
+\newcommand{\tbfrac}[2]{%
+\samewidth{%
+\sfrac{\textsf{0}}{\textsf{0}}%
+}{%
+\sfrac{\textsf{#1}}{\textsf{#2}}%
+}}
 
 %% frac 
 %% The latest fixes the linespace in inline fractions
