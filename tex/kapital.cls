@@ -58,7 +58,6 @@
 %% Math
 %% ======
 
-\RequirePackage{xfrac}
 \RequirePackage{amsmath}
 \RequirePackage{mathtools}
 
@@ -71,6 +70,8 @@
 \input{fonts.tex}
 
 %% sfrac
+% \RequirePackage{xfrac}
+\newcommand{\sfrac}[2]{#1 #2}  % 20 seconds
 \let\oldsfrac\sfrac
 \renewcommand{\sfrac}[2]{\ensuremath{\oldsfrac{#1}{#2}}}
 
@@ -81,6 +82,11 @@
 }{%
 \sfrac{\textsf{#1}}{\textsf{#2}}%
 }}
+
+\renewcommand{\tbfrac}[2]{\oldsfrac{#1}{#2}}  % 47 s
+
+\renewcommand{\tbfrac}[2]{#1 #2}  % 20 seconds
+\renewcommand{\sfrac}[2]{#1 #2}  % 11 seconds
 
 %% frac 
 %% The latest fixes the linespace in inline fractions
