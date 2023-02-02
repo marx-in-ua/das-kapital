@@ -58,7 +58,6 @@
 %% Math
 %% ======
 
-\RequirePackage{xfrac}
 \RequirePackage{amsmath}
 \RequirePackage{mathtools}
 
@@ -70,12 +69,12 @@
 
 \input{fonts.tex}
 
-%% sfrac
-\let\oldsfrac\sfrac
-\renewcommand{\sfrac}[2]{\ensuremath{\oldsfrac{#1}{#2}}}
+%% nicefrac
+\RequirePackage{nicefrac}
+\newcommand{\sfrac}[2]{\nicefrac{#1}{#2}}
 
 %% fraction in tables
-\newcommand{\tbfrac}[2]{\sfrac{\textsf{#1}}{\textsf{#2}}}
+\newcommand{\tbfrac}[2]{\nicefrac{#1}{#2}}
 
 %% frac 
 %% The latest fixes the linespace in inline fractions
