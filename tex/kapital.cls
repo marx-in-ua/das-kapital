@@ -69,24 +69,12 @@
 
 \input{fonts.tex}
 
-%% sfrac
-% \RequirePackage{xfrac}
-\newcommand{\sfrac}[2]{#1 #2}  % 20 seconds
-\let\oldsfrac\sfrac
-\renewcommand{\sfrac}[2]{\ensuremath{\oldsfrac{#1}{#2}}}
+%% nicefrac
+\RequirePackage{nicefrac}
+\newcommand{\sfrac}[2]{\nicefrac{#1}{#2}}
 
 %% fraction in tables
-\newcommand{\tbfrac}[2]{%
-\samewidth{%
-\sfrac{\textsf{0}}{\textsf{0}}%
-}{%
-\sfrac{\textsf{#1}}{\textsf{#2}}%
-}}
-
-\renewcommand{\tbfrac}[2]{\oldsfrac{#1}{#2}}  % 47 s
-
-\renewcommand{\tbfrac}[2]{#1 #2}  % 20 seconds
-\renewcommand{\sfrac}[2]{#1 #2}  % 11 seconds
+\newcommand{\tbfrac}[2]{\nicefrac{#1}{#2}}
 
 %% frac 
 %% The latest fixes the linespace in inline fractions
