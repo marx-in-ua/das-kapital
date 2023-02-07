@@ -109,7 +109,7 @@
 \renewcommand{\partnamefont}{\raggedright\Large\scsans}
 \renewcommand{\partnumfont}{\Large\scsans}
 
-\renewcommand{\parttitlefont}{\Huge\letterspacefont\raggedright\MakeUppercase}
+\renewcommand{\parttitlefont}{\Huge\lettersfont\raggedright\MakeUppercase}
 \renewcommand*{\printparttitle}[1]{
   \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
   \parttitlefont{#1}
@@ -193,7 +193,7 @@
   \vspace{10pt}
   \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
   \color{white}
-  \Huge\letterspacefont\raggedright\bfseries\MakeUppercase{#2}
+  \Huge\lettersfont\raggedright\bfseries\MakeUppercase{#2}
   \end{minipage}
   \cleardoublepage
   \nopagecolor
@@ -258,7 +258,7 @@
   \tocspace\hfill\itshape%
 }
 \renewcommand{\cftbookaftersnumb}{%
-  \\\hspace*{-\numlen}\tocspace\cntspace{}\letterspacefont\MakeUppercase%
+  \\\hspace*{-\numlen}\tocspace\cntspace{}\lettersfont\MakeUppercase%
 }
 \renewcommand{\cftbookaftersnum}{\hfill}
 \renewcommand*{\cftbookfont}{\large\sffamily}
