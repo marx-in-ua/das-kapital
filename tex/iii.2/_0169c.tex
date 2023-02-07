@@ -18,41 +18,33 @@
 Тепер ми наведемо таблиці:
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця XI}
-    \footnotesize
+  \centering
+  \footnotesize
+  \caption*{Таблиця XI}
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
+  \begin{tabular}{lcccccc}
     \toprule
-      \multirowcell{2}{\makecell{Рід\\ землі}} &
+      \thead[tl]{Рід\\землі} &
       Ціна продукції &
       Продукт &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
+      \thead[t]{Продажна\\ціна} &
+      \thead[t]{Здо-\\буток} &
       Рента &
-      \multirowcell{2}{Підвищення ренти} \\
+      \thead[t]{Підвищення\\ренти} \\
 
-      \cmidrule(r){2-2}
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){5-5}
-      \cmidrule(r){6-6}
+    \cmidrule(r){2-6}
+      & \shil{Шил.} & бушелі & \shil{Шил.} & \shil{Шил.} & \shil{Шил.} & \\
 
-       & Шил. & Бушелі & Шил. & Шил. & Шил. & \\
-      \midrule
+    \midrule
       A & 60 & 10 & 6 & 60  & \phantom{00}0 & \phantom{00 × 0}0 \\
       B & 60 & 12 & 6 & 72  & \phantom{0}12 & \phantom{01 × }12 \\
-      C & 60 & 14 & 6 & 84  & \phantom{0}24 & \phantom{0}2 × 12           \\
-      D & 60 & 16 & 6 & 96  & \phantom{0}36 & \phantom{0}3 × 12           \\
-      E & 60 & 18 & 6 & 108 & \phantom{0}48 & \phantom{0}4 × 12           \\
+      C & 60 & 14 & 6 & 84  & \phantom{0}24 & \phantom{0}2 × 12 \\
+      D & 60 & 16 & 6 & 96  & \phantom{0}36 & \phantom{0}3 × 12 \\
+      E & 60 & 18 & 6 & 108 & \phantom{0}48 & \phantom{0}4 × 12 \\
 
-     \cmidrule(r){6-6}
-     \cmidrule(r){7-7}
-
-      & & & & & 120 & 10 × 12 \\
+     \cmidrule(r){6-7}
+        & & & & & \hang{r}{1}20 & 10 × 12 \\
   \end{tabular}
-
-  \end{center}
 \end{table}
 
 За другої витрати капіталу на тій самій землі.
@@ -62,41 +54,33 @@
 Варіянт 1: за незмінної продуктивности другої витрати капіталу.
 
 \begin{table}[H]
-  \begin{center}
-    \emph{Таблиця XII}
-    \footnotesize
+  \centering
+  \footnotesize
+  \caption*{Таблиця XII}
 
-  \begin{tabular}{c@{  } c@{  } c@{  } c@{  } c@{  } c@{  } c}
+  \begin{tabular}{lcccccc}
     \toprule
-      \multirowcell{2}{\makecell{Рід\\ землі}} &
+      \thead[tl]{Рід\\землі} &
       Ціна продукції &
       Продукт &
-      \makecell{Продажна \\ ціна} &
-      \makecell{Здо-\\буток} &
+      \thead[t]{Продажна\\ціна} &
+      \thead[t]{Здо-\\буток} &
       Рента &
-      \multirowcell{2}{Підвищення ренти} \\
+      \thead[t]{Підвищення\\ренти} \\
 
-      \cmidrule(r){2-2}
-      \cmidrule(r){3-3}
-      \cmidrule(r){4-4}
-      \cmidrule(r){5-5}
-      \cmidrule(r){6-6}
+    \cmidrule(r){2-6}
+      & \shil{Шил.} & бушелі & \shil{Шил.} & \shil{Шил.} & \shil{Шил.} & \\
 
-       & Шил. & Бушелі & Шил. & Шил. & Шил. &  \\
-      \midrule
+    \midrule
       A & 60 \dplus{} 60 \deq{} 120 & 10 \dplus{} 10 \deq{} 20 & 6 & 120  & \phantom{00}0 & \phantom{00 × 0}0 \\
       B & 60 \dplus{} 60 \deq{} 120 & 12 \dplus{} 12 \deq{} 24 & 6 & 144  & \phantom{0}24 & \phantom{01 × }24 \\
       C & 60 \dplus{} 60 \deq{} 120 & 14 \dplus{} 14 \deq{} 28 & 6 & 168  & \phantom{0}48 & \phantom{0}2 × 24 \\
       D & 60 \dplus{} 60 \deq{} 120 & 16 \dplus{} 16 \deq{} 32 & 6 & 192  & \phantom{0}72 & \phantom{0}3 × 24 \\
       E & 60 \dplus{} 60 \deq{} 120 & 18 \dplus{} 18 \deq{} 36 & 6 & 216  & \phantom{0}96 & \phantom{0}4 × 24 \\
 
-     \cmidrule(r){6-6}
-     \cmidrule(r){7-7}
-
+    \cmidrule(r){6-7}
       & & & & & 240 & 10 × 24 \\
   \end{tabular}
-
-  \end{center}
 \end{table}
 
 Варіянт 2: за низхідної продуктивности другої витрати капіталу: на землі
