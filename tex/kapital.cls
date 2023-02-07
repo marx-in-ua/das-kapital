@@ -211,7 +211,7 @@
 
 %% set font
 \newcommand{\settablefont}{%
-  \sisetup{group-minimum-digits=3,detect-all,text-rm=\tablefont}%
+  \sisetup{group-minimum-digits=3,detect-all}%
   \tablefont%
 }
 
