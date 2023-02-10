@@ -210,6 +210,13 @@
 %% TOC
 %% ======
 
+%% Fix cftaddnumtitleline in memoir
+%% https://tex.stackexchange.com/questions/674794/error-when-add-custom-line-in-toc-cftaddnumtitleline-in-memoir
+\renewcommand{\cftaddnumtitleline}[5]{%
+  \addtocontents{#1}%
+    {\protect\contentsline{#2}{\protect\numberline{#3}%
+                              {\protect\ignorespaces #4}}{#5}\newline}}
+
 \newlength\tocindent
 \setlength\tocindent{2em}
 \newcommand{\tocspace}{\hspace*{\tocindent}}
