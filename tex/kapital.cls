@@ -18,6 +18,7 @@
 \setfootins{18\p@ \@plus 4\p@ \@minus 4\p@}{\bigskipamount}
 \setheaderspaces{*}{13pt}{*}
 \checkandfixthelayout
+% \sloppybottom
 
 % languages support
 \RequirePackage[no-math]{fontspec}
@@ -276,10 +277,14 @@
 %% Typography
 %% ======
 
-\usepackage[all]{nowidow}
-
 \usepackage{microtype} % [tracking=true]
 \frenchspacing
+
+%\usepackage[all]{nowidow}
+\usepackage[balanced]{lua-widow-control}
+\interfootnotelinepenalty=\@M
+
+% \lwcsetup{disablecmds = {footnotetext}}
 
 % % L e t t e r  s p a c e (\so)
 % \RequirePackage{soul} 
