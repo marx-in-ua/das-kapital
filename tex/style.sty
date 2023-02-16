@@ -109,7 +109,7 @@
 \renewcommand{\partnamefont}{\raggedright\Large\scsans}
 \renewcommand{\partnumfont}{\Large\scsans}
 
-\renewcommand{\parttitlefont}{\Huge\letterspacefont\raggedright\MakeUppercase}
+\renewcommand{\parttitlefont}{\Huge\lettersfont\raggedright\MakeUppercase}
 \renewcommand*{\printparttitle}[1]{
   \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
   \parttitlefont{#1}
@@ -193,7 +193,7 @@
   \vspace{10pt}
   \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
   \color{white}
-  \Huge\letterspacefont\raggedright\bfseries\MakeUppercase{#2}
+  \Huge\lettersfont\raggedright\bfseries\MakeUppercase{#2}
   \end{minipage}
   \cleardoublepage
   \nopagecolor
@@ -209,6 +209,13 @@
 %% ======
 %% TOC
 %% ======
+
+%% Fix cftaddnumtitleline in memoir
+%% https://tex.stackexchange.com/questions/674794/error-when-add-custom-line-in-toc-cftaddnumtitleline-in-memoir
+\renewcommand{\cftaddnumtitleline}[5]{%
+  \addtocontents{#1}%
+    {\protect\contentsline{#2}{\protect\numberline{#3}%
+                              {\protect\ignorespaces #4}}{#5}\newline}}
 
 \newlength\tocindent
 \setlength\tocindent{2em}
@@ -258,7 +265,7 @@
   \tocspace\hfill\itshape%
 }
 \renewcommand{\cftbookaftersnumb}{%
-  \\\hspace*{-\numlen}\tocspace\cntspace{}\letterspacefont\MakeUppercase%
+  \\\hspace*{-\numlen}\tocspace\cntspace{}\lettersfont\MakeUppercase%
 }
 \renewcommand{\cftbookaftersnum}{\hfill}
 \renewcommand*{\cftbookfont}{\large\sffamily}

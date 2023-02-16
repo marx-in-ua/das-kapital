@@ -18,6 +18,7 @@
 \setfootins{18\p@ \@plus 4\p@ \@minus 4\p@}{\bigskipamount}
 \setheaderspaces{*}{13pt}{*}
 \checkandfixthelayout
+% \sloppybottom
 
 % languages support
 \RequirePackage[no-math]{fontspec}
@@ -211,7 +212,7 @@
 
 %% set font
 \newcommand{\settablefont}{%
-  \sisetup{group-minimum-digits=3,detect-all,text-rm=\tablefont}%
+  \sisetup{group-minimum-digits=3,detect-all}%
   \tablefont%
 }
 
@@ -276,10 +277,14 @@
 %% Typography
 %% ======
 
-\usepackage[all]{nowidow}
-
 \usepackage{microtype} % [tracking=true]
 \frenchspacing
+
+%\usepackage[all]{nowidow}
+\usepackage[balanced]{lua-widow-control}
+\interfootnotelinepenalty=\@M
+
+% \lwcsetup{disablecmds = {footnotetext}}
 
 % % L e t t e r  s p a c e (\so)
 % \RequirePackage{soul} 
@@ -306,12 +311,6 @@
 
 % footnotes 
 \RequirePackage{bigfoot}
-
-% fix bug in bigfoot 2015/08/30 2.1
-% see https://tex.stackexchange.com/questions/471379/footnote-marks-missplaced-with-bigfoot/
-\usepackage{xpatch}
-\patchcmd\FN@allmarks{266}{256}{}{\fail}
-
 
 % allow marks to be sans serif
 \renewcommand{\@makefnmark}{\hbox{\@textsuperscript{\scriptsize\@thefnmark}\!}}
