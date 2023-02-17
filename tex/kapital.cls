@@ -80,15 +80,16 @@
 %% frac 
 %% The latest fixes the linespace in inline fractions
 \let\oldfrac\frac
-\renewcommand{\frac}[2]{\ensuremath{%
-\mathchoice{%
-\oldfrac{#1}{#2}}{%
-\oldfrac{#1}{%
-  \raisebox{1.5pt}{$\scriptstyle #2$}}%
-}{%
-\oldfrac{#1}{#2}}{%
-\oldfrac{#1}{#2}}}%
-}
+% \renewcommand{\frac}[2]{\ensuremath{%
+% \mathchoice{%
+% \oldfrac{#1}{#2}}{%
+% \oldfrac{#1}{%
+%   \raisebox{1.5pt}{$\scriptstyle #2$}}%
+% }{%
+% \oldfrac{#1}{#2}}{%
+% \oldfrac{#1}{#2}}}%
+\renewcommand{\frac}[2]{\ensuremath{\dfrac{#1}{#2}}}
+
 
 %% oversets
 \newcommand{\oversetn}[2]{\overset{\raisebox{-2pt}{$\scriptstyle #1$}}{#2}}
@@ -282,7 +283,7 @@
 
 %\usepackage[all]{nowidow}
 \usepackage[balanced]{lua-widow-control}
-\interfootnotelinepenalty=\@M
+\interfootnotelinepenalty=500% \@M
 
 % \lwcsetup{disablecmds = {footnotetext}}
 
