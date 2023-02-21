@@ -53,7 +53,7 @@
 \renewcommand{\thesection}{\arabic{section}. }
 \renewcommand{\thesubsection}{\alph{subsection}) }
 \renewcommand{\thesubsubsection}{\arabic{subsubsection}. }
-\renewcommand{\theparagraph}{\Alph{subsubsection}) }
+\renewcommand{\theparagraph}{\Alph{paragraph}) }
 
 %% ======
 %% Math
@@ -283,7 +283,7 @@
 
 %\usepackage[all]{nowidow}
 \usepackage[balanced]{lua-widow-control}
-\interfootnotelinepenalty=500% \@M
+\interfootnotelinepenalty=\@M
 
 % \lwcsetup{disablecmds = {footnotetext}}
 
