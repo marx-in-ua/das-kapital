@@ -173,9 +173,8 @@
 \setafterparaskip{1.5ex plus 1ex minus .2ex}
 
 \renewcommand{\ukrainian@capsformat}{%
-  \setsecnumformat{\makebox[\defindent][r]{\csname the#1\endcsname~}}%
+  \setsecnumformat{\makebox[\defindent][r]{\csname the##1\endcsname~}}%
 }
-
 
 %% Book title page
 \newcommand{\bookpaget}[2]{
@@ -227,7 +226,7 @@
 %% No hyphen in TOC
 \setrmarg{2.55em plus 1fil}
 %% hack to center space
-\newcommand{\cntspace}{\hfil\hfil\hspace{0em plus 1fil}}
+\newcommand{\cntspace}{\hspace{0em plus 1fil}}
 
 \renewcommand{\printtoctitle}[1]{\headerwrapper{\printchaptertitle{\tocspace{}#1}}}
 %% no page numbers on TOC
@@ -285,12 +284,12 @@
 \renewcommand*{\cftpartfont}{}
 \renewcommand{\cftpartaftersnum}{\hfill}
 \renewcommand{\cftpartaftersnumb}{%
-  \\\hspace*{-\numlen}\tocspace\cntspace{}\large\bfseries\scmain%
+  \\\hspace*{-\numlen}\hfil\large\bfseries\scmain%
 }
 \setlength{\cftbeforepartskip}{\medskipamount}
 
-\newcommand{\partnumberlineadd}[1]{
-\cntspace\large\bfseries\scmain{#1}\hfill%
+\newcommand{\partnumberlineadd}[1]{%
+\tocspace\cntspace\large\bfseries\scmain{#1}%
 }
 
 % Pidrozdil
