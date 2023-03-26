@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{kapital}[2017/04/15 Das Kapital]
 
-\LoadClass[11pt, b5paper, final, openany]{memoir}
+\LoadClass[11pt, b5paper, final, openright]{memoir}
 
 
 % 2893px 1889px
