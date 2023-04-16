@@ -261,18 +261,18 @@
 \addtolength\numlen{-\@tocrmarg}
 
 % book
-\cftpagenumbersoff{book}
-\setlength{\cftbooknumwidth}{\numlen}
-\renewcommand*{\cftbookpresnum}{%
-  \tocspace\hfill\itshape%
-}
-\renewcommand{\cftbookaftersnumb}{%
-  \\\hspace*{-\numlen}\tocspace\cntspace{}\lettersfont\MakeUppercase%
-}
-\renewcommand{\cftbookaftersnum}{\hfill}
-\renewcommand*{\cftbookfont}{\large\sffamily}
-\renewcommand*{\cftbookname}{}
-\setlength{\cftbeforebookskip}{\bigskipamount}
+% \cftpagenumbersoff{book}
+% \setlength{\cftbooknumwidth}{\numlen}
+% \renewcommand*{\cftbookpresnum}{%
+%   \tocspace\hfill\itshape%
+% }
+% \renewcommand{\cftbookaftersnumb}{%
+%   \\\hspace*{-\numlen}\tocspace\cntspace{}\lettersfont\MakeUppercase%
+% }
+% \renewcommand{\cftbookaftersnum}{\hfill}
+% \renewcommand*{\cftbookfont}{\large\sffamily}
+% \renewcommand*{\cftbookname}{}
+% \setlength{\cftbeforebookskip}{\bigskipamount}
 
 % Viddil
 \cftpagenumbersoff{part}
@@ -284,7 +284,7 @@
 \renewcommand*{\cftpartfont}{}
 \renewcommand{\cftpartaftersnum}{\hfill}
 \renewcommand{\cftpartaftersnumb}{%
-  \\\hspace*{-\numlen}\hfil\large\bfseries\scmain%
+  \\\hspace*{-\numlen}\tocspace\tocspace\hfil\large\bfseries\scmain%
 }
 \setlength{\cftbeforepartskip}{\medskipamount}
 
