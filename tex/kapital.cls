@@ -41,7 +41,6 @@
 \let\paragraph\subsubsection
 \let\subsubsection\subsection
 \let\subsection\section
-\let\chapter\part
 
 \addto\captionsukrainian{\renewcommand{\partname}{Відділ}}
 \renewcommand{\thepart}{\UkrNumToName{\value{part}}}
