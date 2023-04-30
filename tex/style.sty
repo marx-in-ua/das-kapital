@@ -286,12 +286,13 @@
 {\sffamily\itshape #1}
 
 {\lettersfont\MakeUppercase{#2}}
-\end{center}\vspace{-\medskipamount}%
+\end{center}%
 }
 
 % chastyna TOC entry
 \newcommand{\subbooktocentry}[1]{%
 \begin{center}
+\vspace{-\medskipamount}
 
 {\lettersfont\MakeUppercase{#1}}
 
@@ -306,7 +307,6 @@
 {\large\bfseries\scmain #2}
 \end{center}%
 \vspace{-\medskipamount}\vspace{-\medskipamount}%
-\nopagebreak[4]%
 }
 
 % Viddil
