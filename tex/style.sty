@@ -260,26 +260,6 @@
 \settowidth\rozdwidth{\itshape\small Розділ~}
 \setlength{\cftchapternumwidth}{-\rozdwidth}
 
-
-% length without margin
-% \newlength\numlen
-% \setlength\numlen{\textwidth}
-% \addtolength\numlen{-\@tocrmarg}
-
-
-% \cftpagenumbersoff{book}
-% \setlength{\cftbooknumwidth}{\numlen}
-% \renewcommand*{\cftbookpresnum}{%
-%   \tocspace\hfill\itshape%
-% }
-% \renewcommand{\cftbookaftersnumb}{%
-%   \\\hspace*{-\numlen}\tocspace\cntspace{}\lettersfont\MakeUppercase%
-% }
-% \renewcommand{\cftbookaftersnum}{\hfill}
-% \renewcommand*{\cftbookfont}{\large\sffamily}
-% \renewcommand*{\cftbookname}{}
-% \setlength{\cftbeforebookskip}{\bigskipamount}
-
 % book TOC entry
 \newcommand{\booktocentry}[2]{%
 \begin{center}
@@ -308,24 +288,6 @@
 \end{center}%
 \vspace{-\medskipamount}\vspace{-\medskipamount}%
 }
-
-% Viddil
-% \cftpagenumbersoff{part}
-% \newcommand{\tocviddil}{\footnotesize\itshape\mdseries Відділ~}
-% \setlength{\cftpartnumwidth}{\numlen}
-% \setlength{\cftpartindent}{0pt}
-% \renewcommand*{\cftpartname}{}
-% \renewcommand*{\cftpartpresnum}{\tocspace\hfill\tocviddil}
-% \renewcommand*{\cftpartfont}{}
-% \renewcommand{\cftpartaftersnum}{\hfill}
-% \renewcommand{\cftpartaftersnumb}{%
-%   \\\hspace*{-\numlen}\tocspace\tocspace\hfil\large\bfseries\scmain%
-% }
-% \setlength{\cftbeforepartskip}{\medskipamount}
-
-% \newcommand{\partnumberlineadd}[1]{%
-% \tocspace\cntspace\large\bfseries\scmain{#1}%
-% }
 
 % Pidrozdil
 \setlength{\cftsectionindent}{0pt}
