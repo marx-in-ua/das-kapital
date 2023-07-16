@@ -141,14 +141,20 @@
 \newcommand{\chaptertwoline}[3]{%
   \chapteronly{#1 #2}%
 
-\addcontentsline{toc}{part}%
-  {\protect\partnumberline{\thepart}#1}%
-\addtocontents{toc}{\protect\vspace{-0.7em}}
-\addcontentsline{toc}{part}%
-  {\protect\partnumberlineadd{#2}}%
+\addtocontents{toc}{\protect\parttocentry{Відділ \thepart}{#1 \protect\par #2}}%
 
 \markboth{Відділ \thepart. #3}{\rightmark}
 }
+
+\newcommand{\chapteroneline}[1]{%
+  \chapteronly{#1}%
+
+\addtocontents{toc}{\protect\parttocentry{Відділ \thepart}{#1}}%
+
+\markboth{Відділ \thepart. #1}{\rightmark}
+}
+
+\let\chapter\chapteroneline
 
 %% Rozdil
 
@@ -254,42 +260,33 @@
 \settowidth\rozdwidth{\itshape\small Розділ~}
 \setlength{\cftchapternumwidth}{-\rozdwidth}
 
+% book TOC entry
+\newcommand{\booktocentry}[2]{%
+\begin{center}
+{\sffamily\itshape #1}
 
-% length without margin
-\newlength\numlen
-\setlength\numlen{\textwidth}
-\addtolength\numlen{-\@tocrmarg}
-
-% book
-\cftpagenumbersoff{book}
-\setlength{\cftbooknumwidth}{\numlen}
-\renewcommand*{\cftbookpresnum}{%
-  \tocspace\hfill\itshape%
+{\lettersfont\MakeUppercase{#2}}
+\end{center}%
 }
-\renewcommand{\cftbookaftersnumb}{%
-  \\\hspace*{-\numlen}\tocspace\cntspace{}\lettersfont\MakeUppercase%
-}
-\renewcommand{\cftbookaftersnum}{\hfill}
-\renewcommand*{\cftbookfont}{\large\sffamily}
-\renewcommand*{\cftbookname}{}
-\setlength{\cftbeforebookskip}{\bigskipamount}
 
-% Viddil
-\cftpagenumbersoff{part}
-\newcommand{\tocviddil}{\footnotesize\itshape\mdseries Відділ~}
-\setlength{\cftpartnumwidth}{\numlen}
-\setlength{\cftpartindent}{0pt}
-\renewcommand*{\cftpartname}{}
-\renewcommand*{\cftpartpresnum}{\tocspace\hfill\tocviddil}
-\renewcommand*{\cftpartfont}{}
-\renewcommand{\cftpartaftersnum}{\hfill}
-\renewcommand{\cftpartaftersnumb}{%
-  \\\hspace*{-\numlen}\hfil\large\bfseries\scmain%
-}
-\setlength{\cftbeforepartskip}{\medskipamount}
+% chastyna TOC entry
+\newcommand{\subbooktocentry}[1]{%
+\begin{center}
+\vspace{-\medskipamount}
 
-\newcommand{\partnumberlineadd}[1]{%
-\tocspace\cntspace\large\bfseries\scmain{#1}%
+{\lettersfont\MakeUppercase{#1}}
+
+\end{center}}
+
+% viddil TOC entry
+\newcommand{\parttocentry}[2]{%
+\begin{center}
+\vspace{-\medskipamount}%
+{\footnotesize\itshape\mdseries #1}
+
+{\large\bfseries\scmain #2}
+\end{center}%
+\vspace{-\medskipamount}\vspace{-\medskipamount}%
 }
 
 % Pidrozdil
