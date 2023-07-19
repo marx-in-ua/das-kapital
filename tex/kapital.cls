@@ -87,7 +87,7 @@
 % }{%
 % \oldfrac{#1}{#2}}{%
 % \oldfrac{#1}{#2}}}%
-\renewcommand{\frac}[2]{\ensuremath{\dfrac{#1}{#2}}}
+\renewcommand{\frac}[2]{\ensuremath{\oldfrac{#1}{#2}}}
 
 
 %% oversets
