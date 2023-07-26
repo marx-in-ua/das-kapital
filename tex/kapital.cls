@@ -87,7 +87,7 @@
 % }{%
 % \oldfrac{#1}{#2}}{%
 % \oldfrac{#1}{#2}}}%
-\renewcommand{\frac}[2]{\ensuremath{\dfrac{#1}{#2}}}
+\renewcommand{\frac}[2]{\ensuremath{\oldfrac{#1}{#2}}}
 
 
 %% oversets
@@ -280,9 +280,14 @@
 \usepackage{microtype} % [tracking=true]
 \frenchspacing
 
-%\usepackage[all]{nowidow}
+% \usepackage[all]{nowidow}
+
 \usepackage[balanced]{lua-widow-control}
-\interfootnotelinepenalty=\@M
+
+\newcommand{\disablefootnotebreak}{\interfootnotelinepenalty=\@M}
+% Reasonamble nobreak
+\newcommand{\enablefootnotebreak}{\interfootnotelinepenalty=1000}
+\enablefootnotebreak{}
 
 % \lwcsetup{disablecmds = {footnotetext}}
 
