@@ -284,9 +284,6 @@
 
 \usepackage[balanced]{lua-widow-control}
 
-\newcommand{\withoutLCW}[1]{\lwcsetup{disable}#1\lwcsetup{enable}}
-\newcommand{\footnoteWithFotnote}[1]{\withoutLCW{\footnote{#1}}}
-
 \newcommand{\disablefootnotebreak}{\interfootnotelinepenalty=\@M}
 % Reasonamble nobreak
 \newcommand{\enablefootnotebreak}{\interfootnotelinepenalty=1000}
