@@ -282,6 +282,7 @@
 
 % \usepackage[all]{nowidow}
 
+%% Keep it balanced, as default breaks build of book.i
 \usepackage[balanced]{lua-widow-control}
 
 \newcommand{\withoutLCW}[1]{\lwcsetup{disable}#1\lwcsetup{enable}}
