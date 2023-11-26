@@ -309,8 +309,8 @@
 \usepackage{enumitem}
 \renewcommand{\labelitemi}{\textendash}
 
-%% Word spacing
-
-\newcommand{\vtyagnut}[1]{\spaceskip=#1\fontdimen2\font plus #1\fontdimen3\font minus #1\fontdimen4\font}
+%% Paragraph length
+\newcommand{\vtyagnut}{\looseness=-1}
+\newcommand{\roztyagnut}{\looseness=1}
 
 \endinput

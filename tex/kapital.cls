@@ -288,6 +288,9 @@
 \newcommand{\withoutLCW}[1]{\lwcsetup{disable}#1\lwcsetup{enable}}
 \newcommand{\footnoteWithFotnote}[1]{\withoutLCW{\footnote{#1}}}
 
+% Do not warn if hyphnation is on page break
+\lwcsetup{brokenpenalty=0}
+
 \newcommand{\disablefootnotebreak}{\interfootnotelinepenalty=\@M}
 % Reasonamble nobreak
 \newcommand{\enablefootnotebreak}{\interfootnotelinepenalty=1000}
