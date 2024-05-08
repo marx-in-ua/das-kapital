@@ -261,9 +261,7 @@
 \newcommand{\emptycell}{\makecell{\textemdash{}}}
 
 %% caption2
-\newcommand{\captionnew}[1]{
-{\bfseries\sffamily #1}%
-}
+\newcommand{\captionnew}[1]{{\bfseries\sffamily #1}}
 
 %% line color 75%
 \definecolor{gray75}{rgb}{0.75, 0.75, 0.75}
