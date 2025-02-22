@@ -387,6 +387,11 @@
 %% styling
 \RequirePackage{style}
 
+%% Latex logo
+\RequirePackage{metalogo}
+\setlogokern{La}{-0.21em}
+\setlogokern{aT}{-0.05em}
+
 %% page numbering
 \usepackage{pageslts}
 
