@@ -6,8 +6,25 @@
 
 % 2893px 1889px
 % 11.8082 px in mm
-\setstocksize{235mm}{155mm}
-\settrimmedsize{\stockheight}{\stockwidth}{*}
+\setstocksize{245mm}{165mm}
+\settrimmedsize{235mm}{155mm}{*}
+\settrims{5mm}{5mm}
+
+% Set Trim box 
+% https://tex.stackexchange.com/questions/435773/lualatex-not-correctly-setting-pdf-page-boxes
+%
+% PDF uses pts, so we convert mm to pts
+% mm    pts
+% 165   467,717
+% 1      2,835
+% 5      14,173
+% 160   453,544
+% 240   680,316
+\usepackage{ifluatex}
+\ifluatex
+  \edef\pdfpageattr{\pdfvariable pageattr}
+\fi
+\pdfpageattr{/TrimBox [14.17 14.17 453.54 680.32]}
 
 % 1422px (2190 + 56)px
 \settypeblocksize{*}{120.42mm}{1.5795}
