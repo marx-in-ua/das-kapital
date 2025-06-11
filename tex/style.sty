@@ -184,11 +184,11 @@
 
 %% Book title page
 \newcommand{\bookpaget}[2]{
-  \bookpages{#1}{#2}
+  \bookpages{#1}{#2}{}
   \addtocontents{toc}{\protect\booktocentry{\BookNumber{}}{#2}}
 }
 
-\newcommand{\bookpages}[2]{
+\newcommand{\bookpages}[3]{
     \cleardoublepage
   \thispagestyle{empty}
   \pagecolor{darkgray}
@@ -202,6 +202,10 @@
   \hfill\begin{minipage}{\dimexpr\textwidth-1.5cm}
   \color{white}
   \Huge\lettersfont\raggedright\bfseries\MakeUppercase{#2}
+  
+  \null\vspace{10pt} 
+  {\noindent\LARGE\lettersfont\raggedright\bfseries\MakeUppercase{#3}}
+
   \end{minipage}
   \cleardoublepage
   \nopagecolor

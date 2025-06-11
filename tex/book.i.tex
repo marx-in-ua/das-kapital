@@ -28,6 +28,7 @@
 
 \begin{document}
   \input{common/front.tex}
+  \input{common/richi.tex}
   \input{common/foreword.tex}
   \pagenumbering{arabic}
   \mainmatter
@@ -42,6 +43,9 @@
   \input{i/part.6.tex}
   \input{i/part.7.tex}
   \input{franko/part.1.tex}
+  % insert 2 blank pages to align total number of pages to 16
+  \newpage\thispagestyle{empty}\mbox{}
+  \newpage\thispagestyle{empty}\mbox{}
   \cleardoublepage
   \input{common/fonts.tex}
 \end{document}
