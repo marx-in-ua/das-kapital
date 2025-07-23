@@ -249,22 +249,14 @@
 }
 
 % rozdil
-\renewcommand{\cftchaptername}{\itshape\small Розділ~}
-\renewcommand*{\cftchapteraftersnum}{%
-  \itshape\small\addfontfeature{LetterSpace=0}.~\bfseries\upshape\normalsize%
-}
 \renewcommand{\cftchapterleader}{\tiny\mdseries\cftdotfill{\cftdotsep}}
-\renewcommand*{\cftchapterfont}{\normalsize\mdseries}
-\renewcommand*{\cftchapterpresnum}{\footnotesize\addfontfeature{LetterSpace=5}}
-\renewcommand*{\cftchapterpagefont}{\mdseries}
-\setlength{\cftbeforechapterskip}{\smallskipamount}
+\renewcommand*{\cftchapterpresnum}{%
+   \hspace{-2em}\hfill\footnotesize\addfontfeature{LetterSpace=5}%
+}
 
-\renewcommand\chapternumberlinebox[2]{#2}
-\setlength{\cftchapterindent}{\tocindent}
-
-\newlength\rozdwidth
-\settowidth\rozdwidth{\itshape\small Розділ~}
-\setlength{\cftchapternumwidth}{-\rozdwidth}
+\renewcommand*{\cftchapteraftersnum}{.~}
+\setlength{\cftbeforechapterskip}{\medskipamount}
+\setlength{\cftchapternumwidth}{\tocindent} % -\rozdwidth
 
 % Page numbrers should be table formatted (Monospaced, Lining)
 \renewcommand{\cftchapterformatpnum}[1]{\addfontfeature{Numbers={Monospaced,Lining}}#1}
