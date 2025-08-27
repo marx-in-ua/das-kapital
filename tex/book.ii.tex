@@ -11,8 +11,10 @@
 \newcommand{\BookAddSecond}{}
 
 \newcommand{\SourceYear}{Харків, 1932}
-\newcommand{\Biblio}{Т. ІІ. — Кн. ІІ: Процес циркуляції капіталу /
+\newcommand{\Biblio}{Т. ІІ. — Кн. ІІ: Процес циркуляції капіталу~/
 Пер. із 2 нім. вид.; За ред. Д. Рабіновича і С. Трикоза.}
+
+\newcommand{\ISBN}{ISBN 000-000-0000-00-0 (том ІІ)}
 
 \newcommand{\FullSource}{\VolumeNumber. \BookNumber: \BookTitle. \BookSource{} \BookAuthors{} — \SourceYear{}}
 
@@ -34,6 +36,7 @@
   \input{ii/part.0.tex}
   \bookpaget{\BookNumber{}}{\BookTitle{}}
   \input{ii/part.1.tex}
+  \addtocontents{toc}{\protect\newpage}
   \input{ii/part.2.tex}
   \input{ii/part.3.tex}
   \cleardoublepage
